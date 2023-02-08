@@ -1,0 +1,84 @@
+@font-face {
+    font-family: "Pokemon `hollow";
+    src: url(/assets/fonts/PokemonHollow.ttf);
+}
+
+body
+{
+    background-color: rgb(136, 127, 115);
+}
+
+header
+{
+    font-family: "Pokemon Hollow";
+    height: 200px;
+}
+
+
+
+#board
+{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#container
+{
+    background-color: black;
+    display: flex;
+    flex-wrap: wrap;
+    width: max-content;
+    height: 80%;
+    border: 2px solid black;
+}
+
+#card1
+{
+    background-color: orangered;
+    height: 100%;
+}
+
+.card
+{
+    height: 270px;
+    width: 200px;
+    position: relative;
+    margin: 5px;
+    transform-style: preserve-3d;
+    transition: all 0.5s;
+}
+
+.card.visible
+{
+    transform: rotateY(180deg);
+}
+
+.card-back,.card-front
+{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    backface-visibility: hidden;
+}
+
+.card-back
+{
+    background-image: url(/assets/img/cardHidden.jpg);
+    cursor: pointer;
+}
+
+.card-front
+{
+    background-color: brown;
+    transform: rotateY(180deg);
+    background-size: 100% auto;
+    background-repeat: no-repeat;
+    background-position: center center;
+    cursor: not-allowed;
+}
+
+h1
+{
+    font-family: 'Pokemon Hollow.ttf';
+}
