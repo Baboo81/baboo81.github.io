@@ -19,7 +19,7 @@
 
 header
 {
-    background-color: var(--roseLeger);
+    background-color: var(--black);
     height: 350px;
     display: flex;
     font-family: 'Notable', sans-serif;
@@ -270,6 +270,7 @@ header #mainTitle
     text-align: center;
     margin-left: 20%;
     margin-top: 3%;
+    color: var(--rose);
 }
 
 header #name
@@ -277,6 +278,7 @@ header #name
     font-family: 'Poiret One', cursive;
     font-size: 1em;
     font-weight:bold;
+    color: var(--rose);
     text-align:start;
     margin-top: 5%;
     margin-bottom: 2%;
@@ -730,6 +732,7 @@ footer #copyRight
     }
     header
     {
+        background-color: var(--black);
         display: flex;
         width: 100%;
         height: 300px;
@@ -816,11 +819,13 @@ header .menu {
 
     header #mainTitle
     {
+        color: var(--rose);
         font-size: 1em;
     }
 
     header #name
     {
+        color: var(--rose);
        font-size: 1em;
     }
 
@@ -1219,6 +1224,7 @@ section #imgLogo2
     }
     header
     {
+        background-color: var(--black);
         width: 100%;
         height: 200px;
         font-size: 1.5em;
@@ -1313,11 +1319,13 @@ header .menu {
 
     header #mainTitle
     {
+        color: var(--rose);
         padding-right: 5%;
     }
 
     header #name
     {
+        color: var(--rose);
         font-size: 1.3em;
         margin-left: -12%;
         margin-top: 8%;
@@ -1711,6 +1719,7 @@ section #imgLogo2
     }
     header
     {
+        background-color: var(--black);
         width: 100%;
         height: 200px;
         font-size: 1.5em;
@@ -1806,11 +1815,13 @@ header .menu {
 
     header #mainTitle
     {
+        color: var(--rose);
         padding-right: 5%;
     }
 
     header #name
     {
+        color: var(--rose);
         font-size: 1em;
         margin-left: -45%;
         margin-top: 8%;
@@ -2208,6 +2219,7 @@ section #imgLogo2
     }
     header
     {
+        background-color: var(--black);
         width: 100%;
         height: 200px;
         font-size: 1.5em;
@@ -2303,11 +2315,13 @@ header .menu {
 
     header #mainTitle
     {
+        color: var(--rose);
         padding-right: 5%;
     }
 
     header #name
     {
+        color: var(--rose);
         font-size: 1.3em;
         margin-left: -12%;
         margin-top: 8%;
@@ -2708,6 +2722,7 @@ section #imgLogo2
     }
     header
     {
+        background-color: var(--black);
         width: 100%;
         height: 200px;
         font-size: 1.5em;
@@ -2803,11 +2818,13 @@ header .menu {
 
     header #mainTitle
     {
+        color: var(--rose);
         padding-right: 5%;
     }
 
     header #name
     {
+        color: var(--rose);
         font-size: 1.3em;
         margin-left: -12%;
         margin-top: 8%;
@@ -3205,7 +3222,7 @@ section #imgLogo2
 {
     header
     {
-        background-color: var(--roseLeger);
+        background-color: var(--black);
         height: 350px;
         display: flex;
         font-family: 'Notable', sans-serif;
@@ -3383,12 +3400,14 @@ header .menu {
     /*Titles*/
     header #mainTitle
     {
+        color: var(--rose);
         margin-left: 5%;
         margin-top: 3%;
     }
     
     header #name
     {
+        color: var(--rose);
         font-family: 'Poiret One', cursive;
         font-size: 1em;
         font-weight:bold;
@@ -3894,7 +3913,7 @@ section #imgLogo2
 {
     header
     {
-        background-color: var(--roseLeger);
+        background-color: var(--black);
         height: 350px;
         display: flex;
         font-family: 'Notable', sans-serif;
@@ -4077,6 +4096,7 @@ header .menu {
     /*Titles*/
     header #mainTitle
     {
+        color: var(--rose);
         text-align: center;
         margin-left: 25%;
         margin-top: 3%;
@@ -4084,6 +4104,7 @@ header .menu {
     
     header #name
     {
+        color: var(--rose);
         font-family: 'Poiret One', cursive;
         font-size: 1em;
         font-weight:bold;
