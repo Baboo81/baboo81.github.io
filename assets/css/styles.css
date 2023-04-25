@@ -121,7 +121,7 @@ h1:nth-child(4){
 
 #part-yellow
 {
-    height: 1200px;
+    height: 3200px;
     width: 100%;
     background-color: var(--yellow);
     margin-top: -20%;
@@ -163,6 +163,15 @@ h4
     padding: 2%;
 }
 
+h5
+{
+    color: var(--yellow);
+    font-family: 'Bebas Neue', cursive;
+    font-size: 2em;
+    text-align: center;
+    padding: 2%;
+}
+
 button
 {
     height: 3em;
@@ -192,6 +201,7 @@ button:hover
     background-color: var(--yellow);
     border-radius: 30px;
     border: solid 2px var(--yellow);
+    margin-left: 40%;
 }
 
 .btn:hover
@@ -229,3 +239,4 @@ button:hover
     color: var(--yellow);
     text-align: justify;
 }
+
