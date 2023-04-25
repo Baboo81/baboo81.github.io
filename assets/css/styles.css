@@ -1,7 +1,106 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Dancing+Script:wght@400;600&display=swap');
+
 :root
 {
     --violet : #686bae;
     --yellow : #f1eda3;
     --pink : #e5d2e0;
     --blue : #05a9c7;
+}
+
+header
+{
+    background-color: var(--violet);
+}
+
+/*Nav*/
+nav
+{
+    height: 100px;
+}
+ul
+{
+    position: fixed;
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    height: 100px;
+    width: 100%;
+    background-color: var(--violet);
+    opacity: 80%;
+    justify-content: space-evenly;
+    z-index: 10;
+}
+
+li
+{
+    padding-top: 1%;
+
+}
+
+li a
+{
+    display: block;
+    color: var(--yellow);
+    font-size: 2em;
+    font-weight: bold;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover
+{
+    color: var(--blue);
+}
+
+/*MainTitle + animation*/
+h1
+{
+    position: relative;
+    color: var(--yellow);
+    font-family: 'Bebas Neue', cursive;
+    font-size: 12em !important;
+    line-height: .7em !important;
+    top: 5%;
+    left: 2%;
+    animation: flash 1.2s linear infinite;
+}
+@keyframes flash 
+{
+    0% {
+        color: var(--pink);
+        text-shadow: 0 0 7px var(--pink);
+    }
+    90% {
+        color: var(--yellow);
+        text-transform: none;
+    }
+    100% {
+        color: var(--pink);
+        text-shadow: 0 0 7px var(--pink);
+    }
+}
+
+h1:nth-child(1){
+    animation-delay: 0.1s;
+}
+h1:nth-child(2){
+    animation-delay: 0.3s;
+}
+h1:nth-child(3){
+    animation-delay: 0.5s;
+}
+h1:nth-child(4){
+    animation-delay: 0.7s;
+}
+
+#logo
+{
+    position: fixed;
+    top: 0%;
+    left: 20%;
+    height: 170em;
+    width: 170em;
+    opacity: 50%;
 }
