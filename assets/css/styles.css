@@ -8,6 +8,12 @@
     --blue : #05a9c7;
 }
 
+body
+{
+    box-sizing: border-box;
+    overflow-x: hidden;
+}
+
 header
 {
     background-color: var(--violet);
@@ -98,9 +104,102 @@ h1:nth-child(4){
 #logo
 {
     position: fixed;
-    top: 0%;
-    left: 20%;
+    top: -5%;
+    left: 30%;
     height: 170em;
     width: 170em;
     opacity: 50%;
+    z-index: 20;
+}
+
+#part-violet
+{
+    height: 800px;
+    width: 100%;
+    background-color: var(--violet);
+}
+
+#part-yellow
+{
+    height: 1200px;
+    width: 100%;
+    background-color: var(--yellow);
+    margin-top: -20%;
+}
+
+#aboutMe
+{
+    flex-direction: column;
+    height: 20em;
+    width: 30em;
+    font-size: 2em;
+    text-align: justify;
+    line-height: 1.1em;
+    border: solid 6px var(--blue);
+    border-radius: 12px;
+    color: var(--blue);
+    padding: 1%;
+    padding-left: 2%;
+    padding-right: 2%;
+    margin-left: 25%;
+    z-index: 5;
+}
+
+h2
+{
+    color: var(--yellow);
+    font-family: 'Bebas Neue', cursive;
+    font-size: 2.5em !important;
+    text-align: center;
+    padding: 2%;
+}
+
+h5
+{
+    color: var(--yellow);
+    font-family: 'Bebas Neue', cursive;
+    text-align: center;
+    padding: 2%;
+}
+
+button
+{
+    height: 3em;
+    width: 6em;
+    color: var(--violet);
+    font-size: .6em;
+    font-weight: bold;
+    background-color: var(--yellow);
+    border-radius: 30px;
+    border: solid 2px var(--yellow);
+}
+
+button:hover
+{
+    background-color: var(--violet);
+    color: var(--yellow);
+    border: solid 2px var(--yellow);
+}
+
+.wave
+{
+    margin-top: -20%;
+    transform: scale(1.2);
+    z-index: 1;
+}
+
+.card
+{
+    height: 350px;
+    width: 450px;
+    background-color: var(--);
+    border-bottom-left-radius: 12px;
+    border-bottom-right-radius: 12px;
+}
+
+.card:hover
+{
+    transform: scale(1.02);
+    transition: transform 330ms ease-in;
+    box-shadow: 8px 8px 12px #aaa;
 }
