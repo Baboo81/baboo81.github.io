@@ -145,6 +145,31 @@ h1:nth-child(4){
     z-index: 5;
 }
 
+/*Titles*/
+
+#titleProjets
+{
+    font-size: 6em !important;
+    animation: flash2 4s linear infinite;
+    text-align: center;
+}
+
+@keyframes flash2 
+{
+    0% {
+        color: var(--pink);
+        text-shadow: 0 0 10px var(--pink);
+    }
+    90% {
+        color: var(--blue);
+        text-transform: none;
+    }
+    100% {
+        color: var(--violet);
+        text-shadow: 0 0 10px var(--pink);
+    }
+}
+
 h2
 {
     color: var(--yellow);
@@ -211,6 +236,19 @@ button:hover
     border: solid 2px var(--yellow);
 }
 
+#card1Btn
+{
+    position: absolute;
+    top: 92%;
+}
+
+#card2Btn
+{
+    position: absolute;
+    top: 90%;
+    left: 25%;
+}
+
 /*SVG*/
 .wave
 {
@@ -224,8 +262,17 @@ button:hover
     position: relative;
     height: 790px;
     width: 790px;
-    right: 50%;
-    bottom: 17%;
+    right: 43%;
+    bottom: 18%;
+}
+
+#pictosHack
+{
+    position: relative;
+    height: 790px;
+    width: 790px;
+    right: 43%;
+    bottom: 18%;
 }
 
 .card
@@ -250,3 +297,8 @@ button:hover
     text-align: justify;
 }
 
+#cardsBlock
+{
+    position: relative;
+    top: 9%;
+}
