@@ -332,13 +332,14 @@ button:hover
     bottom: 21%;
 }
 
-#pictosToDoList
+
+#pictosFooter
 {
     position: relative;
     height: 790px;
     width: 790px;
-    right: 33%;
-    bottom: 22%;
+    left: 33%;
+    bottom: 110%;
 }
 
 /*CARDS*/
@@ -369,4 +370,14 @@ button:hover
     position: relative;
     top: 9%;
     left: 6%;
+}
+
+footer
+{
+    background-color: var(--blue);
+    height: 200px;
+    color: var(--yellow);
+    font-size: 1.5em;
+    font-weight: bold;
+    text-align: center;
 }
