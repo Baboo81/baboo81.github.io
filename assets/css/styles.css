@@ -24,6 +24,7 @@ nav
 {
     height: 100px;
 }
+
 ul
 {
     position: fixed;
@@ -105,7 +106,7 @@ h1:nth-child(4){
 {
     position: fixed;
     top: -5%;
-    left: 30%;
+    left: 40%;
     height: 170em;
     width: 170em;
     opacity: 50%;
@@ -219,7 +220,7 @@ button:hover
 .btn
 {
     height: 3em;
-    width: 6em;
+    width: 7em;
     color: var(--violet);
     font-size: .6em;
     font-weight: bold;
@@ -240,13 +241,21 @@ button:hover
 {
     position: absolute;
     top: 92%;
+    left: 1%;
 }
 
 #card2Btn
 {
     position: absolute;
     top: 90%;
-    left: 25%;
+    left: 21%;
+}
+
+#card3Btn
+{
+    position: absolute;
+    top: 90%;
+    left: 21%;
 }
 
 /*SVG*/
@@ -275,6 +284,15 @@ button:hover
     bottom: 18%;
 }
 
+#pictosPokemon
+{
+    position: relative;
+    height: 790px;
+    width: 790px;
+    right: 27%;
+    bottom: 23%;
+}
+
 .card
 {
     height: 650px;
@@ -301,4 +319,5 @@ button:hover
 {
     position: relative;
     top: 9%;
+    left: 6%;
 }
