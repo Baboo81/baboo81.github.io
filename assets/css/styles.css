@@ -258,6 +258,20 @@ button:hover
     left: 21%;
 }
 
+#card4Btn
+{
+    position: absolute;
+    top: 90%;
+    left: 21%;
+}
+
+#card5Btn
+{
+    position: absolute;
+    top: 90%;
+    left: 21%;
+}
+
 /*SVG*/
 .wave
 {
@@ -293,6 +307,25 @@ button:hover
     bottom: 23%;
 }
 
+#pictosAsturias
+{
+    position: relative;
+    height: 790px;
+    width: 790px;
+    right: 37%;
+    bottom: 22%;
+}
+
+#pictosNode
+{
+    position: relative;
+    height: 790px;
+    width: 790px;
+    right: 33%;
+    bottom: 21%;
+}
+
+/*CARDS*/
 .card
 {
     height: 650px;
