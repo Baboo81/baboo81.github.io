@@ -332,15 +332,15 @@ button:hover
     bottom: 21%;
 }
 
-
-#pictosFooter
+#pictosToDoList
 {
     position: relative;
     height: 790px;
     width: 790px;
-    left: 33%;
-    bottom: 110%;
+    right: 33%;
+    bottom: 21%;
 }
+
 
 /*CARDS*/
 .card
