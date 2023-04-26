@@ -272,6 +272,13 @@ button:hover
     left: 21%;
 }
 
+#card6Btn
+{
+    position: absolute;
+    top: 90%;
+    left: 21%;
+}
+
 /*SVG*/
 .wave
 {
@@ -323,6 +330,15 @@ button:hover
     width: 790px;
     right: 33%;
     bottom: 21%;
+}
+
+#pictosToDoList
+{
+    position: relative;
+    height: 790px;
+    width: 790px;
+    right: 33%;
+    bottom: 22%;
 }
 
 /*CARDS*/
