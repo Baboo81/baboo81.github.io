@@ -211,11 +211,21 @@ button:hover
     border: solid 2px var(--yellow);
 }
 
+/*SVG*/
 .wave
 {
     margin-top: -20%;
     transform: scale(1.2);
     z-index: 1;
+}
+
+#pictosMolen
+{
+    position: relative;
+    height: 790px;
+    width: 790px;
+    right: 50%;
+    bottom: 17%;
 }
 
 .card
