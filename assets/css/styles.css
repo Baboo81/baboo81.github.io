@@ -231,6 +231,7 @@ button:hover
     border: solid 2px var(--yellow);
 }
 
+
 .btn
 {
     height: 3em;
@@ -414,6 +415,56 @@ button:hover
     top: 9%;
     left: 6%;
 }
+
+/*Animation photo*/
+.bulles
+{
+    flex-direction: row;
+    height: 6em;
+    width: 6em;
+    background: url(../img/bulles.png);
+    font-size: 2em;
+    display: table-cell;
+    text-align: center;
+    vertical-align: middle;
+    border: solid 6px var(--blue);
+    /*Animated property*/
+    border-radius: 50%;
+    margin-top: 10%;
+
+    transition: 2s;
+
+    /*Animation*/
+    animation: sinusoidal infinite;
+    animation-duration: 3s;
+
+}
+
+@keyframes sinusoidal
+{
+    0% {
+        border-radius: 50%;
+        transform: translateX(50%);
+        transform: translateY(25%);
+        
+    }
+    25% {
+        border-radius: 12px;
+        
+    }
+    50% {
+        
+    }
+    75% {
+        
+    }
+    100% {
+        transform: translateX(100%);
+    }
+    
+}
+/*END*/    
+
 
 footer
 {
