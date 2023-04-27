@@ -128,6 +128,14 @@ h1:nth-child(4){
     margin-top: -20%;
 }
 
+#part-pink
+{
+    height: 3200px;
+    width: 100%;
+    background-color: var(--pink);
+    margin-top: -20%;
+}
+
 #aboutMe
 {
     flex-direction: column;
@@ -198,6 +206,7 @@ h5
     padding: 2%;
 }
 
+/*BTN*/
 button
 {
     height: 3em;
@@ -241,7 +250,7 @@ button:hover
 {
     position: absolute;
     top: 92%;
-    left: 1%;
+    left: 21%;
 }
 
 #card2Btn
@@ -281,6 +290,13 @@ button:hover
 
 /*SVG*/
 .wave
+{
+    margin-top: -20%;
+    transform: scale(1.2);
+    z-index: 1;
+}
+
+.wave2
 {
     margin-top: -20%;
     transform: scale(1.2);
@@ -343,7 +359,8 @@ button:hover
 
 #Git
 {
-
+    position: relative;
+    top: 30%;
 }
 
 #LinkedIn
@@ -353,7 +370,7 @@ button:hover
 
 #Mail
 {
-    
+
 }
 
 
