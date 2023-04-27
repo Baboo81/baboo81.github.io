@@ -105,14 +105,15 @@ h1:nth-child(4){
 #logo
 {
     position: fixed;
-    top: -5%;
-    left: 40%;
-    height: 170em;
-    width: 170em;
+    top: 15%;
+    right:  5%;
+    height: 25em;
+    width: 25em;
     opacity: 50%;
     z-index: 20;
 }
 
+/*Sections*/
 #part-violet
 {
     height: 800px;
@@ -136,9 +137,13 @@ h1:nth-child(4){
     margin-top: -20%;
 }
 
+#intro
+{
+    margin-top: 5%;
+}
+
 #aboutMe
 {
-    flex-direction: column;
     height: 20em;
     width: 30em;
     font-size: 2em;
@@ -148,8 +153,8 @@ h1:nth-child(4){
     border-radius: 12px;
     color: var(--blue);
     padding: 1%;
-    padding-left: 2%;
-    padding-right: 2%;
+    padding-left: 5%;
+    padding-right: 5%;
     margin-left: 25%;
     z-index: 5;
 }
@@ -246,6 +251,12 @@ button:hover
     border: solid 2px var(--yellow);
 }
 
+#introBtn
+{
+   position: relative;
+   left: 43%;
+}
+
 #card1Btn
 {
     position: absolute;
@@ -289,14 +300,14 @@ button:hover
 }
 
 /*SVG*/
-.wave
+#wave1
 {
     margin-top: -20%;
     transform: scale(1.2);
     z-index: 1;
 }
 
-.wave2
+#wave2
 {
     margin-top: -20%;
     transform: scale(1.2);
@@ -365,12 +376,12 @@ button:hover
 
 #LinkedIn
 {
-
+    top: 0;
 }
 
 #Mail
 {
-
+    top: 0;
 }
 
 
