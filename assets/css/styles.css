@@ -300,6 +300,12 @@ button:hover
     left: 21%;
 }
 
+/*Img size*/
+#imgCards
+{
+    height: 220px;
+}
+
 /*SVG*/
 #wave1
 {
