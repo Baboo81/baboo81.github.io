@@ -166,7 +166,7 @@ h1:nth-child(4){
 
     font-size: 9em !important;
     text-align: center;
-    margin-bottom: 200px;
+    margin-bottom: 50px;
     animation: flash2 4s linear infinite;
 }
 
@@ -317,6 +317,13 @@ button:hover
 }
 
 #wave2
+{
+    margin-top: -20%;
+    transform: scale(1.2);
+    z-index: 1;
+}
+
+#wave3
 {
     margin-top: -20%;
     transform: scale(1.2);
@@ -514,4 +521,45 @@ footer
     font-size: 1em;
     font-weight: bold;
     text-align: center;
+}
+
+/*Media queries*/
+@media only screen and (max-width : 480px)
+{
+    /*Style mobile, on travail sur les périphériques dt la largeur est inférieure à 480px*/
+
+    /*p
+    {
+        width: 70%;
+        height: 400px;
+        padding: 50px;
+        color: aliceblue;
+        background: black;
+    }*/
+}
+
+@media only screen and (min-width : 481px) and (max-width : 768px)
+{
+    /*Style pour les tablettes*/
+   /*p
+    {
+        width: 80%;
+        height: 400px;
+        padding: 50px;
+        color: aliceblue;
+        background: black;
+    }*/
+}
+
+@media only screen and (min-width : 769px)
+{
+    /*Style pour les ordinateurs*/
+    /*p
+    {
+        width: 90%;
+        height: 300px;
+        padding: 50px;
+        color: aliceblue;
+        background: black;
+    }*/
 }
