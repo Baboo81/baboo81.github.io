@@ -213,6 +213,11 @@ h5
     padding: 2%;
 }
 
+#picto-h5
+{
+    color: var(--blue);
+}
+
 /*BTN*/
 button
 {
@@ -326,6 +331,7 @@ button:hover
 #wave3
 {
     margin-top: -20%;
+    margin-bottom: -20%;
     transform: scale(1.2);
     z-index: 1;
 }
@@ -382,6 +388,15 @@ button:hover
     width: 790px;
     right: 33%;
     bottom: 21%;
+}
+
+#pictoList
+{
+   position: relative;
+   height: 75px;
+   width: 75px;
+   left: 47%;
+
 }
 
 #Git
@@ -516,7 +531,7 @@ button:hover
 footer
 {
     background-color: var(--blue);
-    height: 200px;
+    height: 600px;
     color: var(--yellow);
     font-size: 1em;
     font-weight: bold;
