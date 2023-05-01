@@ -538,6 +538,13 @@ footer
     text-align: center;
 }
 
+#chris
+{
+    position: relative;
+    bottom: 0%;
+    font-size: 1.5em;
+}
+
 /*Media queries*/
 @media only screen and (max-width : 480px)
 {
