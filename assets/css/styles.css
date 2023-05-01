@@ -163,9 +163,11 @@ h1:nth-child(4){
 
 #titleProjets
 {
-    font-size: 6em !important;
-    animation: flash2 4s linear infinite;
+
+    font-size: 9em !important;
     text-align: center;
+    margin-bottom: 200px;
+    animation: flash2 4s linear infinite;
 }
 
 @keyframes flash2 
@@ -303,7 +305,7 @@ button:hover
 /*Img size*/
 #imgCards
 {
-    height: 220px;
+    height: 220px !important;
 }
 
 /*SVG*/
@@ -484,6 +486,25 @@ button:hover
 }
 /*END*/    
 
+/*List-group*/
+#list
+{
+    background-color: var(--pink);
+    color: var(--blue);
+    font-size: 1.5em;
+}
+
+#logo1
+{
+    height: 300px;
+    width: 350px;
+}
+
+#logo2
+{
+    height: 300px;
+    width: 350px;
+}
 
 footer
 {
