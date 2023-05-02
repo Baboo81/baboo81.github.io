@@ -71,7 +71,7 @@ h1
     font-family: 'Bebas Neue', cursive;
     font-size: 12em !important;
     line-height: .7em !important;
-    top: 5%;
+    top: 8%;
     left: 2%;
     animation: flash 1.2s linear infinite;
 }
@@ -118,7 +118,7 @@ h1:nth-child(4){
 /*Sections*/
 #part-violet
 {
-    height: 800px;
+    height: 1500px;
     width: 100%;
     background-color: var(--violet);
 }
@@ -146,7 +146,7 @@ h1:nth-child(4){
 
 #aboutMe
 {
-    height: 22em;
+    height: 24em;
     width: 30em;
     font-size: 2em;
     font-family: 'Castoro Titling', cursive;
@@ -158,7 +158,8 @@ h1:nth-child(4){
     padding: 1%;
     padding-left: 5%;
     padding-right: 5%;
-    margin-left: 10%;
+    margin-left: 25%;
+    margin-top: 5%;
     z-index: 5;
 }
 
@@ -213,7 +214,7 @@ h5
     font-family: 'Bebas Neue', cursive;
     font-size: 2em;
     text-align: center;
-    padding: 2%;
+    padding: 0%;
 }
 
 #picto-h5
@@ -266,7 +267,8 @@ button:hover
 {
    position: relative;
    left: 0%;
-   bottom: 3%;
+   bottom: 0%;
+   font-family: 'Bebas Neue', cursive;
 }
 
 #card1Btn
@@ -543,13 +545,13 @@ button:hover
     text-align: justify;
     color: var(--yellow);
     border-radius: 12px;
-    margin-top: 250px;
+    margin-top: 350px;
 }
 
 /*Table*/
 table
 {
-    margin-top: 250px;
+    margin-top: 50px;
     background-color: var(--violet);
     border-radius: 12px;
 }
@@ -594,15 +596,10 @@ footer
 
 @media only screen and (min-width : 481px) and (max-width : 768px)
 {
-    /*Style pour les tablettes*/
-   /*p
+    h1
     {
-        width: 80%;
-        height: 400px;
-        padding: 50px;
-        color: aliceblue;
-        background: black;
-    }*/
+        font-size: 4em;
+    }
 }
 
 @media only screen and (min-width : 769px)
