@@ -600,17 +600,35 @@ footer
     {
         font-size: 4em;
     }
+
+    #logo
+    {
+        position: relative;
+        top: 15%;
+        right:  5%;
+        height: 25em;
+        width: 25em;
+        opacity: 50%;
+        z-index: 20;
+    }
 }
 
 @media only screen and (min-width : 769px)
 {
     /*Style pour les ordinateurs*/
-    /*p
+    h1
     {
-        width: 90%;
-        height: 300px;
-        padding: 50px;
-        color: aliceblue;
-        background: black;
-    }*/
+        font-size: 4em;
+    }
+
+    #logo
+    {
+        position: relative;
+        top: 15%;
+        right:  5%;
+        height: 25em;
+        width: 25em;
+        opacity: 50%;
+        z-index: 20;
+    }
 }
