@@ -158,7 +158,7 @@ h1:nth-child(4){
     padding: 1%;
     padding-left: 5%;
     padding-right: 5%;
-    margin-left: 25%;
+    margin-left: 65%;
     margin-top: 5%;
     z-index: 5;
 }
@@ -614,14 +614,6 @@ footer
 {
     /*Style mobile, on travail sur les périphériques dt la largeur est inférieure à 480px*/
 
-    /*p
-    {
-        width: 70%;
-        height: 400px;
-        padding: 50px;
-        color: aliceblue;
-        background: black;
-    }*/
 }
 
 @media only screen and (min-width : 481px) and (max-width : 768px)
