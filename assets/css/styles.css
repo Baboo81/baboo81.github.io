@@ -411,7 +411,12 @@ button:hover
     height: 50px;
     width: 50px;
     left: 45%;
+}
 
+#Git:hover
+{
+    transform: scale(1.5);
+    transition: transform 330ms ease-in;
 }
 
 #LinkedIn
@@ -422,12 +427,24 @@ button:hover
     left: 47%;
 }
 
+#LinkedIn:hover
+{
+    transform: scale(1.5);
+    transition: transform 330ms ease-in;
+}
+
 #Mail
 {
     position: relative;
     height: 50px;
     width: 50px;
     left: 49%;
+}
+
+#Mail:hover
+{
+    transform: scale(1.5);
+    transition: transform 330ms ease-in;
 }
 
 
@@ -562,6 +579,19 @@ thead, td
     font-family: 'Castoro Titling', cursive;
 }
 
+th
+{
+    text-align: center;
+    color: var(--blue);
+    font-weight: bold;
+    font-size: 1.5em;
+}
+
+td a 
+{
+    color: var(--yellow);
+}
+
 footer
 {
     background-color: var(--blue);
@@ -596,18 +626,59 @@ footer
 
 @media only screen and (min-width : 481px) and (max-width : 768px)
 {
+    /*Nav*/
+    nav
+    {
+        height: 210px;
+    }
+
+    ul
+    {
+        position: fixed;
+        list-style-type: none;
+        display: flex;
+        flex-direction: row;
+        height: 100px;
+        width: 100%;
+        background-color: var(--violet);
+        opacity: 80%;
+        justify-content: space-evenly;
+        z-index: 10;
+    }
+
+    li
+    {
+        padding-top: 1%;
+
+    }
+
+    li a
+    {
+        display: block;
+        color: var(--yellow);
+        font-size: 2em;
+        font-weight: bold;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+    }
+
+    li a:hover
+    {
+        color: var(--blue);
+    }
+
     h1
     {
-        font-size: 4em;
+        font-size: 8em !important;
     }
 
     #logo
     {
         position: relative;
-        top: 15%;
-        right:  5%;
-        height: 25em;
-        width: 25em;
+        right:  45%;
+        height: 15em;
+        width: 15em;
         opacity: 50%;
         z-index: 20;
     }
@@ -616,19 +687,5 @@ footer
 @media only screen and (min-width : 769px)
 {
     /*Style pour les ordinateurs*/
-    h1
-    {
-        font-size: 4em;
-    }
-
-    #logo
-    {
-        position: relative;
-        top: 15%;
-        right:  5%;
-        height: 25em;
-        width: 25em;
-        opacity: 50%;
-        z-index: 20;
-    }
+    
 }
