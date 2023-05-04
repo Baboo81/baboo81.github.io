@@ -27,6 +27,16 @@ nav
     height: 100px;
 }
 
+#logo
+{
+    position: relative;
+    opacity: 100%;
+    height: 300px;
+    width: 300px;
+    left: 110%;
+    bottom: 40%;
+}
+
 ul
 {
     position: fixed;
@@ -69,10 +79,10 @@ h1
     position: relative;
     color: var(--yellow);
     font-family: 'Bebas Neue', cursive;
-    font-size: 12em !important;
+    font-size: 10em !important;
     line-height: .7em !important;
     top: 8%;
-    left: 2%;
+    left: -45%;
     animation: flash 1.2s linear infinite;
 }
 @keyframes flash 
@@ -104,28 +114,17 @@ h1:nth-child(4){
     animation-delay: 0.7s;
 }
 
-#logo
-{
-    position: fixed;
-    top: 15%;
-    right:  5%;
-    height: 25em;
-    width: 25em;
-    opacity: 50%;
-    z-index: 20;
-}
-
 /*Sections*/
 #part-violet
 {
-    height: 1500px;
+    height: 600px;
     width: 100%;
     background-color: var(--violet);
 }
 
 #part-yellow
 {
-    height: 3200px;
+    height: 2000px;
     width: 100%;
     background-color: var(--yellow);
     margin-top: -20%;
@@ -138,29 +137,18 @@ h1:nth-child(4){
     background-color: var(--pink);
     margin-top: -20%;
 }
+/*END*/
 
 #intro
 {
-    margin-top: 2%;
-}
-
-#aboutMe
-{
-    height: 24em;
-    width: 30em;
-    font-size: 2em;
-    font-family: 'Castoro Titling', cursive;
-    text-align: justify;
-    line-height: 1.1em;
-    border: solid 6px var(--blue);
+    width: 900px;
+    background-color: var(--pink);
+    font-family: 'Bebas Neue', cursive;
+    font-size: 1.2em;
+    color: var(--violet);
     border-radius: 12px;
-    color: var(--blue);
-    padding: 1%;
-    padding-left: 5%;
-    padding-right: 5%;
-    margin-left: 65%;
-    margin-top: 5%;
-    z-index: 5;
+    margin-left: 75%;
+    margin-top: -20%;
 }
 
 /*Titles*/
@@ -169,8 +157,8 @@ h1:nth-child(4){
 {
 
     font-size: 9em !important;
-    text-align: center;
     margin-bottom: 50px;
+    margin-left: 85%;
     animation: flash2 4s linear infinite;
 }
 
@@ -192,7 +180,7 @@ h1:nth-child(4){
 
 h2
 {
-    color: var(--yellow);
+    color: var(--violet);
     font-family: 'Bebas Neue', cursive;
     font-size: 2.5em !important;
     text-align: center;
@@ -266,8 +254,7 @@ button:hover
 #introBtn
 {
    position: relative;
-   left: 0%;
-   bottom: 0%;
+   right: 100px;
    font-family: 'Bebas Neue', cursive;
 }
 

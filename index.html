@@ -12,48 +12,56 @@
     </head>
     <body>
         <header>
-            <nav class="navbar navbar-expand-lg">
-                <a class="navbar-brand" href=#></a>
-                <ul class="navbar-nav">
-                    <li class="nav-item">
-                        <a href="#">Accueil</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="#projets">Projets</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="#pictos">Pictos</a>
-                    </li>
-                </ul>
+           <nav class="navbar navbar-expand-lg">
+               
+                    <a class="navbar-brand" href=#>
+                        <!--<img class="mx-4" src="./assets/img/svg/Logo.svg" alt="logo circulaire du porte folio" height="50" id="logo">-->
+                    </a>
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a href="#">Accueil</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#projets">Projets</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#pictos">Pictos</a>
+                        </li>
+                    </ul>
             </nav>
             <div class="d-flex">
-                <div class="col-6" id="mainTitle">
+                <div class="container col-6" id="mainTitle">
                     <h1>Front-end</h1> 
                     <h1>developer</h1>
                     <h1>Christel</h1> 
                     <h1>Rodriguez Perez</h1>
-                </div>
-                <div id="logo">
-                    <img src="./assets/img/svg/Logo.svg" alt="logo circulaire du porte folio">
+                    <img src="./assets/img/svg/Logo.svg" alt="logo circulaire du porte folio" id="logo">
                 </div>
             </div>
         </header>
         <main>
             <section class="d-flex" id="part-violet">
-                <div id="intro" class="row p-4">
-                    <div id="aboutMe" class="col-12 col-md-8 col-sm-1">
+                <div class="list-group list-group-flush my-3">
+                    <article class="list-group-item p-4" id="intro">
                         <h2>Qui suis-je ?</h2>
-                        <p>Je suis une mordue d'informatique depuis l'âge de 12 ans.
-                        Mes premières lignes de codes, je les ai faites en Q-Basic sur un 486, je m'interesse 
-                        depuis peu à Kali Linux et à d'autres distribution.
-                        J'adore faire du sport en l'occurence du vélo, je m'interesse à la spiritualité, à la
-                        géopolitique, au Reiki, ... 
-                        J'aime beaucoup les jeux de société tels que les jeux de rôles, le jeu de Go, ...
-                        Je suis de nature sociable et diplomate, j'ai l'habitude du contact client grâce à mon passé en pharmacie.</p>
-                        <div id="introBtn">
-                            <button formaction="./assets/pdf/CV.pdf" class="btn btn-primary" >CV</button>
-                        </div>
-                    </div>
+                        <div class="row">
+                            <div class="col-12 col-md-4 d-none d-md-block">
+                                <img src="./assets/img/bulles.png" class="img-thumbnail mt-3" alt="Photo de Chris">
+                            </div>
+                            <div class="col-12 col-md-8 p-4">
+                                <p class="mb-4 mt-0">Je suis une mordue d'informatique depuis l'âge de 12 ans.
+                                    Mes premières lignes de codes, je les ai faites en Q-Basic sur un 486, je m'interesse 
+                                    depuis peu à Kali Linux et à d'autres distribution.
+                                    J'adore faire du sport en l'occurence du vélo, je m'interesse à la spiritualité, à la
+                                    géopolitique, au Reiki, ... 
+                                    J'aime beaucoup les jeux de société tels que les jeux de rôles, le jeu de Go, ...
+                                    Je suis de nature sociable et diplomate, j'ai l'habitude du contact client grâce à mon passé en pharmacie.</p>
+                                    <div id="introBtn">
+                                        <button formaction="./assets/pdf/CV.pdf" class="btn btn-primary" >CV</button>
+                                    </div>
+                            </div>
+                        </div>   
+                    </article>
                 </div>
             </section>
             <section id="wave1" class="d-flex">
@@ -82,7 +90,7 @@
                 <!--Ancre-->
                 <a id="projets" href=""></a>
                 <!--CARDS ROW 1-->
-                <div id="cardsBlock" class="col-lg-12 col-md-4 col-sm-1 d-md-flex p-4">
+                <div id="cardsBlock" class="container col-lg-12 col-md-4 col-sm-1 d-md-flex p-4">
                     <!--Les cards-->
                     <article class="card col-12 col-md-8">
                         <h4 class="card-title p-4">Molenbeek en promenade</h4>
@@ -869,14 +877,14 @@
                         </div>
                     </article>
                 </div>
-                <h1 class="p-4" id="titleProjets">Stage : Agoria</h1>
+                <h1 class="p-4" id="titleProjets">Stage</h1>
                 <div class="container">
                     <article id="agoria" class="">
                         <img src="./assets/img/svg/agoria.svg" alt="Logo Agoria">
                         <p id="agoriaTxt" class="p-4">Agoria, la fédération de l’industrie technologique, regroupe 2079 entreprises technologiques et tous ceux qui sont inspirés par la technologie. Comptant plus de 321.000 travailleurs, le secteur technologique est le plus grand secteur de Belgique et Agoria la plus grande fédération au sein de la FEB. Quelque 70 pour cent des membres d'Agoria sont des PME. 
                            Agoria compte plus de 200 collaborateurs. Ils travaillent chez les membres, à domicile ou au bureau à Bruxelles, Anvers, Liège, Gand et Charleroi. Dans les trois premières villes, Agoria dispose de son propre centre d'affaires BluePoint et d’un Tech.Lounge.
                            Les services et positions d’Agoria portent sur la digitalisation, l’industrie manufacturière de demain, la politique de gestion des talents et la formation, l’évolution des marchés, la réglementation, les infrastructures, le climat, l’environnement et l’énergie. Agoria entend mettre en relation tous ceux qui sont inspirés par la technologie et l'innovation et accroître le succès des entreprises et façonner un avenir durable. Grâce à son initiative Agoria Techlancers, Agoria propose également toute une série de services aux freelances.
-                           À travers « Be The Change », Agoria se concentre sur l'avenir du marché du travail, dans le cadre de « Factory of the Future » sur les atouts de notre industrie manufacturière et à travers « DigiCoach », sur la poursuite de la digitalisation des individus et organisations. Agoria dispose à la fois d'un centre d'études et d’un centre d’innovation et est active à tous les niveaux politiques. Bart Steukers est le CEO d’Agoria. Agoria existe depuis 1946.
+                           À travers « Be The Change », Agoria se concentre sur l'avenir du marché du travail, dans le cadre de « Factory of the Future » sur les atouts de notre industrie manufacturière et à travers « DigiCoach », sur la poursuite de la digitalisation des individus et organisations. Agoria dispose à la fois d'un centre d'études et d’un centre d’innovation et est active à tous les niveaux politiques. Bart Steukers est le CEO d’Agoria.
                         </p>
                     </article>
                     <table class="table table-hover">
