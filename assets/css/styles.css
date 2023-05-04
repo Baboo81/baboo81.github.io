@@ -655,16 +655,17 @@ footer
     #logo
     {
         position: relative;
-        right:  45%;
-        height: 15em;
-        width: 15em;
-        opacity: 50%;
-        z-index: 20;
+        opacity: 100%;
+        height: 300px;
+        width: 300px;
+        left: 80%;
+        bottom: 40%;
     }
 }
 
 @media only screen and (min-width : 769px)
 {
     /*Style pour les ordinateurs*/
+    
     
 }
