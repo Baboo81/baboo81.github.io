@@ -118,7 +118,7 @@ h1:nth-child(4){
 /*Skills animation*/
 #skills
 {
-    
+
 }
 
 /*Sections*/
@@ -311,6 +311,13 @@ button:hover
 #imgCards
 {
     height: 220px !important;
+}
+/*END*/
+
+/*CARDS*/
+#cardsBlock
+{
+    margin-left: -5%;
 }
 
 /*SVG*/
