@@ -73,6 +73,11 @@ li a:hover
     color: var(--blue);
 }
 
+.dropdown
+{
+    display: none;
+}
+
 /*MainTitle + animation*/
 h1
 {
@@ -124,7 +129,7 @@ h1:nth-child(4){
 /*Sections*/
 #part-violet
 {
-    height: 600px;
+    height: 750px;
     width: 100%;
     background-color: var(--violet);
 }
@@ -408,10 +413,9 @@ button:hover
 
 #Git
 {
-    position: relative;
     height: 50px;
     width: 50px;
-    left: 45%;
+    margin-right: 10%;
 }
 
 #Git:hover
@@ -422,10 +426,9 @@ button:hover
 
 #LinkedIn
 {
-    position: relative;
     height: 50px;
     width: 50px;
-    left: 47%;
+    margin-right: 10%;
 }
 
 #LinkedIn:hover
@@ -436,10 +439,8 @@ button:hover
 
 #Mail
 {
-    position: relative;
     height: 50px;
-    width: 50px;
-    left: 49%;
+    width: 50px;   
 }
 
 #Mail:hover
@@ -448,6 +449,14 @@ button:hover
     transition: transform 330ms ease-in;
 }
 
+#GLM
+{
+    position: absolute;
+    left: 45%;
+    
+    
+    
+}
 
 /*CARDS*/
 .card
@@ -596,7 +605,7 @@ td a
 footer
 {
     background-color: var(--blue);
-    height: 600px;
+    height: 300px;
     color: var(--yellow);
     font-size: 1em;
     font-weight: bold;
@@ -608,13 +617,57 @@ footer
     position: relative;
     bottom: 0%;
     font-size: 1.5em;
+    top: 50%;
 }
 
 /*Media queries*/
 @media only screen and (max-width : 480px)
 {
     /*Style mobile, on travail sur les périphériques dt la largeur est inférieure à 480px*/
+    .navbar
+    {
+        display: none;
+    }
 
+    .dropdown
+    {
+        display: block;
+    }
+
+    #dropdownMenu2
+    {
+        height: 50px;
+        width: 100px;
+        font-size: large;
+    }
+
+    #part-violet
+    {
+        height: 750px;
+        width: 100%;
+        background-color: var(--violet);
+    }
+
+    #part-yellow
+    {
+        height: 5900px;
+        width: 100%;
+        background-color: var(--yellow);
+        margin-top: -20%;
+    }
+
+    #part-pink
+    {
+        height: 5700px;
+        width: 100%;
+        background-color: var(--pink);
+        margin-top: -20%;
+    }
+
+    #logo
+    {
+        display: none;
+    }
 }
 
 @media only screen and (min-width : 481px) and (max-width : 768px)
