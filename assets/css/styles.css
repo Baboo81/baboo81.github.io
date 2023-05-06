@@ -123,7 +123,7 @@ h1:nth-child(4){
 /*Skills animation*/
 #skills
 {
-
+    border: solid 2px var(--yellow);
 }
 
 /*Sections*/
@@ -667,6 +667,16 @@ footer
     #logo
     {
         display: none;
+    }
+
+    #logo1 
+    {
+        margin-left: 20%;
+    }
+
+    #logo2
+    {
+        margin-left: 20%;
     }
 
     h1
