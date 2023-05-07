@@ -123,13 +123,29 @@ h1:nth-child(4){
 /*Skills animation*/
 #skills
 {
-    border: solid 2px var(--yellow);
+    height: 60px;
+    width: 60px;
+    margin-top: 20%;  
+}
+
+#container
+{
+    border-top: solid 1px var(--yellow);
+    border-bottom: solid 1px var(--yellow);
+    width: px;
+}
+
+#skillsTxt
+{
+    color: var(--yellow);
+    font-size: 3em;
+    font-family: 'Bebas Neue', cursive;
 }
 
 /*Sections*/
 #part-violet
 {
-    height: 750px;
+    height: 1300px;
     width: 100%;
     background-color: var(--violet);
 }
