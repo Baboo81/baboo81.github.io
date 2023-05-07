@@ -185,7 +185,7 @@ h1:nth-child(4){
 /*Sections*/
 #part-violet
 {
-    height: 1300px;
+    height: 1000px;
     width: 100%;
     background-color: var(--violet);
 }
