@@ -127,8 +127,7 @@ h1:nth-child(4){
     height: 80px;
     width: 80px;
     top: 50%;
-    left: -60%;
-     
+    left: -60%; 
 }
 
 #container
@@ -136,7 +135,7 @@ h1:nth-child(4){
     height: 100px;
     width: 3000px; 
     margin-left: -345%;  
-    animation: skills 4.5s linear infinite;
+    animation: skills 6.5s linear infinite;
 }
 
 @keyframes skills
@@ -144,26 +143,31 @@ h1:nth-child(4){
     0%
     {
         transform: translateX(0px);
+        opacity: 10%;
     }
 
     25%
     {
         transform: translateX(300px);
+        opacity: 100%;
     }
 
     50%
     {
-        transform: translateX(700px);
+        transform: translateX(600px);
+        opacity: 10%;
     }
 
     75%
     {
         transform: translate(900px);
+        opacity: 100%;
     }
 
     100%
     {
         transform: translateX(1100px);
+        opacity: 10%;
     }
 }
 
