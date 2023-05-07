@@ -123,24 +123,60 @@ h1:nth-child(4){
 /*Skills animation*/
 #skills
 {
-    height: 60px;
-    width: 60px;
-    margin-top: 20%;  
+    position: relative;
+    height: 80px;
+    width: 80px;
+    top: 50%;
+    left: -60%;
+     
 }
 
 #container
 {
-    border-top: solid 1px var(--yellow);
-    border-bottom: solid 1px var(--yellow);
-    width: px;
+    height: 100px;
+    width: 3000px; 
+    margin-left: -345%;  
+    animation: skills 4.5s linear infinite;
+}
+
+@keyframes skills
+{
+    0%
+    {
+        transform: translateX(0px);
+    }
+
+    25%
+    {
+        transform: translateX(300px);
+    }
+
+    50%
+    {
+        transform: translateX(700px);
+    }
+
+    75%
+    {
+        transform: translate(900px);
+    }
+
+    100%
+    {
+        transform: translateX(1100px);
+    }
 }
 
 #skillsTxt
 {
+    position: absolute;
     color: var(--yellow);
-    font-size: 3em;
+    font-size: 6em;
     font-family: 'Bebas Neue', cursive;
+    top: -150%;
+    left: -210%;
 }
+/*END*/
 
 /*Sections*/
 #part-violet
