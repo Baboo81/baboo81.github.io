@@ -136,7 +136,7 @@ h1:nth-child(4){
 
 #borderSkills
 {
-    border: solid 5px var(--yellow);
+    border: solid 2px var(--yellow);
     height: 150px;
     width: 4000px;
     margin-left: -3000%;
@@ -156,7 +156,7 @@ h1:nth-child(4){
 {
     0%
     {
-        transform: translateX(0px);
+        transform: translateX(200px);
         opacity: 10%;
     }
 
@@ -297,6 +297,7 @@ h5
 #picto-h5
 {
     color: var(--blue);
+    margin-top: 5%;
     margin-right: 265%;
 }
 
@@ -491,8 +492,8 @@ button:hover
 
 #Git
 {
-    height: 50px;
-    width: 50px;
+    height: 70px;
+    width: 70px;
     margin-right: 10%;
 }
 
@@ -504,8 +505,8 @@ button:hover
 
 #LinkedIn
 {
-    height: 50px;
-    width: 50px;
+    height: 70px;
+    width: 70px;
     margin-right: 10%;
 }
 
@@ -517,8 +518,8 @@ button:hover
 
 #Mail
 {
-    height: 50px;
-    width: 50px;   
+    height: 70px;
+    width: 70px;   
 }
 
 #Mail:hover
@@ -630,7 +631,7 @@ td a
 footer
 {
     background-color: var(--blue);
-    height: 300px;
+    height: 600px;
     color: var(--yellow);
     font-size: 1em;
     font-weight: bold;
@@ -729,10 +730,6 @@ footer
         margin-top: 30% !important;
     }
 
-    #agoria
-    {
-        
-    }
 }
 
 @media only screen and (min-width : 681px) and (max-width : 968px)
