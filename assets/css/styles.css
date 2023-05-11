@@ -187,12 +187,11 @@ h1:nth-child(4){
 
 #skillsTxt
 {
-    position: absolute;
     color: var(--yellow);
     font-size: 6em;
     font-family: 'Bebas Neue', cursive;
-    top: 120%;
-    left: 45%;
+    margin-left: 30%;
+    margin-top: -4.3%;
 }
 /*END*/
 
