@@ -428,56 +428,50 @@ button:hover
 
 #pictosMolen
 {
-    position: relative;
-    height: 790px;
-    width: 790px;
-    right: 43%;
-    bottom: 18%;
+    height: 750px;
+    width: 750px;
+    margin-top: -80%;
+    margin-left: -35%;
 }
 
 #pictosHack
 {
-    position: relative;
-    height: 790px;
-    width: 790px;
-    right: 43%;
-    bottom: 18%;
+    height: 750px;
+    width: 750px;
+    margin-top: -80%;
+    margin-left: -40%;
 }
 
 #pictosPokemon
 {
-    position: relative;
-    height: 790px;
-    width: 790px;
-    right: 27%;
-    bottom: 23%;
+    height: 750px;
+    width: 750px;
+    margin-top: -85%;
+    margin-left: -23%;
 }
 
 #pictosAsturias
 {
-    position: relative;
-    height: 790px;
-    width: 790px;
-    right: 37%;
-    bottom: 22%;
+    height: 750px;
+    width: 750px;
+    margin-top: -87%;
+    margin-left: -34%;
 }
 
 #pictosNode
 {
-    position: relative;
-    height: 790px;
-    width: 790px;
-    right: 33%;
-    bottom: 21%;
+    height: 750px;
+    width: 750px;
+    margin-top: -89%;
+    margin-left: -30%;
 }
 
 #pictosToDoList
 {
-    position: relative;
-    height: 790px;
-    width: 790px;
-    right: 33%;
-    bottom: 21%;
+    height: 750px;
+    width: 750px;
+    margin-top: -86%;
+    margin-left: -29%;
 }
 
 #pictoList
@@ -668,7 +662,7 @@ footer
 
     #part-violet
     {
-        height: 1250px;
+        height: 1750px;
         width: 100%;
         background-color: var(--violet);
     }
@@ -710,13 +704,43 @@ footer
         margin-left: 20%;
     }
 
+    /*Intro*/
+    #mainTitle
+    {
+        margin-top: 10%;
+    }
+
     #intro
     {
-        height: 800px;
+        height: 900px;
         width: 450px;
-        margin-top: 20%;
+        margin-top: 10%;
         margin-left: 20%;
     }
+
+    #introBtn
+    {
+        left: 0%;
+        top: 3%;
+    }
+    /*END*/
+
+    /*Skills*/
+    #skills
+    {
+
+    }
+
+    #borderSkills
+    {
+        margin-top: 2500%;
+    }
+
+    #skillsTxt
+    {
+       margin-top: -30%%; 
+    }
+    /*END*/
 
     #titleProjets
     {
