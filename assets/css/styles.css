@@ -222,7 +222,7 @@ h1:nth-child(4){
 
 #part-pink
 {
-    height: 5700px;
+    height: 4300px;
     width: 100%;
     background-color: var(--pink);
     margin-top: -20%;
@@ -279,8 +279,9 @@ h1:nth-child(4){
 {
 
     font-size: 9em !important;
-    margin-bottom: 25%;
-    margin-left: 90%;
+    margin-bottom: 10%;
+    margin-top: -10%;
+    margin-left: 87%;
     animation: flash2 4s linear infinite;
 }
 
@@ -778,7 +779,7 @@ footer
 
     #part-violet
     {
-        height: 1750px;
+        height: 1950px;
         width: 100%;
         background-color: var(--violet);
     }

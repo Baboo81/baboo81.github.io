@@ -108,6 +108,11 @@ $(document).ready(function(){
     }
 });
 
+//Gestion slider:
+$(document).ready(function(){
+
+});
+
 //Gestion certificats:
 $(document).ready(function(){
 
