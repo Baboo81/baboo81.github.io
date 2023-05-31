@@ -28,16 +28,6 @@ nav
     height: 100px;
 }
 
-#logo
-{
-    position: relative;
-    opacity: 100%;
-    height: 300px;
-    width: 300px;
-    left: 80%;
-    bottom: 40%;
-}
-
 ul
 {
     position: fixed;
@@ -55,8 +45,9 @@ ul
 li
 {
     padding-top: 1%;
-
 }
+
+
 
 li a
 {
@@ -69,6 +60,11 @@ li a
     text-decoration: none;
 }
 
+.certificats
+{
+    margin-left: -80%;
+}
+
 li a:hover
 {
     color: var(--blue);
@@ -78,6 +74,19 @@ li a:hover
 {
     display: none;
 }
+/*END*/
+
+/*TxtSize*/
+#txtSize
+{
+    position: static;
+    width: 400px;
+    background-color: var(--pink);
+    border-radius: 12px;
+    margin-left: 200%;
+    margin-top: -50%;
+}
+/*END*/
 
 /*MainTitle + animation*/
 h1
@@ -205,7 +214,7 @@ h1:nth-child(4){
 
 #part-yellow
 {
-    height: 2500px;
+    height: 3500px;
     width: 100%;
     background-color: var(--yellow);
     margin-top: -20%;
@@ -213,7 +222,7 @@ h1:nth-child(4){
 
 #part-pink
 {
-    height: 3700px;
+    height: 5700px;
     width: 100%;
     background-color: var(--pink);
     margin-top: -20%;
@@ -245,8 +254,33 @@ h1:nth-child(4){
 {
 
     font-size: 9em !important;
-    margin-bottom: 50px;
+    margin-bottom: 10%;
     margin-left: 85%;
+    animation: flash2 4s linear infinite;
+}
+
+@keyframes flash2 
+{
+    0% {
+        color: var(--pink);
+        text-shadow: 0 0 10px var(--pink);
+    }
+    90% {
+        color: var(--blue);
+        text-transform: none;
+    }
+    100% {
+        color: var(--violet);
+        text-shadow: 0 0 10px var(--pink);
+    }
+}
+
+#titleStage
+{
+
+    font-size: 9em !important;
+    margin-bottom: 25%;
+    margin-left: 90%;
     animation: flash2 4s linear infinite;
 }
 
@@ -300,6 +334,32 @@ h5
     margin-right: 265%;
 }
 
+#titleCertifications
+{
+
+    font-size: 9em !important;
+    margin-top: 10%;
+    margin-bottom: 10%;
+    margin-left: 65%;
+    animation: flash2 4s linear infinite;
+}
+
+@keyframes flash2 
+{
+    0% {
+        color: var(--pink);
+        text-shadow: 0 0 10px var(--pink);
+    }
+    90% {
+        color: var(--blue);
+        text-transform: none;
+    }
+    100% {
+        color: var(--violet);
+        text-shadow: 0 0 10px var(--pink);
+    }
+}
+
 /*BTN*/
 button
 {
@@ -320,6 +380,10 @@ button:hover
     border: solid 2px var(--yellow);
 }
 
+.active
+{
+    background-color: var(--blue);
+}
 
 .btn
 {
@@ -420,7 +484,7 @@ button:hover
 
 #wave3
 {
-    margin-top: -20%;
+    margin-top: -30%;
     margin-bottom: -20%;
     transform: scale(1.2);
     z-index: 1;
@@ -561,6 +625,21 @@ button:hover
     left: 6%;
 }
 
+/*Aside*/
+aside
+{
+    height: 250px;
+    width: 447px;
+    font-family: 'Bebas Neue', cursive;
+    font-size: 1.3em;
+    color: var(--yellow);
+    background-color: var(--violet);
+    border-radius: 12px;
+    margin-top: 15%;
+    margin-left: 2%;
+}
+/*END*/
+
 /*List-group*/
 #list
 {
@@ -620,7 +699,38 @@ td a
 {
     color: var(--yellow);
 }
+/*END*/
 
+/*Slider*/
+#carouselExampleCaptions
+{
+    height: 800px;
+    width: 890px !important;
+    margin-left: 30%;
+}
+
+#carousel
+{
+    background-color: var(--pink) !important;
+}
+
+#control-prev
+{
+    margin-top: -8%;
+}
+
+#control-next
+{
+    margin-top: -8%;
+}
+
+#carousel-indic
+{
+    margin-bottom: 95%;
+}
+/*END*/
+
+/*Footer*/
 footer
 {
     background-color: var(--blue);
@@ -638,11 +748,17 @@ footer
     font-size: 1.5em;
     top: 50%;
 }
+/*END*/
 
 /*Media queries*/
 @media only screen and (max-width : 680px)
 {
     /*Style mobile, on travail sur les périphériques dt la largeur est inférieure à 480px*/
+    main
+    {
+        overflow-x: hidden;
+    }
+
     .navbar
     {
         display: none;
@@ -669,7 +785,7 @@ footer
 
     #part-yellow
     {
-        height: 5500px;
+        height: 6500px;
         width: 100%;
         background-color: var(--yellow);
         margin-top: -20%;
@@ -677,7 +793,7 @@ footer
 
     #part-pink
     {
-        height: 4700px;
+        height: 4800px;
         width: 100%;
         background-color: var(--pink);
         margin-top: -20%;
@@ -700,8 +816,8 @@ footer
 
     h1
     {
-        font-size: 7em !important;
-        margin-left: 20%;
+        font-size: 6em !important;
+        margin-left: 0%;
     }
 
     /*Intro*/
@@ -712,10 +828,10 @@ footer
 
     #intro
     {
-        height: 900px;
-        width: 450px;
+        height: 1050px;
+        width: 300px;
         margin-top: 10%;
-        margin-left: 20%;
+        margin-left: 10%;
     }
 
     #introBtn
@@ -726,11 +842,6 @@ footer
     /*END*/
 
     /*Skills*/
-    #skills
-    {
-
-    }
-
     #borderSkills
     {
         margin-top: 2500%;
@@ -738,19 +849,232 @@ footer
 
     #skillsTxt
     {
-       margin-top: -30%%; 
+       font-size: 4em; 
+       margin-top: -3.2%;
+       margin-left: 34.5% 
     }
     /*END*/
 
     #titleProjets
     {
         font-size: 4em !important;
-        margin-top: -50%;
+        margin-top: -85%;
+        margin-left: 75.5%;
     }
 
     .list-group
     {
         margin-top: 30% !important;
+    }
+    /*Cards*/
+    .card
+    {
+        height: 750px;
+        width: 320px;
+        background-color: var(--blue);
+        border-bottom-left-radius: 12px;
+        border-bottom-right-radius: 12px;
+    }
+
+    .card:hover
+    {
+        transform: scale(1.02);
+        transition: transform 330ms ease-in;
+        box-shadow: 8px 8px 12px #aaa;
+    }
+
+    #pictosMolen
+    {
+        margin-left: -75%;
+        margin-top: -115%;
+    }
+
+    #card1Btn
+    {
+        margin-left: -11%;
+    }
+
+    #pictosHack
+    {
+        margin-left: -82%;
+        margin-top: -115%;
+    }
+    #card2Btn
+    {
+        margin-left: -11%;
+    }
+
+    #pictosPokemon
+    {
+        margin-left: -55%;
+        margin-top: -115%;
+    }
+    #card3Btn
+    {
+        margin-left: -15%;
+    }
+
+    #pictosAsturias
+    {
+        margin-left: -73%;
+        margin-top: -115%;
+    }
+    #card4Btn
+    {
+        margin-left: -15%;
+    }
+
+    #pictosNode
+    {
+        margin-left: -69%;
+        margin-top: -115%;
+    }
+    #card5Btn
+    {
+        margin-left: -15%;
+    }
+
+    #pictosToDoList
+    {
+        margin-left: -65%;
+        margin-top: -115%;
+    }
+    #card6Btn
+    {
+        margin-left: -15%;
+    }
+    /*END*/
+
+    /*Aside*/
+    aside
+    {
+        height: 250px;
+        width: 322px;
+        padding: 1%;
+        font-family: 'Bebas Neue', cursive;
+        font-size: 1.3em;
+        color: var(--yellow);
+        background-color: var(--violet);
+        border-radius: 12px;
+        margin-top: 120%;
+        margin-left: 7%;
+    }
+    /*END*/
+
+    /*List-group*/
+    #list
+    {
+        background-color: var(--pink);
+        color: var(--blue);
+        font-size: 1.5em;
+        font-family: 'Poppins', sans-serif;
+        margin-top: 35%;
+    }
+
+    #logo1
+    {
+        height: 150px;
+        width: 175px;
+    }
+
+    #logo2
+    {
+        height: 150px;
+        width: 175px;
+    }
+
+    #picto-h5
+    {
+        font-size: 1.5em;
+        margin-left: 22%;
+    }
+
+    #pictoList
+    {
+        position: relative;
+        height: 35px;
+        width: 35px;
+        left: 40%;
+    }
+
+    #txtListGroup
+    {
+        font-size: .7em;
+        margin-left: 7%;
+    }
+    /*END*/
+
+    /*Stage*/
+    #titleStage
+    {
+        font-size: 4em !important;
+        margin-top: -30%;
+        margin-left: 75%;
+        animation: flash2 4s linear infinite;
+    }
+
+    /*Slider*/
+    #titleCertifications
+    {
+        font-size: 4em !important;
+        margin-left: 47%;
+    }
+
+    #carouselExampleCaptions
+    {
+        height: 400px !important;
+        width: 445px !important;
+        margin-top: 15%;
+        margin-left: 0%;
+    }
+
+    #carousel
+    {
+        background-color: var(--pink) !important;
+        height: 500px;
+        width: 150px !important;
+    }
+
+    #control-prev
+    {
+        margin-top: 80%;
+    }
+
+    #control-next
+    {
+        margin-top: 80%;
+        margin-left: -50%;
+    }
+
+    #carousel-indic
+    {
+        margin-bottom: 98%;
+        margin-left: 5%;
+    }
+    /*END*/
+
+    /*Footer*/
+    footer
+    {
+        background-color: var(--blue);
+        height: 600px;
+        color: var(--yellow);
+        font-size: 1em;
+        font-weight: bold;
+        text-align: center;
+    }
+
+    #GLM
+    {
+        left: 20%;
+    }
+
+    #chris
+    {
+        position: relative;
+        bottom: 0%;
+        font-size: 1.5em;
+        top: 30%;
     }
 
 }
