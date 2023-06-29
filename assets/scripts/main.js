@@ -110,11 +110,14 @@ $(document).ready(function(){
 
 //Gestion slider:
 $(document).ready(function(){
-
+    for(let i = 0; i <15; i++){
+        $('#carouselExampleCaptions').append(`<div class="carousel-indicators" id="carousel-indic"><button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button></div>`);
+    }
+    
 });
 
 //Gestion certificats:
-$(document).ready(function(){
-
+$(document).ready(function(index){
+    $('<div class="carousel-indicators" id="carousel-indic">').click(`<button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" ${index+1} aria-label="Slide 2"></button>`);
 });
 

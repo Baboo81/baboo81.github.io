@@ -772,14 +772,15 @@ footer
 
     #dropdownMenu2
     {
-        height: 50px;
-        width: 100px;
-        font-size: large;
+        height: 60px;
+        width: 150px;
+        margin-top: 5%;
+        font-size: 1.2em;
     }
 
     #part-violet
     {
-        height: 1950px;
+        height: 1700px;
         width: 100%;
         background-color: var(--violet);
     }
@@ -825,6 +826,7 @@ footer
     #mainTitle
     {
         margin-top: 10%;
+        margin-right: 15%;
     }
 
     #intro
@@ -832,7 +834,7 @@ footer
         height: 1050px;
         width: 300px;
         margin-top: 10%;
-        margin-left: 10%;
+        margin-left: 15%;
     }
 
     #introBtn
@@ -1009,7 +1011,7 @@ footer
     #titleStage
     {
         font-size: 4em !important;
-        margin-top: -30%;
+        margin-top: -40%;
         margin-left: 75%;
         animation: flash2 4s linear infinite;
     }
@@ -1018,7 +1020,7 @@ footer
     #titleCertifications
     {
         font-size: 4em !important;
-        margin-left: 47%;
+        margin-left: 55%;
     }
 
     #carouselExampleCaptions
@@ -1026,7 +1028,7 @@ footer
         height: 400px !important;
         width: 445px !important;
         margin-top: 15%;
-        margin-left: 0%;
+        margin-left: -2%;
     }
 
     #carousel
@@ -1038,19 +1040,20 @@ footer
 
     #control-prev
     {
-        margin-top: 80%;
+        margin-top: 50%;
+        margin-right: -40%;
     }
 
     #control-next
     {
-        margin-top: 80%;
-        margin-left: -50%;
+        margin-top: 50%;
+        margin-left: -40%;
     }
 
     #carousel-indic
     {
         margin-bottom: 98%;
-        margin-left: 5%;
+        margin-left: 15%;
     }
     /*END*/
 
@@ -1058,7 +1061,7 @@ footer
     footer
     {
         background-color: var(--blue);
-        height: 600px;
+        height: 300px;
         color: var(--yellow);
         font-size: 1em;
         font-weight: bold;
@@ -1067,7 +1070,7 @@ footer
 
     #GLM
     {
-        left: 20%;
+        left: 25%;
     }
 
     #chris
