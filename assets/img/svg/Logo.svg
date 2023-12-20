@@ -6,19 +6,19 @@
 	.st0{fill:#E5D2E0;}
 	.st1{fill:#05A9C7;}
 	.st2{font-family:'Rockwell-Regular';}
-	.st3{font-size:48px;}
-	.st4{letter-spacing:1;}
+	.st3{font-size:51.2795px;}
+	.st4{letter-spacing:2;}
 	.st5{fill:#FFFFFF;}
 	.st6{font-family:'ArialMT';}
 </style>
+<circle class="st0" cx="128.5" cy="128.5" r="128.5"/>
 <g>
-	<circle class="st0" cx="128.5" cy="128.5" r="128.5"/>
-	<text transform="matrix(1 0 0 1 51.0288 93.6841)" class="st1 st2 st3 st4">  P </text>
-	<text transform="matrix(1 0 0 1 82.9088 93.6841)" class="st5 st2 st3 st4">  o r t</text>
-	<text transform="matrix(1 0 0 1 188.3488 93.6841)" class="st6 st3"> </text>
-	<text transform="matrix(1 0 0 1 87.6611 58.1665)" class="st1 st2 st3 st4">  F</text>
-	<text transform="matrix(1 0 0 1 88.73 143.4541)" class="st5 st2 st3 st4">  l</text>
-	<text transform="matrix(1 0 0 1 88.7646 190.0747)" class="st5 st2 st3 st4">  i</text>
-	<text transform="matrix(1 0 0 1 82.3965 228.293)" class="st5 st2 st3 st4">  o</text>
+	<text transform="matrix(1 0 0 1 75.9106 102.7695)" class="st1 st2 st3 st4">P</text>
+	<text transform="matrix(1 0 0 1 109.9688 102.7695)" class="st5 st2 st3 st4">ort</text>
+	<text transform="matrix(1 0 0 1 222.6128 102.7695)" class="st6 st3"> </text>
+	<text transform="matrix(1 0 0 1 112.0298 67.7456)" class="st1 st2 st3 st4">F</text>
+	<text transform="matrix(1 0 0 1 119.4663 148.0869)" class="st5 st2 st3 st4">l</text>
+	<text transform="matrix(1 0 0 1 120.4409 194.8955)" class="st5 st2 st3 st4">i</text>
+	<text transform="matrix(1 0 0 1 112.9526 232.3789)" class="st5 st2 st3 st4">o</text>
 </g>
 </svg>
