@@ -17,6 +17,12 @@ body
     background-color: var(--violet);
 }
 
+p
+{
+    color: var(--yellow);
+    font-size: 1.5em;
+}
+
 /*Nav*/
 nav
 {
@@ -47,6 +53,65 @@ nav
 }
 /*Nav END*/
 
+/*Animation horloge*/
+.clock
+{
+    height: 20em;
+    width: 20em;
+    background: url(../img/svg/Logo.svg) no-repeat;
+    margin-top: 20%;
+}
+
+.wrap
+{
+    width: 298px;
+    height: 298px;
+    position: relative;
+}
+
+.minute, .heure
+{
+    position: absolute;
+    height: 100px;
+    width: 6px;
+    margin: auto;
+    background: black;
+    top: -27%;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    transform-origin: bottom center;
+    transform: rotate(0deg);
+    box-shadow: 0 0 10px rgba(0, 0, 0, .4);
+}
+
+.minute
+{
+    position: absolute;
+    height: 130px;
+    width: 4px;
+    top: -38%;
+    left: 0;
+    right: 0;
+    transform: rotate(90deg);
+}
+
+.seconde
+{
+    position: absolute;
+    height: 90px;
+    width: 2px;
+    margin: auto;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    top: -26%;
+    background: #ff4b3e;
+    transform-origin: bottom center;
+    transform: rotate(180deg);
+}
+/*END*/
+
 .fontCaveat
 {
     font-family: 'Caveat', cursive;
@@ -65,6 +130,11 @@ nav
     color: var(--yellow);
 }
 
+.colorBlue
+{
+    color: var(--blue);
+}
+
 .fontSizeTitles
 {
     font-size: 2em;
@@ -75,7 +145,18 @@ nav
     font-size: 1.5em;
 }
 
+.sizeIcones
+{
+    height: 2em;
+    width: 2em;
+}
+
 /*Titles*/
+.mainTitle
+{
+    margin-top: 5%;
+}
+
 #titleSkills
 {
     font-size: 8em;
@@ -214,6 +295,11 @@ h1:nth-child(4){
     margin-left: 30%;
     margin-top: -4.3%;
 }
+
+.boxShadow
+{
+    box-shadow: 8px 8px 12px #aaa;
+}
 /*END*/
 
 /*Btn*/
@@ -235,6 +321,11 @@ h1:nth-child(4){
     background-color: var(--violet);
     color: var(--yellow);
     border: solid 2px var(--yellow);
+}
+
+.cardBtn
+{
+    margin-left: -60%;
 }
 /*Btn END*/
 
@@ -275,7 +366,7 @@ h1:nth-child(4){
 {
     background: url(../img/banner/banner1.svg) center center no-repeat;
     background-size: cover;
-    height: 4700px;
+    height: 5100px;
 }
 
 .projets
@@ -290,7 +381,7 @@ h1:nth-child(4){
 {
     background: url(../img/banner/banner3.svg) center center no-repeat;
     background-size: cover;
-    height: 6500px;
+    height: 6900px;
     margin-top: -130%;
 }
 
@@ -298,8 +389,8 @@ h1:nth-child(4){
 {
     background: url(../img/banner/banner4.svg) center center no-repeat;
     background-size: cover;
-    height: 2500px;
-    margin-top: -122%;
+    height: 3500px;
+    margin-top: -133%;
 }
 /*Section END*/
 
@@ -343,14 +434,14 @@ h1:nth-child(4){
     text-align: justify;
     color: var(--yellow);
     border-radius: 12px;
-    margin-top: 350px;
 }
 
 table
 {
-    margin-top: 50px !important;
-    background-color: var(--violet) !important;
-    border-radius: 12px !important;
+    margin-top: 50px;
+    background-color: var(--violet);
+    border-radius: 12px;
+    height: 30em;
 }
 
 thead, td
@@ -374,72 +465,19 @@ td a
 /*Stage END*/
 
 /*CarouselCertifications*/
-.center
+.carousel-control
 {
-    display:flex;
-    justify-content: center;
-    position: relative;
-    top: 25vh;
+    height: 1300px;
 }
 
-.carousel-container 
+#carouselExampleFade
 {
-    position: relative;
-    overflow: hidden;
-    width: 90em;
-    height: 50em;
-    margin-top: -25%;
-    margin-bottom: 35%;
+    margin-top: 10%;
+    border: solid 15px var(--pink);
+    box-shadow: 8px 8px 12px #aaa;
 }
-  
-.carousel-slide 
-{
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    animation: slideFadeIn 1s ease-in-out;
-    
-}
-  
-.carousel-slide img 
-{
-    height: 100%;
-    width: 100%;
-    object-fit: cover;
-}
-  
-.carousel-caption 
-{
-    background-color: rgba(0, 0, 0, 0.5);
-    color: #fff;
-    padding: 1rem;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content:center;
-    height: 100%;
-    width: 70%;
-    text-align: justify;
-    font-size: 1.3rem;
-}
-  
-  @keyframes slideFadeIn {
-    from {
-      opacity: 0;
-      transform: translateX(-100%);
-    }
-    to {
-      opacity: 1;
-      transform: translateX(0%);
-    }
-  }
-  
-  .carousel-control-prev,
+
+.carousel-control-prev,
   .carousel-control-next {
     position: absolute;
     top: 50%;
@@ -464,23 +502,13 @@ td a
   .carousel-control-next {
     right: 0;
   }
-  
-  .carousel-slide:first-of-type ~ .carousel-control-prev,
-  .carousel-slide:last-of-type ~ .carousel-control-next {
-    
-  }
-
-  #carousel
-  {
-    margin-top: 10%;
-  }
-  /*CarouselCertifications END*/
+/*CarouselCertifications END*/
 
   /*Footer*/
 footer
 {
-    height: 650px;
-    margin-top: -20%;
+    
+    margin-top: -25%;
 }
 
  #mapid
@@ -507,7 +535,72 @@ footer
 /*Style pour mobile,largeur d'écran inférieur à 480px*/
 @media only screen and (max-width : 480px)
 {
+    /*MainTitle*/
+    .mainTitle
+    {
+        font-size: .7em;
+        margin-top: 20%;
+        margin-left: 40%;
+    }
 
+    /*Clock*/
+    .clock
+    {
+        margin-left: 12%;
+    }
+
+    /*Section*/
+    .acceuil
+    {
+        height: 6400px;
+    }
+
+    .projets
+    {
+        margin-top: -850%;
+        height: 11000px;
+    }
+
+    .pictos
+    {
+        height: 10600px;
+        margin-top: -1620%;
+    }
+
+    .certifications
+    {
+        height: 1000px;
+        margin-top: -1630%;
+    }
+
+    /*Titles*/
+    #titleSkills, #titleProjets, #titlePictos, #titleCertifications
+    {
+        font-size: 4em;
+    }
+
+    /*Bloc Agoria*/
+    .scroll
+    {
+        width: 365px;
+        height: 500px;
+        overflow-y: scroll;
+        overflow-x: hidden;
+        border: 1px solid var(--taupe);
+        margin: auto;
+    }
+
+    /*Carousel bg*/
+    .carousel-control
+    {
+        height: 460px;
+    }
+
+    /*AnimationLogo*/
+    .animationLogo
+    {
+        display: none;
+    }
 }
 
 /*Style pour les tablettes*/
@@ -519,5 +612,5 @@ footer
 /*Style pour les desktop*/
 @media only screen and (min-width : 769px)
 {
-    
+
 }
