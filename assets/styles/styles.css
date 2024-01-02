@@ -1,496 +1,483 @@
-@import url('https://fonts.googleapis.com/css2?family=Caveat&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Caveat&family=Merriweather:wght@300&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Caveat&family=Merriweather:wght@300&family=Redressed&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Caveat&family=Merriweather:wght@300&family=Poppins:wght@300&family=Redressed&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Dancing+Script:wght@400;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Castoro+Titling&family=Playfair+Display&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Bebas+Neue&family=Caveat&family=Merriweather:wght@300&family=Playfair+Display&family=Poppins:wght@100;300&family=Ranchers&display=swap');
 
 :root
 {
-    --noir: #000;
-    --beige : #e5efe6;
-    --taupe : #8e8d8a;
-    --brun : #e8d5cc;
-    --brunF : #bda18a;
+    --violet : #686bae;
+    --yellow : #f1eda3;
+    --pink : #e5d2e0;
+    --blue : #05a9c7;
 }
 
 body
 {
+    box-sizing: border-box;
     overflow-x: hidden;
+    background-color: var(--violet);
 }
 
-.soinsDeSoieTitle
+p
 {
-  height: 65em;
-  width: 65em;
-  margin-left: 8%;
+    color: var(--yellow);
+    font-size: 1.5em;
 }
-
-.bg-brunF
-{
-    background-color: var(--brunF);
-}
-
-.poppinsFont
-{
-    font-family: 'Poppins', sans-serif;
-    text-align: center;
-    font-weight: 400;
-}
-
-.caveatFont
-{
-    font-family:"Century Gothic", 'Caveat', cursive;
-    font-size: 1.4em; 
-    font-weight: 600;
-    color: var(--taupe);
-}
-
-.caveatFontTitles
-{
-    font-family:"Century Gothic", 'Caveat', cursive;
-    font-size: 2.5em; 
-    font-weight: 600;
-    color: var(--noir);
-}
-
-.merriweatherFont
-{
-    font-family: 'Merriweather', serif;
-}
-
-.mainTitles
-{
-  font-size: 5em;
-  font-weight: 600;
-  font-family: 'Merriweather', serif;
-  letter-spacing: .3em;
-  color: var(--beige);
-}
-
-nav
-{
-    height: 170px;
-    font-size: 1.4em;
-}
-
-#logo2
-{
-    height: 15em;
-    width: 15em;
-}
-
-.icons
-{
-    height: 5em;
-    width: 5em;
-}
-
-.icons:hover
-{
-    transform: scale(1.5);
-    transition: transform 330ms ease-in;
-    opacity: 70%;
-}
-
-#cachetStatic
-{
-    height: 65rem;
-    width: 65rem;
-    margin-top: -55%;
-}
-
-/*Carousel1*/
-.Slideshow 
-{
-    height: 600px;
-    width: 620px;
-    margin-top: 10%;
-    overflow: hidden;
-}
-
-.Slideshow-Content 
-{
-    position: relative;
-    height: 100%;
-}
-
-.Slideshow-Content img 
-{
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    border-radius: 50%;
-    -o-object-fit: cover;
-       object-fit: cover;
-    animation-name: fadeInOut;
-    animation-timing-function: ease-in-out;
-    animation-iteration-count: infinite;
-    animation-duration: 20s;
-    animation-direction: alternate;
-  }
-
-  .Slideshow-Content img:nth-of-type(1) 
-  {
-    animation-delay: 10s;
-  }
-
-  .Slideshow-Content img:nth-of-type(2) 
-  {
-    animation-delay: 5s;
-  }
-
-  .Slideshow-Content img:nth-of-type(3) 
-  {
-    animation-delay: 0s;
-  }
-
-  @keyframes fadeInOut {
-    0% {
-      opacity: 0;
-    }
-    30% {
-      opacity: 0;
-    }
-    35% {
-      opacity: 1;
-    }
-    65% {
-      opacity: 1;
-    }
-    70% {
-      opacity: 0;
-    }
-    100% {
-      opacity: 0;
-    }
-  }
-  
-/*Carousel1 END*/
-
-/*Zones scrollables*/
-.scroll
-{
-    width: 455px;
-    height: 500px;
-    overflow-y: scroll;
-    overflow-x: hidden;
-    border: 1px solid var(--taupe);
-    margin: auto;
-}
-
-#cardContent
-{
-    overflow-y: scroll;
-    overflow-x: hidden;
-    border: #000 1px solid;
-    width: 450px;
-    height: 500px;
-}
-
-#cardContent2
-{
-    overflow-y: scroll;
-    overflow-x: hidden;
-    border: #000 1px solid;
-    width: 450px;
-    height: 500px;
-}
-/*Zones scrollables END*/
 
 /*Nav*/
-.perso-navbar
+nav
 {
-    background-color: rgba(0, 0, 0, 0.55);
-    font-family: 'Merriweather', serif;
-    box-shadow: 1px 1px 3px rgba(255, 255, 255, 0.54);
-    z-index: 99;
+    height: 7em;
+    background-color: var(--violet);
+    opacity: 80%;
+    z-index: 20;
 }
 
-.perso-navbar .nav-link
+.navbar-brand
 {
-    border-bottom: 1px solid transparent;
-    transition: padding-bottom .4s ease-in-out, border-color .3s ease;
+    color: var(--yellow);
+    font-size: 2.5em;
 }
 
-.perso-navbar .nav-link:hover
+.nav-link
 {
-    padding-bottom: 20px;
-    border-bottom-color: var(--bs-teal);
+    display: block;
+    color: var(--yellow);
+    font-size: 2em;
+    font-family: 'Ranchers', sans-serif;
+    font-weight: bold;
+}
+
+.nav-link:hover
+{
+    color: var(--blue);
 }
 /*Nav END*/
 
-/*Parallaxe*/
-.banner 
+/*Animation horloge*/
+.clock
 {
-    background: linear-gradient(rgba(0, 0, 0, .5), rgba(0, 0, 0, 0)), url(../img/banner/banner1Bis.jpg) center center fixed no-repeat;
-    background-size: cover;
-    height: 1200px;
+    height: 20em;
+    width: 20em;
+    background: url(../img/svg/Logo.svg) no-repeat;
+    margin-top: 20%;
 }
 
-.banner .banner-desc
+.wrap
 {
-    font-size: 48px;
-    font-weight: 400;
-    color: #fff;
+    width: 298px;
+    height: 298px;
+    position: relative;
 }
 
-.perso-menu
+.minute, .heure
 {
-    background: linear-gradient(rgba(0, 0, 0, .5), rgba(0, 0, 0, 0)), url(../img/banner/banner2SmallScreen.jpg) center center fixed no-repeat;
-    background-size: cover;
-    height: 2800px;
+    position: absolute;
+    height: 100px;
+    width: 6px;
+    margin: auto;
+    background: black;
+    top: -27%;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    transform-origin: bottom center;
+    transform: rotate(0deg);
+    box-shadow: 0 0 10px rgba(0, 0, 0, .4);
 }
 
-.card-bloc
+.minute
 {
-    background: linear-gradient(rgba(0, 0, 0, .5), rgba(0, 0, 0, .5)), url(../img/banner/banner3SmallScreen.jpg) center center fixed no-repeat;
-    background-size: cover;
-    height: 1800px;
+    position: absolute;
+    height: 130px;
+    width: 4px;
+    top: -38%;
+    left: 0;
+    right: 0;
+    transform: rotate(90deg);
 }
-/*Parallaxe END*/
+
+.seconde
+{
+    position: absolute;
+    height: 90px;
+    width: 2px;
+    margin: auto;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    top: -26%;
+    background: #ff4b3e;
+    transform-origin: bottom center;
+    transform: rotate(180deg);
+}
+/*END*/
+
+.fontCaveat
+{
+    font-family: 'Caveat', cursive;
+    font-size: 1.5em;
+    font-weight: bold;
+
+}
+
+.fontRanchers
+{
+    font-family: 'Ranchers', sans-serif;
+}
+
+.colorYellow
+{
+    color: var(--yellow);
+}
+
+.colorBlue
+{
+    color: var(--blue);
+}
+
+.fontSizeTitles
+{
+    font-size: 2em;
+}
+
+.fontSizeMedium
+{
+    font-size: 1.5em;
+}
+
+.sizeIcones
+{
+    height: 2em;
+    width: 2em;
+}
+
+/*Titles*/
+.mainTitle
+{
+    margin-top: 5%;
+}
+
+#titleSkills
+{
+    font-size: 8em;
+    color: var(--yellow);
+    margin-top: 5%;
+}
+
+#titleProjets
+{
+    font-size: 8em;
+    color: var(--blue);
+    margin-top: 5%;
+}
+
+#titlePictos
+{
+    font-size: 8em;
+    color: var(--violet);
+    margin-top: 5%;
+}
+
+#titleCertifications
+{
+    font-size: 8em;
+    color: var(--pink);
+    margin-top: 5%;
+}
+/*Titles END*/
+
+/*MainTitle + animation*/
+h1
+{
+    position: relative;
+    color: var(--yellow);
+    font-family: 'Bebas Neue', cursive;
+    font-size: 10em !important;
+    line-height: .7em !important;
+    top: 8%;
+    left: -45%;
+    animation: flash 1.2s linear infinite;
+}
+@keyframes flash 
+{
+    0% {
+        color: var(--pink);
+        text-shadow: 0 0 7px var(--pink);
+    }
+    90% {
+        color: var(--yellow);
+        text-transform: none;
+    }
+    100% {
+        color: var(--pink);
+        text-shadow: 0 0 7px var(--pink);
+    }
+}
+
+h1:nth-child(1){
+    animation-delay: 0.1s;
+}
+h1:nth-child(2){
+    animation-delay: 0.3s;
+}
+h1:nth-child(3){
+    animation-delay: 0.5s;
+}
+h1:nth-child(4){
+    animation-delay: 0.7s;
+}
+/*END*/
+
+/*Skills animation*/
+#skills
+{
+    height: 80px;
+    width: 80px;
+}
+
+#borderSkills
+{
+    border: solid 2px var(--yellow);
+    height: 150px;
+    width: 4000px;
+    margin-top: 15%;
+    margin-left: -37%;
+    
+}
+
+#container
+{
+    height: 100px;
+    width: 3000px;
+    margin-top: .5%; 
+    margin-left: -20%;  
+    animation: skills 8.5s linear infinite;
+}
+
+@keyframes skills
+{
+    0%
+    {
+        transform: translateX(200px);
+        opacity: 10%;
+    }
+
+    25%
+    {
+        transform: translateX(500px);
+        opacity: 100%;
+    }
+
+    50%
+    {
+        transform: translateX(800px);
+        opacity: 10%;
+    }
+
+    75%
+    {
+        transform: translate(1100px);
+        opacity: 100%;
+    }
+
+    100%
+    {
+        transform: translateX(1400px);
+        opacity: 10%;
+    }
+}
+
+#skillsTxt
+{
+    color: var(--yellow);
+    font-size: 6em;
+    font-family: 'Bebas Neue', cursive;
+    margin-left: 30%;
+    margin-top: -4.3%;
+}
+
+.boxShadow
+{
+    box-shadow: 8px 8px 12px #aaa;
+}
+/*END*/
 
 /*Btn*/
-#btn
-{
-    height: 4em;
-    width: 12em;
-    color: var(--beige);
-    font-size: .8em;
-    font-weight: bold;
-    background-color: var(--taupe);
-    border-radius: 30px;
-    border: solid 3px var(--beige);
-    margin-left: 20%;
-}
-
-#btn:hover
-{
-    background-color: var(--beige);
-    color: var(--noir);
-    border: solid 2px var(--taupe);
-}
-
 .btn
 {
-    height: 4em;
-    width: 12em;
-    color: var(--beige);
-    font-size: .8em;
+    height: 3em;
+    width: 7em;
+    color: var(--violet);
+    font-size: .6em;
     font-weight: bold;
-    background-color: var(--taupe);
+    background-color: var(--yellow);
     border-radius: 30px;
-    border: solid 3px var(--beige);
+    border: solid 2px var(--yellow);
+    margin-left: 40%;
 }
 
 .btn:hover
 {
-    background-color: var(--beige);
-    color: var(--noir);
-    border: solid 2px var(--taupe);
+    background-color: var(--violet);
+    color: var(--yellow);
+    border: solid 2px var(--yellow);
 }
 
-#carousel-btn1
+.cardBtn
 {
-    height: 3em;
-    width: 9em;
+    margin-left: -60%;
 }
+/*Btn END*/
 
-#carousel-btn2
+/*Logos, pictos*/
+#logo
 {
-    height: 3em;
-    width: 9em;
+    height: 20em;
+    width: 20em;
 }
 
-#carousel-btn3
+#picto1
 {
-    height: 3em;
-    width: 9em;
+    height: 15em;
+    width: 20em;
 }
 
-/*Section Marie*/
-.sectionInstitut
+#picto2
 {
-    background-color: var(--taupe);
-    height: 1200px;
+    height: 15em;
+    width: 20em;
 }
 
-#cardMarie
+#picto3
 {
-    border-radius: 12px;
+    height: 15em;
+    width: 20em;
 }
 
-#cardMarie:hover
+#pictoList
+{
+    height: 5em;
+    width: 5em;
+}
+/*Logos, pictos END*/
+
+/*Section*/
+.acceuil
+{
+    background: url(../img/banner/banner1.svg) center center no-repeat;
+    background-size: cover;
+    height: 5100px;
+}
+
+.projets
+{
+    background: url(../img/banner/banner2.svg) center center no-repeat;
+    background-size: cover;
+    height: 5500px;
+    margin-top: -100%;
+}
+
+.pictos
+{
+    background: url(../img/banner/banner3.svg) center center no-repeat;
+    background-size: cover;
+    height: 6900px;
+    margin-top: -130%;
+}
+
+.certifications
+{
+    background: url(../img/banner/banner4.svg) center center no-repeat;
+    background-size: cover;
+    height: 3500px;
+    margin-top: -133%;
+}
+/*Section END*/
+
+/*Cards*/
+#cardAcceuil
+{
+    background-color: var(--pink);
+}
+
+#cardAcceuil:hover
 {
     transform: scale(1.02);
     transition: transform 330ms ease-in;
     box-shadow: 8px 8px 12px #aaa;
 }
-/*Section Marie END*/
 
-/*Section slider1*/
-.sectionSlider1
+.card
 {
-  height: 1000px;
+    background-color: var(--blue);
 }
-/*Section slider1 END*/
 
-/*Accordion*/
-#accordionCares
+.card:hover
+{
+    transform: scale(1.02);
+    transition: transform 330ms ease-in;
+    box-shadow: 8px 8px 12px #aaa;
+}
+/*Cards END*/
+
+.list-group-item
+{
+    background-color: var(--violet);
+}
+
+/*Stage*/
+#agoria
+{
+    background-color: var(--violet);
+    font-size: 1.2em;
+    font-family: 'Poppins', sans-serif;
+    text-align: justify;
+    color: var(--yellow);
+    border-radius: 12px;
+}
+
+table
+{
+    margin-top: 50px;
+    background-color: var(--violet);
+    border-radius: 12px;
+    height: 30em;
+}
+
+thead, td
+{
+    color: var(--yellow);
+    font-family: 'Poppins', sans-serif;
+}
+
+th
+{
+    text-align: center;
+    color: var(--blue);
+    font-weight: bold;
+    font-size: 1.5em;
+}
+
+td a 
+{
+    color: var(--yellow);
+}
+/*Stage END*/
+
+/*CarouselCertifications*/
+.carousel-control
+{
+    height: 1300px;
+}
+
+#carouselExampleFade
 {
     margin-top: 10%;
+    border: solid 15px var(--pink);
+    box-shadow: 8px 8px 12px #aaa;
 }
 
-.accordion-item
-{
-    background-color: lightgrey;
-    color: var(--noir);
-}
-
-.accordion-button
-{
-    background-color: var(--taupe);
-    color: var(--beige);
-}
-    /*Prix beauté du regard*/
-.prixBR1
-{
-  margin-left: 10%;
-}
-
-.prixBR2
-{
-  margin-left: 12.8%;
-}
-    /*Prix soins des mains*/
-.prixSM1
-{
-  margin-left: 10%;
-}
-
-.prixSM2
-{
-  margin-left: 52.9%;
-}
-
-.prixSM3
-{
-  margin-left: 34%;
-}
-
-.prixSM4
-{
-  margin-left: 61%;
-}
-
-.prixSM5
-{
-  margin-left: 61%;
-}
-
-.prixSM6
-{
-  margin-left: 45%;
-}
-
-.prixSM7
-{
-  margin-left: 73%;
-}
-
-.prixSM8
-{
-  margin-left: 61%;
-}
-
-.prixSM9
-{
-  margin-left: 61%;
-}
-
-.prixSM10
-{
-  margin-left: 51%;
-}
-
-.prixSM11
-{
-  margin-left: 51%;
-}
-/*Accordion END*/
-
-#cards
-{
-  margin-top: 20%;
-}
-
-/*CarouselProduct*/
-.center
-{
-    display:flex;
-    justify-content: center;
-    position: relative;
-    top: 25vh;
-}
-
-.carousel-container 
-{
-    position: relative;
-    overflow: hidden;
-    width: 90em;
-    height: 50em;
-    margin-top: -25%;
-    margin-bottom: 35%;
-}
-  
-.carousel-slide 
-{
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    animation: slideFadeIn 1s ease-in-out;
-    
-}
-  
-.carousel-slide img 
-{
-    height: 100%;
-    width: 100%;
-    object-fit: cover;
-}
-  
-.carousel-caption 
-{
-    background-color: rgba(0, 0, 0, 0.5);
-    color: #fff;
-    padding: 1rem;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content:center;
-    height: 100%;
-    width: 70%;
-    text-align: justify;
-    font-size: 1.3rem;
-}
-  
-  @keyframes slideFadeIn {
-    from {
-      opacity: 0;
-      transform: translateX(-100%);
-    }
-    to {
-      opacity: 1;
-      transform: translateX(0%);
-    }
-  }
-  
-  .carousel-control-prev,
+.carousel-control-prev,
   .carousel-control-next {
     position: absolute;
     top: 50%;
@@ -515,546 +502,115 @@ nav
   .carousel-control-next {
     right: 0;
   }
-  
-  .carousel-slide:first-of-type ~ .carousel-control-prev,
-  .carousel-slide:last-of-type ~ .carousel-control-next {
-    
-  }
+/*CarouselCertifications END*/
 
-  #carouselProduct
-  {
-    margin-top: 10%;
-  }
-
- .bloc1BtnVideo
- {
-    margin-top: 0%;
- } 
-
- .bloc2BtnVideo
- {
-    margin-top: 0%;
- } 
-
- .bloc3BtnVideo
- {
-    margin-top: 0%;
- } 
-
- #blocCarouselBtn1
- {
-    margin-top: 5%;
- }
-
- #blocCarouselBtn2
- {
-    margin-top: 5%;
- }
-
- #blocCarouselBtn3
- {
-    margin-top: 7%;
- }
-  /*CarouselProduct END*/
-
-  /*Cards*/
-#cards
-{
-  margin-left: 26%;
-}
-
-  .card 
-{
-    margin-top: 5%;
-    margin-bottom: 0%;
-    border-radius: 12px;
-    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-}
-
-#fontCaveat
-{
-  font-family:"Century Gothic", 'Caveat', cursive;
-  font-weight: 700;
-}
-
-figure 
-{
-    display: grid;
-    border-top: 1rem;
-    overflow: hidden;
-    cursor: pointer;
-}
-
-figure > * 
-{
-    grid-area: 1/1;
-    transition: .4s;
-}
-
-figure figcaption 
-{
-    display: grid;
-    align-items: end;
-    font-family: sans-serif;
-    font-size: 2.3rem;
-    font-weight: bold;
-    color: #0000;
-    padding: .75rem;
-    background: var(--c,#0009);
-    clip-path: inset(0 var(--_i,100%) 0 0);
-    -webkit-mask:
-      linear-gradient(#000 0 0),
-      linear-gradient(#000 0 0);
-    -webkit-mask-composite: xor;
-    -webkit-mask-clip: text, padding-box;
-    margin: -1px;
-  }
-
-  figure:hover figcaption
-  {
-    --_i: 0%;
-  }
-
-  figure:hover img 
-  {
-    transform: scale(1.2);
-  }
-
-  @supports not (-webkit-mask-clip: text) 
-  {
-    figure figcaption {
-     -webkit-mask: none;
-     color: var(--noir);
-    }
-  }
-/*Cards END*/
-
-#rdvTitle
-{
-    color: var(--taupe);
-    margin-right: 15%;
-}
-
-/*FooterMap*/
+  /*Footer*/
 footer
 {
-    height: 615px;
-    background-color: rgba(0, 0, 0, 0.55);
-    font-family: 'Merriweather', serif;
-    box-shadow: 1px 1px 3px rgba(255, 255, 255, 0.54);
+    
+    margin-top: -25%;
 }
 
-#mapid 
-{
+ #mapid
+ {
     height: 300px;
-    border-radius: 10px;
+    border-radius: 12px;
+ } 
+
+.netWorks
+{
+    height: 70px;
+    width: 70px;
 }
-/*FooterMap END*/
+
+.netWorks:hover
+{
+    transform: scale(1.5);
+    transition: transform 330ms ease-in;
+}
+  /*Footer END*/
 
 /*Media queries*/
 
 /*Style pour mobile,largeur d'écran inférieur à 480px*/
 @media only screen and (max-width : 480px)
 {
-    body 
+    /*MainTitle*/
+    .mainTitle
     {
-       overflow-x: hidden;
+        font-size: .7em;
+        margin-top: 20%;
+        margin-left: 40%;
     }
 
-    #cachetStatic
+    /*Clock*/
+    .clock
     {
-        height: 40rem;
-        width: 40rem;
-        margin-top: -25%;
-        margin-left: -17%;
+        margin-left: 12%;
     }
 
-    .mainTitles
+    /*Section*/
+    .acceuil
     {
-        font-size: 2.6em;
-        font-weight: 600;
-        font-family: 'Merriweather', serif;
-        letter-spacing: .2em;
+        height: 6400px;
     }
 
-    /*Parallaxe*/
-    .banner, .order-form
+    .projets
     {
-        background: linear-gradient(rgba(0, 0, 0, .5), rgba(0, 0, 0, 0)), url(../img/banner/banner1Bis.jpg) center center fixed no-repeat;
-        background-size: cover;
-        height: 1200px;
+        margin-top: -850%;
+        height: 11000px;
     }
 
-    .perso-menu
+    .pictos
     {
-        background: linear-gradient(rgba(0, 0, 0, .5), rgba(0, 0, 0, 0)), url(../img/banner/banner2SmallScreen.jpg) center center fixed no-repeat;
-        background-size: cover;
-        height: 1800px;
+        height: 10600px;
+        margin-top: -1620%;
     }
 
-    .card-bloc
+    .certifications
     {
-        background: linear-gradient(rgba(0, 0, 0, .5), rgba(0, 0, 0, .5)), url(../img/banner/banner3SmallScreen.jpg) center center fixed no-repeat;
-        background-size: cover;
-        height: 1200px;
-    }
-    /*Parallaxe END*/
-
-    /*SectionMarie*/
-    .available
-    {
-        background-color: #fff;
+        height: 1000px;
+        margin-top: -1630%;
     }
 
-    .sectionInstitut
+    /*Titles*/
+    #titleSkills, #titleProjets, #titlePictos, #titleCertifications
     {
-        background-color: var(--taupe);
-        height: 1500px;
+        font-size: 4em;
     }
 
-    #cardMarie
-    {
-        margin: 2%;
-    }
-    /*END*/
-
-    /*Carousel1*/
-    .Slideshow
-    {
-        height: 430px;
-        width: 430px;
-        overflow: hidden;
-        
-    }
-    /*Carousel1 END*/
-
-    /*Accordion*/
-    #collapseThree
-    {
-      width: 300px;
-    }
-
+    /*Bloc Agoria*/
     .scroll
-  {
-    width: 455px;
-    height: 300px;
-    overflow-y: scroll;
-    overflow-x: hidden;
-    border: 1px solid var(--taupe);
-    margin: auto;
-  }
-    /*END*/
-
-    /*CarouselProduct*/
-
-    #sectionCosmetiques
     {
-        height: 900px;
+        width: 365px;
+        height: 500px;
+        overflow-y: scroll;
+        overflow-x: hidden;
+        border: 1px solid var(--taupe);
+        margin: auto;
     }
 
-    .carousel-container 
+    /*Carousel bg*/
+    .carousel-control
     {
-        position: relative;
-        overflow: hidden;
-        width: 30em;
-        height: 30em;
-        margin-top: -65%;
-        margin-bottom: 35%;
+        height: 460px;
     }
 
-    #blocCarouselBtn1
+    /*AnimationLogo*/
+    .animationLogo
     {
         display: none;
-    }
-
-    #blocCarouselBtn2
-    {
-        display: none;
-    }
-
-    #blocCarouselBtn3
-    {
-        display: none;
-    }
-
-    #videoSothys
-    {
-        height: 150px;
-        width: 200px;
-    }
-
-    #videoCassiere
-    {
-        height: 150px;
-        width: 200px;
-    }
-    /*CarouselProduct END*/
-
-    /*Cards Sothys/Cassière*/
-    #cards
-    {
-      margin-left: 6%;
-    }
-
-    #cardSothys
-    {
-      height: 20rem;
-      width: 20rem !important;
-    }
-
-    #cardContent
-    {
-        width: 300px;
-    }
-
-    #cardContent2
-    {
-        width: 300px;
-    }
-
-    #cardCassiere
-    {
-      height: 20rem;
-      width: 20rem !important;
-    }
-    /*Cards END*/
-
-    /*Cosmétiques*/
-    iframe
-    {
-      width: 8em;
-      height: 4em;
-    }
-    /*Cosmétiques END*/
-
-    /*Section rdv*/
-    #appointment
-    {
-      margin-left: 26%;
-    }
-
-    #carteFid
-    {
-      margin-bottom: -15%;
-      margin-left: 12%;
-    }
-    /*Section rdv END*/
-
-    footer 
-    {
-      height: 1250px;
-      
     }
 }
 
 /*Style pour les tablettes*/
 @media only screen and (min-width : 481px) and (max-width : 768px)
 {
-    body 
-    {
-      overflow-x: hidden;
-    }
 
-    /*Section Marie*/
-    .sectionInstitut
-    {
-        background-color: var(--taupe);
-        height: 1500px;
-    }
-    /*Section Marie END*/
-
-    /*Secttion slider1*/
-    .sectionSlider1
-    {
-      height: 1350px;
-    }
-
-    .Slideshow 
-    {
-        height: 600px;
-        width: 630px;
-    }
-
-    #cachetStatic
-    {
-        height: 65rem;
-        width: 65rem;
-        margin-left: -40%;
-    }
-    /*Secttion slider1 END*/
-
-    /*Section cosmétique*/
-    #sectionCosmetiques
-    {
-       height: 1300px;
-    }
-
-    #carouselProduct
-    {
-        margin-top: -13%;
-    }
-
-    .mainTitles
-    {
-        font-size: 3em;
-    }
-    /*Section cosmétique END*/
-
-    /*Section rdv*/
-    #rdvTitle
-    {
-        margin-left: 10%;
-    }
-
-    #appointment
-    {
-      margin-left: 31%;
-    }
-
-    #carteFid
-    {
-      margin-bottom: -15%;
-      margin-left: 12%;
-    }
-    /*Section rdv END*/
-
-    footer 
-    {
-       height: 1250px;
-    }
 }
 
 /*Style pour les desktop*/
-@media only screen and (min-width : 769px) and (max-width : 991px)
-{
-  body 
-  {
-    overflow-x: hidden;
-  }
-
-  .soinsDeSoieTitle
-  {
-    height: 100em;
-    width: 100em;
-    margin-top: 80%;
-    margin-left: 0%;
-  }
-
-  /*Section Marie*/
-  .sectionInstitut
-  {
-      background-color: var(--taupe);
-      height: 1500px;
-  }
-  /*Section Marie END*/
-
-  /*Secttion slider1*/
-  .sectionSlider1
-  {
-    height: 1550px;
-  }
-
-  .Slideshow 
-  {
-      height: 700px;
-      width: 730px;
-  }
-
-  #cachetStatic
-  {
-      height: 65rem;
-      width: 65rem;
-      margin-top: -130%;
-      margin-left: -85%;
-  }
-  /*Secttion slider1 END*/
-
-  /*Section cosmétique*/
-  #sectionCosmetiques
-  {
-     height: 1300px;
-  }
-
-  #carouselProduct
-  {
-      margin-top: -13%;
-  }
-
-  .mainTitles
-  {
-      font-size: 3em;
-  }
-  /*Section cosmétique END*/
-
-  /*Cards*/
-  #cards
-    {
-      margin-left: 16%;
-    }
-  /*END*/
-
-  /*Section rdv*/
-  #sectionFid
-  {
-      margin-top: -60%;
-  }
-
-  #rdvTitle
-  {
-      margin-left: 10%;
-  }
-
-  #appointment
-  {
-    margin-left: 31%;
-  }
-
-  #carteFid
-  {
-    height: 15em;
-    width: 30em;
-    margin-left: 50%;
-  }
-  /*Section rdv END*/
-
-  footer 
-  {
-     height: 1250px;
-  }
-
-  #containerFooter
-  {
-    display: block;
-  }
-}
-
-@media only screen and (min-width : 1400px) and (max-width : 1546px) 
-{
-  #cards
-  {
-    margin-left: 5%;
-  }
-}
-
-@media only screen and (min-width : 991px) 
+@media only screen and (min-width : 769px)
 {
 
-}
-
-/*Slider1 & cachet static*/
-@media only screen and (min-width : 992px) and (max-width : 1542px)
-{
-  .Slideshow 
-  {
-      height: 500px;
-      width: 530px;
-  }
-
-  #cachetStatic
-  {
-      height: 45rem;
-      width: 45rem;
-      margin-top: -30%;
-      margin-left: -55%;
-  }
 }
