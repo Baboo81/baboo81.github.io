@@ -3,8 +3,8 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta name="description" content="PortFolio de Christel Rodriguez Perez Web-developper junior">
-        <meta name="keywords" content="">
+        <meta name="description" content="Institut de soins esthétiques, se situant à Braine l'Alleud. Votre esthéticienne vous proposera une multitude de soins adaptés à votre peau dans un cadre cocooning, en utilisant les cosmetiques suivants : Bernard Cassière, Sothys, Mavex, Cirépil, Pronails. Marie, votre esthéticienne vous proposera un large choix de soins visage et corps ainsi que des massages.">
+        <meta name="keywords" content="Institut de soins esthétiques, cosmétiques; Sothys, Bernard Cassière, Cirépil, Mavex, Pronails">
         <!-- CSS : Leaflet.js -->
 	    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
 		integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
@@ -13,464 +13,1047 @@
         <link rel="stylesheet" href="./assets/styles/styles.css">
         <!--Script Leaflet-->
         <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js" integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA==" crossorigin=""></script>
-        <!--Scripts, framework JS-->
+        <!--Scripts, libraries, framework JS-->
         <script src="./assets/scripts/bootstrap.bundle.min.js" defer></script>
-        <script src="./assets/scripts/main.js" defer ></script>
-        <title>PortFolio Christel Rodriguez Perez Web-developper</title>
+        <script src="./assets/scripts/main.js" defer></script>
+        <title>Institut de beauté Soins De Soie Belgique</title>
     </head>
     <body>
-        <nav class="navbar navbar-expand-lg fixed-top boxShadow">
-            <div class="container-fluid">
-                <a class="navbar-brand mx-5" href="#">PortFolio</a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                        <li class="nav-item">
-                            <a class="nav-link mx-5" aria-current="page" href="#">Acceuil</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link mx-5" aria-current="page" href="#projets">Projets</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link mx-5" aria-current="page" href="#pictos">Pictos</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link mx-5" aria-current="page" href="#stage">Stage</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link mx-5" aria-current="page" href="#certifications">Certifications</a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </nav>
-        <a id="#" href=""></a><!--Anchor-->
-        <section class="acceuil d-flex">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-6 py-5 mainTitle">
-                        <h1 class="mx-2">Front-end</h1> 
-                        <h1 class="mx-2 py-1">developer</h1>
-                        <h1 class="mx-2 py-1">Christel</h1> 
-                        <h1 class="mx-2 py-1">Rodriguez</h1>
-                        <h1 class="mx-2 py-1">Perez</h1>
+        <!--Nav-->
+        <nav class="perso-navbar navbar navbar-expand-lg position-fixed navbar-dark w-100">
+                <div class="container-fluid">
+                    <img class="p-4 my-5" src="./assets/img/animation/cachet.svg" id="logo2" alt="Logo de l'institut Soins de Soie">
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                            <li class="nav-item pe-5">
+                                <a class="nav-link" aria-current="page" href="#">Accueil</a>
+                            </li>
+                            <li class="nav-item pe-5">
+                                <a class="nav-link" aria-current="page" href="#institut">L'institut</a>
+                            </li>
+                            <li class="nav-item pe-5">
+                                <a class="nav-link" aria-current="page" href="#soins">Soins</a>
+                            </li>
+                            <li class="nav-item pe-5">
+                                <a class="nav-link" aria-current="page" href="#cosmetiques">Cosmétiques</a>
+                            </li>
+                            <li class="nav-item pe-5">
+                                <a class="nav-link" aria-current="page" href="#rdv">Rendez-vous</a>
+                            </li>
+                        </ul>
                     </div>
-                    <div class="clock col-md-5">
-                        <div class="wrap">
-                            <!--Heure-->
-                            <div class="heure"></div>
+                </div>
+          </nav>
+          <!--Nav END-->
+          
+          <!--Banner1-->
+          <!--Anchor-->
+          <a id="#" href=""></a>
+          <!--Anchor END-->
+          <section class="banner d-flex justify-content-center align-items-center pt-5">
+                <div class="container my-5 py-5">
+                    <div class="row">
+                        <div class="col-md-6">
 
-                            <!--Minutes-->
-                            <div class="minute"></div>
-
-                            <!--Secondes-->
-                            <div class="seconde"></div>
-
-                            <!--Point/centre-->
-                            <div class="point"></div>
+                        </div>
+                        <div class="col-md-6 soinsDeSoieTitle">
+                            <img class="banner-desc py-3" id="logo" src="./assets/img/svg/Logo.svg" alt="Logo du site composé d'un pissenlit">
                         </div>
                     </div>
                 </div>
-                <div class="row py-5">
-                    <div class="card my-5 border-0 rounded-4" id="cardAcceuil">
+          </section>
+          <!--Banner1 END-->
+
+          <!--Anchor-->
+          <a id="institut" href=""></a>
+          <!--Anchor END-->
+          <section class="sectionInstitut merriweatherFont py-5">
+                <div class="container">
+                    <div class="row">
+                        <h1 class="text-center mainTitles py-5">L'Institut de Beauté Soins De Soie</h1>
+                        <div id="cardMarie" class="card my-5 mx-1 border-0 rounded-4">
                             <div class="row">
-                                <div class="col-md-6">
-                                    <img src="./assets/img/bulles.png" height="555em" width="555em" class="img-fluid mx-3  p-3" alt="Chris faisant des bulles">
+                                <div class="col-md-6 p-3">
+                                    <img src="./assets/img/img7.webp" class="img-fluid rounded-start" alt="Photo de Marie">
                                 </div>
                                 <div class="col-md-6">
                                     <div class="card-body">
-                                        <h5 class="card-title text-center fontRanchers colorBlue p-3">Qui suis-je ?</h5>
-                                        <p class="card-text fontCaveat colorBlue">Je suis une mordue d'informatique depuis l'âge de 12 ans.
-                                            Mes premières lignes de codes, je les ai faites en Q-Basic sur un 486, je m'interesse 
-                                            depuis peu à Kali Linux et à d'autres distribution.
-                                            J'adore faire du sport en l'occurence du vélo, je m'interesse à la spiritualité, à la
-                                            géopolitique, au Reiki, ... 
-                                            J'aime beaucoup les jeux de société tels que les jeux de rôles, le jeu de Go, ...
-                                            Je suis de nature sociable et diplomate, j'ai l'habitude du contact client grâce à mon passé en pharmacie.
-                                        </p>
-                                        <div>
-                                            <a href="./assets/pdf/ChrisRodriguezPerezCV.pdf" type="button" class="btn btn-primary" >CV</a>
+                                        <h5 class="card-title py-2">Marie votre experte beauté</h5>
+                                        <p class="card-text text-muted caveatFont"><strong>Soins de Soie</strong> est un institut de beauté au féminin situé au lieu-dit L'Ermite, à Braine l'Alleud.<br>Ce joli salon propose un espace amical dans lequel vous vous sentirez à la maison. Sa décoration chaleureuse et ses teintes boisées apportent une atmosphère cosy idéale pour un pur moment de détente.<br>Vous serez accueillies par Marie, véritable experte de l'esthétique qui vous écoute attentivement et vous conseille sur le soin idéale.<br>Vous êtes au parfait endroit pour magnifier vos mains et vos pieds ou pour une épilation en douceur. Le salon propose également des soins de beauté et de bien-être adaptés à chacun de vos besoins : <strong>massages, soins du corps ou encore soins du visage.</strong></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+          </section>
+
+          <section class="sectionSlider1 merriweather bg-dark text-light text-center py-5">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-9 Slideshow p-4 mx-4">
+                        <div class="Slideshow-Content">
+                            <img src="./assets/img/img1.webp" alt="Photo de l'institut Soins de Soie" />
+                            <img src="./assets/img/img2.webp" alt="Photo de l'institut Soins de Soie" />
+                            <img src="./assets/img/img3.webp" alt="Photo de l'institut Soins de Soie" />
+                            <img src="./assets/img/img4.webp" alt="Photo de l'institut Soins de Soie" />
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <img id="cachetStatic" src="./assets/img/animation/cachet.svg" alt="Logo Soins de soie">
+                    </div>
+                </div>
+            </div>
+       </section>
+
+          <!--Anchor-->
+          <a id="soins" href=""></a>
+          <!--Anchor END-->
+
+          <section class="perso-menu py-5 merriweatherFont text-light">
+                <div class="container py-5">
+                    <div class="row">
+                        <h1 class="text-center mainTitles py-5">Les Soins</h1>
+                    </div>
+                    <!--Accordeon-->
+                <section class="accordion rounded-3 bg-dark p-4" id="accordionCares">
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingOne">
+                            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                <h1 class="caveatFontTitles mx-4">Beauté du Regard</h1>
+                            </button>
+                        </h2>
+                        <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parents="#accordionCares">
+                            <div class="accordion-body">
+                                <strong>Teinture des sourcils<span class="prixBR1">16&euro;</span></strong>
+                            </div>
+                            <div class="accordion-body">
+                                <strong>Teinture des cils<span class="prixBR2">18&euro;</span></strong>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingTwo">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                <h1 class="caveatFontTitles mx-4">Soins des Mains</h1>
+                            </button>
+                        </h2>
+                        <div id="collapseTwo" class="accordion-collapse collapse scroll" aria-labelledby="headingTwo" data-bs-parent="#accordionCares">
+                            <div class="accordion-body">
+                                <strong>Manucure express & Pose vernis <span class="prixSM1">25&euro;</span></strong>
+                            </div>
+                            <div class="accordion-body">
+                                <strong>Manucure <span class="prixSM2">30&euro;</span></strong>
+                            </div>
+                            <div class="accordion-body">
+                                <strong>Dépose & Manucure<span class="prixSM3">45&euro;</span></strong>
+                            </div>
+                            <div class="accordion-body">
+                                <strong>Manucure & Pose vernis<span class="prixSM4">40&euro;</span></strong>
+                            </div>
+                            <div class="accordion-body">
+                                <strong>Dépose, Manucure & Pose vernis<span class="prixSM5">55&euro;</span></strong>
+                            </div>
+                            <div class="accordion-body">
+                                <strong>Manucure Spa<span class="prixSM6">35&euro;</span></strong>
+                            </div>
+                            <div class="accordion-body">
+                                <strong>Dépose & Manucure Spa <span class="prixSM7">50&euro;</span></strong>
+                            </div>
+                            <div class="accordion-body">
+                                <strong>Manucure Spa & Pose vernis<span class="prixSM8">45&euro;</span></strong>
+                            </div>
+                            <div class="accordion-body">
+                                <strong>Dépose, Manucure Spa & Pose vernis<span class="prixSM9">60&euro;</span></strong>
+                            </div>
+                            <div class="accordion-body">
+                                <strong>Pose vernis semi-permanent<span class="prixSM10">40&euro;</span></strong>
+                            </div>
+                            <div class="accordion-body">
+                                <strong>Dépose & Pose vernis semi-permanent<span class="prixSM11">55&euro;</span></strong>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingThree">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                <h1 class="caveatFontTitles mx-4">Épilations</h1>
+                            </button>
+                        </h2>
+                        <div id="collapseThree" class="accordion-collapse collapse scroll" aria-labelledby="headingThree" data-bs-parents="#accordionCares">
+                            <div class="accordion-body">
+                                <div class="accordion-item">
+                                    <h3 class="accordion-header" id="headingOne">
+                                        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                            <strong>Jambes</strong>
+                                        </button>
+                                    </h3>
+                                    <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parents="#accordionCares">
+                                        <div class="accordion-body">
+                                            <strong>1/2 jambes</strong>
+                                            <p>20&euro;</p>
+                                        </div>
+                                        <div class="accordion-body">
+                                            <strong>Cuisses</strong>
+                                            <p>24&euro;</p>
+                                        </div>
+                                        <div class="accordion-body">
+                                            <strong>3/4 jambes</strong>
+                                            <span></span>
+                                            <p>28&euro;</p>
+                                        </div>
+                                        <div class="accordion-body">
+                                            <strong>Jambes complètes</strong>
+                                            <span></span>
+                                            <p>21&euro;</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-body">
+                                <div class="accordion-item">
+                                    <h3 class="accordion-header" id="headingOne">
+                                        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                            <strong>Bras</strong>
+                                        </button>
+                                    </h3>
+                                    <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parents="#accordionCares">
+                                        <div class="accordion-body">
+                                            <strong>Avant-bras</strong>
+                                            <p>15&euro;</p>
+                                        </div>
+                                        <div class="accordion-body">
+                                            <strong>Bras complets</strong>
+                                            <p>21&euro;</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-body">
+                                <div class="accordion-item">
+                                    <h3 class="accordion-header" id="headingOne">
+                                        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                            <strong>Maillot</strong>
+                                        </button>
+                                    </h3>
+                                    <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parents="#accordionCares">
+                                        <div class="accordion-body">
+                                            <div class="card-text">  
+                                                <img src="./assets/img/svg/maillotEpilation.svg" alt="">
+                                                <ul id="fontLato" class="text-start">
+                                                    <li>Classique 17&euro;</li>
+                                                    <li>Échancré 21&euro;</li>
+                                                    <li>Brésilien 25&euro;</li>
+                                                    <li>Intégral 29&euro;</li>
+                                                    <li>Sillons inter-fessier 9&euro;</li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-body">
+                                <div class="accordion-item">
+                                    <h3 class="accordion-header" id="headingOne">
+                                        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                            <strong>Visage</strong>
+                                        </button>
+                                    </h3>
+                                    <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parents="#accordionCares">
+                                        <div class="accordion-body">
+                                            <strong>Sourcils</strong>
+                                            <p>13&euro;</p>
+                                        </div>
+                                        <div class="accordion-body">
+                                            <strong>Menton</strong>
+                                            <p>10&euro;</p>
+                                        </div>
+                                        <div class="accordion-body">
+                                            <strong>Lèvres</strong>
+                                            <p>9&euro;</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-body">
+                                <div class="accordion-item">
+                                    <h3 class="accordion-header" id="headingOne">
+                                        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                            <strong>Autres</strong>
+                                        </button>
+                                    </h3>
+                                    <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parents="#accordionCares">
+                                        <div class="accordion-body">
+                                            <strong>Bas du dos</strong>
+                                            <p>12&euro;</p>
+                                        </div>
+                                        <div class="accordion-body">
+                                            <strong>Fesses</strong>
+                                            <p>12&euro;</p>
+                                        </div>
+                                        <div class="accordion-body">
+                                            <strong>Nuque</strong>
+                                            <p>6&euro;</p>
+                                        </div>
+                                        <div class="accordion-body">
+                                            <strong>Aisselles</strong>
+                                            <p>13&euro;</p>
                                         </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                    <div class="container">
-                        <div class="row">
-                            <h2 id="titleSkills" class="text-center fontRanchers">SKILLS</h2>
-                            <div class="col-md-12">
-                                <div class="boxShadow" id="borderSkills">
-                                    <div class="d-flex" id="container">
-                                        <img class="mx-2" src="./assets/img/svg/skills/html5.svg" alt="logo HTML">
-                                        <img class="mx-2" src="./assets/img/svg/skills/css3.svg" alt="logo CSS">
-                                        <img class="mx-2" src="./assets/img/svg/skills/sass.svg" alt="logo Sass">
-                                        <img class="mx-2" src="./assets/img/svg/skills/bootstrap.svg" alt="logo Bootstrap">
-                                        <img class="mx-2" src="./assets/img/svg/skills/javascript.svg" alt="logo JavaScript">
-                                        <img class="mx-2" src="./assets/img/svg/skills/react.svg" alt="logo React">
-                                        <img class="mx-2" src="./assets/img/svg/skills/angular.svg" alt="logo Angular">
-                                        <img class="mx-2" src="./assets/img/svg/skills/php.svg" alt="logo PhP">
-                                        <img class="mx-2" src="./assets/img/svg/skills/laravel.svg" alt="logo Laravel">
-                                        <img class="mx-2" src="./assets/img/svg/skills/illustrator.svg" alt="logo Illustrator">
-                                        <img class="mx-2" src="./assets/img/svg/skills/photoshop.svg" alt="logo PhotoShop">
-                                        <img class="mx-2" src="./assets/img/svg/skills/xd.svg" alt="logo XD">
-                                        <img class="mx-2" src="./assets/img/svg/skills/linux.svg" alt="logo Linux">
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingFive">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                                <h1 class="caveatFontTitles mx-4">Massages</h1>
+                            </button>
+                        </h2>
+                        <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive" data-bs-parent="#accordionCares">
+                            <div class="accordion-body">
+                                <strong>Massage du dos et de la nuque</strong>
+                                <p>&#x1F552; 30min  35&euro;</p>
+                            </div>
+                            <div class="accordion-body">
+                                <strong>Massage du dos et des jambes</strong>
+                                <p>&#x1F552; 45min  50&euro;</p>
+                            </div>
+                            <div class="accordion-body">
+                                <strong>Massage du corps</strong>
+                                <p>&#x1F552; 1h     65&euro; </p>
+                            </div>
+                            <div class="accordion-body">
+                                <strong>Massage du corps et du visage</strong>
+                                <p>&#x1F552; 1h30   95&euro;</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingSix">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
+                                <h1 class="caveatFontTitles mx-4">Soins Du Corps</h1>
+                            </button>
+                        </h2>
+                        <div id="collapseSix" class="accordion-collapse collapse" aria-labelledby="headingSix" data-bs-parent="#accordionCares">
+                            <div class="accordion-body">
+                                <strong>Modelage relaxant 100% sur mesure (Sothys)</strong>
+                                <div id="fontLato" class="card-text text-muted">
+                                    <p>Un massage relaxant personnalisé en choisissant parmi 4 textures : huile de massage assouplissante, crème de massage hydratante, baume de massage nutritif au beurre de karité nourrissant. Et à personnaliser avec l'évasion sensorielle de votre choix parmi nos 5 senteurs aux notes délicates : citron & petitgrain, fleur d'oranger & bois de cèdre, cannelle & gingembre, Sothys Organics&#xAE; et notre senteur saisonnière gourmande et fruitée. La peau est plus douce et délicatement parfumée.</p>
+                                    <ul class="text-start">
+                                        <li>Dos              &#x1F552; 30min &nbsp;  35&euro;</li>
+                                        <li>Jambes           &#x1F552; 45min &nbsp;   55&euro;</li>
+                                        <li>Corps            &#x1F552; 1h &nbsp;  75&euro;</li>
+                                        <li>Corps & visage   &#x1F552; 1h30 &nbsp;  115&euro;</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="accordion-body">
+                                <strong>Gommage 100% sur mesure Sucre et Sel (Sothys)</strong>
+                                <div id="fontLato" class="card-text text-muted">
+                                    <p>Ce gommage tonifiant associe sels marins et sucres à personnaliser avec l'ambiance olfactive de votre choix, parmi nos 5 évasions sensorielles aux notes délicates : citron & petitgrain, fleur d'oranger & bois de cèdre, cannelle & gingembre, Sothys Organics&#xAE; et notre senteur saisonnière gourmande et fruitée.</p>
+                                </div>
+                                <p>&#x1F552; 45min    50&euro;</p>
+                            </div>
+                            <div class="accordion-body">
+                                <strong>Gommage & Modelage relaxant 100% sur-mesure (Sothys)</strong>
+                                <p>&#x1F552; 1h45   110&euro; </p>
+                            </div>
+                            <div class="accordion-body">
+                                <strong>Soins détente Organics (Sothys)</strong>
+                                <div class="card-text text-muted">
+                                    <p id="fontLato">Soin du visage, gommage et modelage du corps</p>
+                                </div>
+                                <p>&#x1F552; 2h30   140&euro;</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingSeven">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSeven" aria-expanded="false" aria-controls="collapseSeven">
+                                <h1 class="caveatFontTitles mx-4">Soins Des Pieds</h1>
+                            </button>
+                        </h2>
+                        <div id="collapseSeven" class="accordion-collapse collapse" aria-labelledby="headingSeven" data-bs-parent="#accordionCares">
+                            <div class="accordion-body">
+                                <strong>Pédicure express & Pose vernis</strong>
+                                <p>25&euro;</p>
+                            </div>
+                            <div class="accordion-body">
+                                <strong>Pédicure</strong>
+                                <p>35&euro;</p>
+                            </div>
+                            <div class="accordion-body">
+                                <strong>Pédicure & Pose vernis</strong>
+                                <p>40&euro; </p>
+                            </div>
+                            <div class="accordion-body">
+                                <strong>Dépose, Pédicure</strong>
+                                <p>45&euro; </p>
+                            </div>
+                            <div class="accordion-body">
+                                <strong>Dépose, Pédicure & Pose vernis</strong>
+                                <p>50&euro; </p>
+                            </div>
+                            <div class="accordion-body">
+                                <strong>Dépose, Pédicure & Pose vernis semi-permanent</strong>
+                                <p>65&euro; </p>
+                            </div>
+                            <div class="accordion-body">
+                                <strong>Pose vernis semi-permanent</strong>
+                                <p>40&euro; </p>
+                            </div>
+                            <div class="accordion-body">
+                                <strong>Dépose & Pose vernis semi-permanent</strong>
+                                <p>50&euro; </p>
+                            </div>
+                            <div class="accordion-body">
+                                <strong>Calluspeeling</strong>
+                                <p>45&euro; </p>
+                            </div>
+                            <div class="accordion-body">
+                                <strong>Calluspeeling & Pose vernis</strong>
+                                <p>50&euro; </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingEight">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseEight" aria-expanded="false" aria-controls="collapseEight">
+                                <h1 class="caveatFontTitles mx-4">Soins Du Visage</h1>
+                            </button>
+                        </h2>
+                        <div id="collapseEight" class="accordion-collapse collapse scroll" aria-labelledby="headingEight" data-bs-parent="#accordionCares">
+                            <div class="accordion-body">
+                                <strong>Soin Détox à l'Orange Sanguine - Énergie Holistique (Bernard Cassière)</strong>
+                                <div class="card-text">
+                                    <p id="fontLato" class="p-3"><b>Un soin du visage complet dédié aux peaux ternes et en manque de vitalité.</b> Durant 45min, votre esthéticienne alterne techniques manuelles et massage avec une Gua-sha en cristal quartz pour réhausser l'éclat du teint et aider votre peau à re-respirer et la protéger. Ce soin technique est également l'occasion pour celle qui le reçoit d'expérimenter un vrai lâcher-prise et de ré-équilibrer ses énergies.</p>
+                                    <h4><b>Recommandations</b></h4>
+                                    <p id="fontLato">Peaux atones sans éclat. Peaux fatiguées, asphyxiées de cellules mortes et de toxines.</p>
+                                    <h4><b>Objectifs</b></h4>
+                                    <ul id="fontLato">
+                                        <li class="text-start">Redonner de l'éclat</li>
+                                        <li class="text-start">Éliminer les cellules mortes</li>
+                                        <li class="text-start">Drainer hydrater/nourrir</li>
+                                        <li class="text-start">Aider la peau à bien respirer à nouveau</li>
+                                        <li class="text-start">Ré-équilibrer ses énergies vitales</li>
+                                    </ul>
+                                </div>
+                                <p id="fontLato">&#x1F552; 45min   55&euro;</p>
+                            </div>
+                            <div class="accordion-body">
+                                <strong>Soin haute hydratation bambou et aloe-vera bio (Bernard Cassière)</strong>
+                                <div class="card-text">
+                                    <p id="fontLato"><b>Des extraits naturels de bambou et d'aloe-vera bio,</b> combinés à des agents hydratants pour apporter vitamines, mineraux et acides aminés essentiels à l'éclat de la peau.</p>
+                                </div>
+                                <h4><b>Recommandations</b></h4>
+                                <p id="fontLato">Peaux présentant un manque d'hydratation, de nutrition, de souplesse et de fermeté.</p>
+                                <h4><b>Objectifs</b></h4>
+                                <p id="fontLato">&bull;&nbsp;Hydrater sur toute la journée<br>&bull;&nbsp;Favoriser la bonne répartition des apports hydriques<br>&bull;&nbsp;Renforcer la barrière cutanée et limiter la perte insensible en eau<br>&bull;&nbsp;Nourrir<br>&bull;&nbsp;Assouplir</p>
+                                <p id="fontLato">&#x1F552; 1h15    75&euro; </p>
+                            </div>
+                            <div class="accordion-body">
+                                <strong>Soin jeunesse à la Spiruline</strong>
+                                <div class="card-text">
+                                    <p id="fontLato">Un soin professionnel pour harmoniser les traits du visage et assumer son âge au quotidien. 6 étapes spécifiques pour agir sur la jeunesse des traits du visage et retrouver un aspect plus jeune, un look plus tonique.</p>
+                                    <h4><b>Recommandations</b></h4>
+                                    <p id="fontLato">Un soin de beauté holistique mêlant sensorialité et inspiration yoga, pour que chacune puisse se reconnecter et assumer son âge en toute sérénité. Á partir de 35 ans.</p>
+                                    <h4><b>Objectifs</b></h4>
+                                    <ul id="fontLato">
+                                        <li class="text-start">Révéler sa beauté et positiver sur son apparence</li>
+                                        <li class="text-start">Protéger la peau des facteurs internes et externes du vieillissement</li>
+                                        <li class="text-start">Retrouver une peau plus lisse et plus ferme</li>
+                                        <li class="text-start">Nourrir et supplémenter les cellules en nutriments essentiels</li>
+                                    </ul>
+                                    <p id="fontLato"><b>Le + du soin</b><br>Une technique de massage visage, inspirée du Yoga, pour maximiser à la fois la détente et les résultats d'éfficacité !</p>
+                                </div>
+                                <p id="fontLato">&#x1F552; 1h15    85&euro;</p>
+                            </div>
+                            <div class="accordion-body">
+                                <strong>Soin du visage Organics / Soin éclat fraîcheur certifié biologique (Sothys&#xAE;)</strong>
+                                <div class="card-text">
+                                    <p id="fontLato">Un soin court à la senteur fraîche pour réveiller la peau et lui donner un coup d'éclat instantané. L'alliance de la sensorialité et de l'éfficacité dans le nouveau soin visage certifié biologique Sothys Organics&#xAE;. Plongez au coeur de la nature grâce à une musique originale et profitez d'un moment de relaxation profonde grâce à un massage cocooning visage et cuir chevelu profondément relaxant.</p>
+                                </div>
+                                <p id="fontLato">&#x1F552; 45min   50&euro;</p>
+                            </div>
+                            <div class="accordion-body">
+                                <strong>Soin Pureté Express aux plantes - Jardin Aromatique (Bernard Cassière)</strong>
+                                <div class="card-text">
+                                    <p id="fontLato">Un soin express nettoyant & purifiant de 45min pour une peau plus lisse, plus nette et un teint plus frais. Ce soin rapide et efficace, notamment grâce au double nettoyage minutieux et à un masque super-absorbant. Il s'inscrit parfaitement dans une cure ou en entretien régulier pour les peaux sujettes aux imperfections, aux excès de sébum ou encore aux pores dilatés. C'est un soin essentiel pour améliorer l'aspect de la peau et retrouver un teint uniforme.</p>
+                                    <h4>Objectifs : </h4>
+                                    <ul id="fontLato">
+                                        <li class="text-start">Matifier</li>
+                                        <li class="text-start">Assainir</li>
+                                        <li class="text-start">Purifier</li>
+                                        <li class="text-start">Nettoyer</li>
+                                    </ul>
+                                </div>
+                                <p id="fontLato">&#x1F552; 45min   50&euro;</p>
+                            </div>
+                            <div class="accordion-body">
+                                <strong>Soin du visage pour peaux mixtes à grasses / Menthe (-18ans)</strong>
+                                <p id="fontLato">&#x1F552; 1h15   50&euro;</p>
+                            </div>
+                            <div class="accordion-body">
+                                <div class="accordion-item">
+                                    <h3 class="accordion-header" id="headingOne">
+                                        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                            <strong>Soin Nutri-Sensibilité au Muesli</strong>
+                                        </button>
+                                    </h3>
+                                    <div id="collapseOne" class="accordion-collapse collapse-show" aria-labelledby="headingOne" data-bs-parents="#accordionCares">
+                                        <div class="accordion-body">
+                                            <strong>Soin Nutri-Sensibilité au Muesli (version peaux sèches)</strong>
+                                            <div class="card-text">
+                                                <p id="fontLato">Un soin professionnel spécialement conçu pour les peaux agressées et asséchées pour retrouver confort et nourir la peau en profondeur. Notre peau est recouverte de "bonnes bactéries" qui sont essentielles à son bon métabolisme, sa protection, et son fonctionnement. C'est ce que l'on appelle le microbiome. Une perturbation dans cette symbiose bien organisée peut provoquer une sècheresse cutanée ou des inconforts. Inspiré de la skinfood et des recettes Muesli, BC allie dans ce soin les propriétés bénéfiques de son complexe Muesli [avoine bio + probiotiques] et du Miel provenant de nos propres ruches de nos jardins pour apporter nutrition et confort aux peaux les plus sèches.</p>
+                                                <h4>Recommandations</h4>
+                                                <p id="fontLato">Convient aux peaux sèches en prévention ou en traitement.</p>
+                                                <h4>Objectifs : </h4>
+                                                    <ul id="fontLato">
+                                                        <li class="text-start">Nourrir et assouplir la peau</li>
+                                                        <li class="text-start">Soulager et protéger les peaux irritées</li>
+                                                        <li class="text-start">Apporter une sensation de confort après application et tout au long de la journée</li>
+                                                        <li class="text-start">Améliorer le confort de la peau et diminuer les sensibilités</li>
+                                                    </ul>
+                                            </div>
+                                            <p id="fontLato">&#x1F552; 1h15   75&euro;</p>
+                                        </div>
+                                        <div class="accordion-body">
+                                            <strong>Soin Nutri-Sensibilité au Muesli (version peaux sensibles)</strong>
+                                            <div class="card-text">
+                                                <p id="fontLato">Un soin professionnel spécialement conçu pour les peaux fragiles et sensibles ayant besoin de douceur tout en atténuant rougeurs visibles et inconforts. Notre peau est recouverte de "bonnes bactéries" qui sont essentielles à son métabolisme, sa protection, et son fonctionnement. C'est ce que l'on appelle le microbiome. Une perturbation dans cette symbiose bien organisée peut provoquer des rougeurs, des tiraillements et des inconforts. Inspiré de la skinfood et des recettes Muesli, BC allie dans ce soin les propriétés bénéfiques de son complexe Muesli [avoine bio + probiotiques] pour apporter douceur, confort et soin aux peaux sensibles.</p>
+                                                <h4>Recommandations</h4>
+                                                <p id="fontLato">Convient aux peaux sensibles ou sensibilisée en prévention ou en traitement, demandez conseils à votre esthéticienne.</p>
+                                                <h4>Objectifs : </h4>
+                                                    <ul id="fontLato">
+                                                        <li class="text-start">Réduire les sensations d'échauffement, atténuer les rougeurs</li>
+                                                        <li class="text-start">Apaiser immédiatement et diminue le seuil de sensibilité</li>
+                                                        <li class="text-start">Soulager et protéger les peaux irritées</li>
+                                                        <li class="text-start">Apporter une sensation de confort après application et tout au long de la journée</li>
+                                                    </ul>
+                                            </div>
+                                            <p id="fontLato">&#x1F552; 1h15  75&euro;</p>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
-                        </div> 
-                    </div>
-            </section><!--END Section acceuil-->
-           
-            <section class="projets d-flex justify-content-center">
-                <div class="container">
-                    <a id="projets" href=""></a><!--Anchor-->
-                    <h2 id="titleProjets" class="text-center fontRanchers">Projets</h2>
-                    <div class="row py-5">
-                        <div class="col-md-4 py-5">
-                            <div class="card" style="height: 35em;" style="width: 25rem;">
-                                <img src="./assets/img/soinsDeSoie.png" height="210em" class="card-img-top" alt="Photo de la page d'acceuil du site Soins de soie">
-                                <div class="card-body">
-                                  <h5 class="card-title text-center fontRanchers colorYellow">Site Soins de soie</h5>
-                                  <p class="card-text">Site réalisé pour un institut de beauté se situant à Braine l'Alleud en Belgique. Site en cours de construction !</p>
-                                  <h5 class="text-center fontRanchers colorYellow">Technologies utilisées</h5>
-                                  <div class="p-3">
-                                    <img class="sizeIcones" src="./assets/img/svg/skills/html5.svg" alt="Logo HTMl5">
-                                    <img class="sizeIcones" src="./assets/img/svg/skills/css3.svg" alt="Logo CSS3">
-                                    <img class="sizeIcones" src="./assets/img/svg/skills/javascript.svg" alt="Logo JavaScript">
-                                    <img class="sizeIcones" src="./assets/img/svg/skills/bootstrap.svg" alt="Logo Bootstrap">
-                                    <img class="sizeIcones" src="./assets/img/svg/skills/illustrator.svg" alt="Logo Illustrator">
-                                  </div>
-                                  <div class="d-flex cardBtn">
-                                    <a href="https://github.com/Baboo81/SoinsDeSoieV2" class="btn btn-primary">Code</a>
-                                    <a href="http://soinsdesoie.be" class="btn btn-primary">Run</a>
-                                  </div>
+                            <!--<div class="accordion-body">
+                                <div class="accordion-item">
+                                    <h3 class="accordion-header" id="headingOne">
+                                        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                            <strong>Soin du visage Saisonnier / Soin coup d'éclat relaxant</strong>
+                                        </button>
+                                    </h3>
+                                    <div id="collapseOne" class="accordion-collapse collapse-show" aria-labelledby="headingOne" data-bs-parents="#accordionCares">
+                                        <div class="accordion-body">
+                                            <strong>Soin du visage Saisonnier / Soin coup d'éclat hydratant relaxant (Automne/Hiver '22: Orange & baies de goji)</strong>
+                                            <p>&#x1F552; 1h30   56&euro;</p>
+                                        </div>
+                                        <div class="accordion-body">
+                                            <strong>Soin du visage Saisonnier / Soin coup d'éclat hydratant relaxant (Printemps/Été '23: Citron & rhubarbe)</strong>
+                                            <p>&#x1F552; 1h30  56&euro;</p>
+                                        </div>
+                                        <div class="accordion-body">
+                                            <strong>Soin du visage Saisonnier.</strong>
+                                            <span></span>
+                                            <p>&#x1F552; 1h15  70&euro;</p>
+                                        </div>
+                                    </div>
                                 </div>
-                            </div>
+                            </div>-->
                         </div>
-                        <div class="col-md-4 py-5">
-                            <div class="card" style="height: 35em;" style="width: 25rem;">
-                                <img src="./assets/img/reactAsturias.png" height="210em" class="card-img-top" alt="Photo de la page d'acceuil du site Asturias">
-                                <div class="card-body">
-                                  <h5 class="card-title text-center fontRanchers colorYellow">Site Asturias</h5>
-                                  <p class="card-text">Site proposant un tour d'horizon de la Principauté des Asturies, région se trouvant au nord de l'Espagne.</p>
-                                  <h5 class="text-center fontRanchers colorYellow">Technologies utilisées</h5>
-                                  <div class="p-3">
-                                    <img class="sizeIcones" src="./assets/img/svg/skills/html5.svg" alt="Logo HTMl5">
-                                    <img class="sizeIcones" src="./assets/img/svg/skills/css3.svg" alt="Logo CSS3">
-                                    <img class="sizeIcones" src="./assets/img/svg/skills/javascript.svg" alt="Logo JavaScript">
-                                    <img class="sizeIcones" src="./assets/img/svg/skills/react.svg" alt="Logo Bootstrap">
-                                    <img class="sizeIcones" src="./assets/img/svg/skills/illustrator.svg" alt="Logo Illustrator">
-                                  </div>
-                                  <div class="d-flex">
-                                    <a href="https://github.com/Baboo81/ReactP2Asturias" class="btn btn-primary">Code</a>
-                                  </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-4 py-5">
-                            <div class="card" style="height: 35em;" style="width: 25rem;">
-                                <img src="./assets/img/molenbeek.png" height="210em" class="card-img-top" alt="Photo de la page d'acceuil du site Molenbeek en promenade">
-                                <div class="card-body">
-                                  <h5 class="card-title text-center fontRanchers colorYellow">Site Molenbeek en promenade</h5>
-                                  <p class="card-text">Site proposant la découverte de Molenbeek via trois itininéraires à faire à pieds, à vélo et en famille.</p>
-                                  <h5 class="text-center fontRanchers colorYellow">Technologies utilisées</h5>
-                                  <div class="p-3">
-                                    <img class="sizeIcones" src="./assets/img/svg/skills/html5.svg" alt="Logo HTMl5">
-                                    <img class="sizeIcones" src="./assets/img/svg/skills/css3.svg" alt="Logo CSS3">
-                                    <img class="sizeIcones" src="./assets/img/svg/skills/javascript.svg" alt="Logo JavaScript">
-                                    <img class="sizeIcones" src="./assets/img/svg/skills/sass.svg" alt="Logo Bootstrap">
-                                    <img class="sizeIcones" src="./assets/img/svg/skills/php.svg" alt="Logo Bootstrap">
-                                    <img class="sizeIcones" src="./assets/img/svg/skills/illustrator.svg" alt="Logo Illustrator">
-                                  </div>
-                                  <div class="d-flex">
-                                    <a href="https://github.com/Baboo81/Molenbeek" class="btn btn-primary">Code</a>
-                                  </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="row py-1">
-                        <div class="col-md-4 py-5">
-                            <div class="card" style="height: 35em;" style="width: 25rem;">
-                                <img src="./assets/img/reactToDoList.png" height="210em" class="card-img-top" alt="Photo de la page d'acceuil du site Soins de soie">
-                                <div class="card-body">
-                                  <h5 class="card-title text-center fontRanchers colorYellow">To Do List</h5>
-                                  <p class="card-text">Petite application permettant de gérer son emploi du temps.</p>
-                                  <h5 class="text-center fontRanchers colorYellow">Technologies utilisées</h5>
-                                  <div class="p-3">
-                                    <img class="sizeIcones" src="./assets/img/svg/skills/html5.svg" alt="Logo HTMl5">
-                                    <img class="sizeIcones" src="./assets/img/svg/skills/css3.svg" alt="Logo CSS3">
-                                    <img class="sizeIcones" src="./assets/img/svg/skills/react.svg" alt="Logo JavaScript">
-                                  </div>
-                                  <div class="d-flex">
-                                    <a href="https://github.com/Baboo81/ReactToDoList" class="btn btn-primary">Code</a>
-                                  </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-4 py-5">
-                            <div class="card" style="height: 35em;" style="width: 25rem;">
-                                <img src="./assets/img/agularTest.png" height="210em" class="card-img-top" alt="Photo de la page d'acceuil du site Asturias">
-                                <div class="card-body">
-                                  <h5 class="card-title text-center fontRanchers colorYellow">Site la tienda</h5>
-                                  <p class="card-text">Petit test réalisé avec Angular.</p>
-                                  <h5 class="text-center fontRanchers colorYellow">Technologies utilisées</h5>
-                                  <div class="p-3">
-                                    <img class="sizeIcones" src="./assets/img/svg/skills/html5.svg" alt="Logo HTMl5">
-                                    <img class="sizeIcones" src="./assets/img/svg/skills/css3.svg" alt="Logo CSS3">
-                                    <img class="sizeIcones" src="./assets/img/svg/skills/angular.svg" alt="Logo JavaScript">
-                                  </div>
-                                  <div class="d-flex">
-                                    <a href="https://github.com/Baboo81/AngularTest" class="btn btn-primary">Code</a>
-                                  </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-4 py-5">
-                            <div class="card" style="height: 35em;" style="width: 25rem;">
-                                <img src="./assets/img/amme.png" height="210em" class="card-img-top" alt="Photo de la page d'acceuil du site Molenbeek en promenade">
-                                <div class="card-body">
-                                  <h5 class="card-title text-center fontRanchers colorYellow">Site @mme</h5>
-                                  <p class="card-text">Site en cours de construction pour une fiduciaire.</p>
-                                  <h5 class="text-center fontRanchers colorYellow">Technologies utilisées</h5>
-                                  <div class="p-3">
-                                    <img class="sizeIcones" src="./assets/img/svg/skills/html5.svg" alt="Logo HTMl5">
-                                    <img class="sizeIcones" src="./assets/img/svg/skills/css3.svg" alt="Logo CSS3">
-                                    <img class="sizeIcones" src="./assets/img/svg/skills/javascript.svg" alt="Logo JavaScript">
-                                    <img class="sizeIcones" src="./assets/img/svg/skills/bootstrap.svg" alt="Logo Bootstrap">
-                                  </div>
-                                  <div class="d-flex">
-                                    <a href="https://github.com/Baboo81/ammeFiduciaire" class="btn btn-primary">Code</a>
-                                  </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+                    </section>
+                    <!--Accordion END-->
                 </div>
-        </section><!--Section projets END-->
-        
-        <section class="pictos d-flex justify-content-center">
+          </section>
+          
+          <!--Anchor-->
+          <a id="cosmetiques" href=""></a>
+          <!--Anchor END-->
+
+          <section class="carousel-control merriweather bg-dark text-light text-center py-5" id="sectionCosmetiques">
             <div class="container">
-                <a id="pictos" href=""></a><!--Anchor-->
-                <h2 id="titlePictos" class="text-center fontRanchers py-5">Pictos</h2>
                 <div class="row">
-                    <div class="col-md-12">
-                        <div class="list-group list-group-flush rounded-4 my-3 boxShadow">
-                            <article id="list" class="list-group-item p-4">
-                                <div class="row">
-                                    <div class="col-12 col-md-4 d-md-block">
-                                        <img id="picto1" src="./assets/img/pictos/logoAmme.png" alt="Logo représentant un ordinateur">
+                    <h1 class="text-center mainTitles py-5">Cosmétiques</h1>
+                </div>
+                <div id="carouselProduct"  class="center">
+                    <div class="col-sm carousel-container">
+                        <div class="carousel-slide" id="slide1">
+                            <img src="./assets/img/svg/pronails.svg" alt="Image Affichant ProNails en titre grand format">
+                            <div class="carousel-caption">
+                                <p id="p1" onload="txtCarouselProduct()">Catherine Claus, femme créative et passionnée, a fondé ProNails il y a plus de 40 ans. Elle a commencé par gérer son propre salon de beauté avant de former des prothésistes ongulaires. Aujourd’hui, ProNails est une entreprise internationale qui développe des produits de soin de qualité supérieure pour les ongles, les pieds et les mains. Le siège social est situé à Brasschaat, en Belgique, où les produits sont développés, testés et fabriqués en respectant les normes de contrôle les plus strictes. Les valeurs fondamentales de l’entreprise sont l’innovation, la qualité et le partage des connaissances et de l’expertise avec les clientes.</p>
+                                <div class="bloc1BtnVideo d-flex">
+                                    <div id="videoPn" class="p-3">
+                                        <iframe class="mx-4" width="200" height="100" src="https://www.youtube.com/embed/dFSmm83CamA?si=v03MUBvEGbVmhCsh" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen>
+                                        </iframe>
+                                        <iframe width="200" height="100" src="https://www.youtube.com/embed/zE6hyl8KW-I?si=7HfAYhwa7cT4DVok" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
                                     </div>
-                                    <div class="col-12 col-md-8 p-4">
-                                        <p id="txtListGroup">Logo réalisé pour une fiduciaire.</p>
-                                        <h3 class="fontRanchers colorYellow py-3" id="picto-h5">Technologie</h3>
-                                        <img id="pictoList" src="./assets/img/svg/PictoListGroup.svg" alt="Logo Illustrator">
-                                    </div>
-                                </div>   
-                            </article>
-                            <article id="list" class="list-group-item p-4">
-                                <div class="row">
-                                    <div class="col-12 col-md-4 d-md-block">
-                                        <img id="picto2" src="./assets/img/pictos/logoSoinsDeSoie.png" alt="Logo représentant un pissenlit">
-                                    </div>
-                                    <div class="col-12 col-md-8 p-4">
-                                        <p id="txtListGroup">Logo réalisé pour un institut de beauté.</p>
-                                        <h3 class="fontRanchers colorYellow py-3" id="picto-h5">Technologie</h3>
-                                        <img id="pictoList" src="./assets/img/svg/PictoListGroup.svg" alt="Logo Illustrator">
+                                    <div id="blocCarouselBtn1" class="p-3">
+                                        <button id="carousel-btn1" type="button" class="btn">Plus d'info</button>
                                     </div>
                                 </div>
-                            </article>
-                            <article id="list" class="list-group-item p-4">
-                                <div class="row">
-                                    <div class="col-12 col-md-4 d-md-block">
-                                        <img id="picto3" src="./assets/img/pictos/cachet.png" alt="Logo représentant un pissenlit">
-                                    </div>
-                                    <div class="col-12 col-md-8 p-4">
-                                        <p id="txtListGroup">Logo réalisé pour un institut de beauté.</p>
-                                        <h3 class="fontRanchers colorYellow py-3" id="picto-h5">Technologie</h3>
-                                        <img id="pictoList" src="./assets/img/svg/PictoListGroup.svg" alt="Logo Illustrator">
-                                    </div>
+                            </div>
+                        </div>
+                    <div class="carousel-slide" id="slide2">
+                        <img src="./assets/img/svg/cirepil.svg" alt="Image Affichant Cirépil en titre grand format">
+                        <div class="carousel-caption">
+                            <p id="p2" onload="txtCarouselProduct()">En 1936, deux hommes, un pharmacien et un commercial, ont créé une huile solaire et une cire à épiler pour accompagner les premiers congés payés d’été en France. C’est ainsi que la marque Perron Rigot est née. Quelques années plus tard, la société a été reprise par Monsieur Des Garets, un ancien parfumeur de la maison Jean Patou et ingénieur chimiste passionné par les soins dépilatoires. Il a déposé de nombreux brevets et inventé la nouvelle génération de cires sans bande. Perron Rigot est devenue une marque experte de renommée internationale dans le domaine de l’épilation, notamment en France et aux États-Unis. Les produits stars de la marque sont alors connus sous le nom Cirépil. 
+                            Plus qu'une simple épilation, Cirépil prône depuis toutes ces nombreuses années un protocole de soin épilatoire basé sur 3 grandes étapes. 
+                            Ce traitement de beauté complet permet d'obtenir une douceur inégalée, un confort assuré et un résultat optimal.</p>
+                            <div class="blocBtn2Video d-flex">
+                                <div class="p-3">
+                                    <iframe class="mx-4" width="200" height="100" src="https://www.youtube.com/embed/A5PEXZzaXXU?si=BQsz1uw4ZnZJYTPu" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen>
+                                    </iframe>
+                                    <iframe width="200" height="100" src="https://www.youtube.com/embed/3s4WGnChhCc?si=KLgiELoXvM9MHeMu" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen>
+                                    </iframe>
                                 </div>
-                            </article>
+                                <div id="blocCarouselBtn2" class="p-3">
+                                    <button id="carousel-btn2" type="button" class="btn" addText()>Plus d'info</button>
+                                </div>
+                            </div>
                         </div>
                     </div>
-                    <a id="stage" href=""></a><!--Anchor-->
-                    <div class="row">
-                        <h2 id="titlePictos" class="text-center fontRanchers py-5">Stage</h2>
-                        <div class="col-md-12">
-                            <article class="boxShadow scroll" id="agoria">
-                                <img src="./assets/img/svg/agoria.svg" alt="Logo Agoria">
-                                <p id="agoriaTxt" class="p-4">Agoria, la fédération de l’industrie technologique, regroupe 2079 entreprises technologiques et tous ceux qui sont inspirés par la technologie. Comptant plus de 321.000 travailleurs, le secteur technologique est le plus grand secteur de Belgique et Agoria la plus grande fédération au sein de la FEB. Quelque 70 pour cent des membres d'Agoria sont des PME. 
-                                   Agoria compte plus de 200 collaborateurs. Ils travaillent chez les membres, à domicile ou au bureau à Bruxelles, Anvers, Liège, Gand et Charleroi. Dans les trois premières villes, Agoria dispose de son propre centre d'affaires BluePoint et d’un Tech.Lounge.
-                                   Les services et positions d’Agoria portent sur la digitalisation, l’industrie manufacturière de demain, la politique de gestion des talents et la formation, l’évolution des marchés, la réglementation, les infrastructures, le climat, l’environnement et l’énergie. Agoria entend mettre en relation tous ceux qui sont inspirés par la technologie et l'innovation et accroître le succès des entreprises et façonner un avenir durable. Grâce à son initiative Agoria Techlancers, Agoria propose également toute une série de services aux freelances.
-                                   À travers « Be The Change », Agoria se concentre sur l'avenir du marché du travail, dans le cadre de « Factory of the Future » sur les atouts de notre industrie manufacturière et à travers « DigiCoach », sur la poursuite de la digitalisation des individus et organisations. Agoria dispose à la fois d'un centre d'études et d’un centre d’innovation et est active à tous les niveaux politiques. Bart Steukers est le CEO d’Agoria.
-                                </p>
-                            </article>
-                            <table class="table-dark boxShadow">
-                                <thead>
-                                    <tr class="fontRanchers">
-                                        <th>Liens</th>
-                                        <th>Activités</th>
-                                    </tr>
-                                </thead>
-                                <tbody>
-                                    <tr>
-                                        <td>
-                                            <a href="https://www.agoria.be/nl/5G-en-industrie" target="_blank" rel="noreferrer noopener">https://www.agoria.be/nl/5G-en-industrie</a></td>
-                                        <td> 
-                                            <li>Modification du design : HTML, CSS, Bootstrap</li>
-                                            <li>Création d'un script en JavaScript qui génère les cards de la 2e partie de la page en créant un rendu aléatoire</li>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td>
-                                            <a href="https://www.agoria.be/en/themes/tomorrows-manufacturing-industry/factories-of-the-future/factories-of-the-future-introduction" target="_blank" rel="noreferrer noopener">https://www.agoria.be/en/themes/tomorrows-manufacturing-industry/factories-of-the-future/factories-of-the-future-introduction</a></td>
-                                        <td>
-                                            <li>Modification du design : HTML, CSS, Bootstrap</li>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td>
-                                            <a href="https://www.agoria.be/nl/sustainability-roadmap" target="_blank" rel="noreferrer noopener">https://www.agoria.be/nl/sustainability-roadmap</a></td>
-                                        <td> 
-                                            <li>Création de la page sur base d'une maquette : HTML, CSS, Bootstrap</li>
-                                            <li>Création d'un script JavaScript pour l'animation des flêches et pour injecter du txt dans l'accordéon aussi.</li>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td>
-                                            <a href="https://www.agoria.be/nl/sustainability-roadmap/waarom" target="_blank" rel="noreferrer noopener">https://www.agoria.be/nl/sustainability-roadmap/waarom</a></td>
-                                        <td>
-                                            <li>Création de la page sur base d'une maquette : HTML, CSS, Bootstrap</li>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td>
-                                            <a href="https://www.agoria.be/cyberstart/woordenboek" target="_blank" rel="noreferrer noopener">https://www.agoria.be/cyberstart/woordenboek</a></td>
-                                        <td>
-                                            <li>Création de la page sur base d'une maquette</li>
-                                            <li>Création d'un script JavaScript qui récupère les données d'un fichier Excel pour les injecter dans des div</li>
-                                        </td>
-                                    </tr>
-                                </tbody>
-                            </table>
+                    <div class="carousel-slide" id="slide3">
+                        <img src="./assets/img/svg/mavex.svg" alt="Image Affichant Mavex en titre grand format">
+                        <div class="carousel-caption">
+                            <p id="p3" onload="txtCarouselProduct()">La révolution écologique que vous attendiez! 
+                                Onze ans après le lancement sur le marché du soin révolutionnaire Mavex Calluspeeling® et des millions de soins effectués dans le monde entier, Mavex révolutionne encore une fois le monde de la pédicure professionnelle avec une première mondiale: 
+                                la pédicure végétale. 
+                                Le soin de beauté naturel pour les pieds nouvelle génération, sans acide, multifonction, 
+                                avec 99.5% d’ingrédients d’origine naturelle et végétale. 
+                                Sur la base d’une ancienne formule à base de plantes de la tradition alpine, les laboratoires Mavex, après plus de 5 ans de recherche, ont développé un phytocomplexe kératolytique innovant obtenu à partir d’un mélange d’extraits de plantes et de plantes médicinales. 
+                            </p>
+                            <div class="blocBtn3Video d-flex">
+                                <div class="d-flex p-3">
+                                    <div class="p-3">
+                                        <iframe class="mx-4" width="200" height="100" src="https://www.youtube.com/embed/Sp1JBrKkm18?si=HsYfuwKx7E9htLOd" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                                    </div>
+                                </div>
+                                <div id="blocCarouselBtn3" class="p-3">
+                                    <button id="carousel-btn3" type="button" class="btn">Plus d'info</button>
+                                </div>
+                            </div>
                         </div>
+                    </div>
+                    <div class="carousel-slide" id="slide3">
+                        <img src="./assets/img/img8.webp" alt="Image de la gamme Sothys">
+                            <div class="carousel-caption">
+                                <div class="d-flex p-3">
+                                    <div class="d-flex p-3">
+                                        <iframe id="videoSothys" width="560" height="315" src="https://www.youtube.com/embed/FeaxdETXeas?si=FEG79GJCYv8EWJVr" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen>
+                                        </iframe>
+                                    </div>
+                                </div>
+                            </div>
+                      </div>
+                      <div class="carousel-slide" id="slide3">
+                        <img src="./assets/img/img6.webp" alt="Image de la gamme Bernard Cassière">
+                            <div class="carousel-caption">
+                                <div class="d-flex p-3">
+                                    <div class="d-flex p-3">
+                                        <iframe id="videoCassiere" width="560" height="315" src="https://www.youtube.com/embed/6IxeWifcCZk?si=Rp1U8FN1n0XwSdFY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen>
+                                        </iframe>
+                                    </div>
+                                </div>
+                            </div>
+                      </div>
+                        <a class="carousel-control-prev" href="#slide1">&#10094;</a>
+                        <a class="carousel-control-next" href="#slide2">&#10095;</a>
+                  </div>
+               </div>
+            </section>
+            <!--CarouselProducts END-->
+            </div>
+          </section>
+
+          <section class="card-bloc py-5 merriweatherFont text-light">
+                <div id="cards" class="container">
+                    <div class="row my-5" id="productCard">
+                        <!--Sothys card-->
+                        <section id="cardSothys" class="col-md-6 align-self-start card bg-light mt-4 mx-5" onload="collapsed()" style="width: 30rem;">
+                            <figure style="--c:#fff5">
+                                <img class="card-img-top mt-2 rounded-3" src="./assets/img/img8.webp" alt="photo de la gamme Sothys">
+                                <figcaption id="fontCaveat" class="text-center">Sothys</figcaption>
+                            </figure>
+                            <div class="text-center p-3">
+                                <button id="togg" type="button" class="btn">Afficher</button>
+                                <!--<button id="togg2" type="button" class="btn">Réduire</button>-->
+                            </div>
+                            <div id="cardContent" class="card-body">
+                                <h1 id="fontCaveat" class="card-title">Sothys</h1>
+                                <h2 id="fontCaveat">Soins visage</h2>
+                                <div class="text-start">
+                                    <h4 id="fontCaveat" class="font-weight-bolder py-2">Masque hydratant éclat</h4>
+                                    <p class="card-text text-muted">Apportant un "Splash" d'hydratation à la peau, ce masque tire sa force de la sève de bouleau revitalisante et l'inonde de fraîcheur.</p>
+                                </div>
+                                <div class="text-start">
+                                    <h4 id="fontCaveat" class="font-weight-bolder py-2">Huile démaquillante visage et yeux</h4>
+                                    <p class="card-text text-muted">Enrichie en oléo-extrait de chèvrefeuille anti-oxydant, cette huile démaquillante élimine éfficacement les impurtés à la surface de la peau ainsi que le maquillage même waterproof. Sa texture se transforme en lait au contact de l'eau. En seul geste, la peau est nette et confortable et le teint éclatant.</p>
+                                    <h6>Gestuelle d'application :</h6>
+                                    <p>Aplliquer sur peau sèche, sur l'ensemble du visage, des yeux ainsi que sur le cou puis rincer à l'eau.</p>
+                                </div>
+                                <div class="text-start">
+                                    <h4 id="fontCaveat" class="font-weight-bolder py-2">Émulsion hydratante</h4>
+                                    <p class="card-text text-muted">Grâce à son complexe d'actifs végétaux biologiques de sève de bouleau, d'eau florale d'aubépine et d'extrait d'alfa-alfa like, cette émulsion réduit les signes de fatigue, lisse visiblement les traits et confère un nouvel éclat au teint. Votre capital jeunesse vitalité est préservé au quotidien.</p>
+                                    <h6>Gestuelle d'application :</h6>
+                                    <p>Appliquer matin et/ou soir sur l'ensemble du visage et du cou après votre sérum soin habituel.</p>
+                                </div>
+                                <div class="text-start">
+                                    <h4 id="fontCaveat" class="font-weight-bolder py-2">Gommage visage éclat</h4>
+                                    <p class="card-text text-muted">Ce soin exfoliant allie pépins de framboise et riz de Camargue à de la sève de bouleau revitalisante. Il libère avec délicatesse la peau de ses impurtés et cellules mortes. Le grain de peau est affiné et la peau est éclatante de beauté.</p>
+                                    <h6>Gestuelle d'application :</h6>
+                                    <p>Sur peau démaquillée, sèche ou humide, appliquer par mouvements circulaires en évitant le contour des yeux. Rincer abondamment 1 à 2 par semaine.</p>
+                                </div>
+                                <div class="text-start">
+                                    <h4 id="fontCaveat" class="font-weight-bolder py-2">Soins teintés hydratants</h4>
+                                    <p class="card-text text-muted">Á la fois hydratant et teinté, ce soin sublime le naturel de la peau en lui procurant tout au long de la journée un fini lumineux. Cette texture crémeuse et fraîche crée un effet bonne mine sans brillance, et unifie le teint. L'association d'actifs végétaux biologiques de sève de bouleau à des actifs hydratants et anti-âge reconnus laisse la peau hydratée, plus confortable, plus souple. Hydratation continue 8h. Disponible en 4 teintes qui conviendront à tous les teints aussi bien aux tonalités chaudes que froides.</p>
+                                    <h6>Gestuelle d'application :</h6>
+                                    <p>Appliquer le soin teinté hydratant après le rituel soin : </p>
+                                        <ul>
+                                            <li>Aux doigts</li>
+                                            <li>Au pinceau fond de teint</li>
+                                            <li>Á l'éponge fond de teint</li>
+                                        </ul>
+                                    <p>Ce soin peut remplacer la crème de jour habituelle (à appliquer sur sérum) ou être utilisé comme dernière étape du rituel beauté tel un produit de maquillage.</p>
+                                    <p class="border p-3"><b>Sothys Organics&#xAE;, la haute efficacité organique</b><br>Au coeur de la Corrèze, grâce à son Laboratoire de Recherche Avancée, Sothys créé la ligne Sothys Organics&#xAE;, l'alchimie parfaite entre <b>soin biologiques</b> et <b>haute efficacité</b>: une gamme certifiée <b>biologique</b> et <b>végan</b> aux accents cosméceutiques.</p>
+                                </div>
+                                <h2 id="fontCaveat">Soins corps</h2>
+                                <div class="text-start">
+                                    <h4 id="fontCaveat" class="font-weight-bolder py-2">Elixir nourrissant corps - Evasion Cannelle & Gingembre</h4>
+                                    <p class="card-text text-muted">Cet Elixir nourrissant corps – Evasion Cannelle et gingembre vous transporte dans une évasion sensorielle <b>aromatique et ambrée.</b> Cette huile sèche à la texture fine laisse votre peau douce, satinée et délicatement parfumée.<br>
+                                    Véritable invitation à l’éveil des sens, découvrez une diversité d’univers olfactifs pour faire de votre moment de détente une parenthèse de bien-être absolu.</p>
+                                    <h6>Gestuelle d'application :</h6>
+                                    <p>Vaporiser sur l’ensemble du corps ou localement et faire pénétrer par mouvements circulaires. Pour une utilisation quotidienne ou pour réaliser des modelages.</p>
+                                </div>
+                                <div class="text-start">
+                                    <h4 id="fontCaveat" class="font-weight-bolder py-2">Elixir nourrissant corps - Evasion Fleur d'oranger & Bois de Cèdre</h4>
+                                    <p class="card-text text-muted">Cette huile nourrissante vous transporte dans une évasion sensorielle <b>musquée et boisée.</b> Votre peau est douce, satinée et délicatement parfumée.<br>
+                                    Véritable invitation à l’éveil des sens, découvrez une diversité d’univers olfactifs pour faire de votre moment de détente une parenthèse de bien-être absolu.</p>
+                                    <h6>Gestuelle d'application :</h6>
+                                    <p>Vaporiser sur l’ensemble du corps ou localement et faire pénétrer par mouvements circulaires. Pour une utilisation quotidienne ou pour réaliser des modelages.</p>
+                                </div>
+                                <div class="text-start">
+                                    <h4 id="fontCaveat" class="font-weight-bolder py-2">Elixir nourrissant corps - Evasion Citron & Petitgrain</h4>
+                                    <p class="card-text text-muted">Cette huile nourrissante vous transporte dans une évasion sensorielle <b>fraîche et tonifiante.</b> La peau est douce, satinée et délicatement parfumée.<br>
+                                    Véritable invitation à l’éveil des sens, découvrez une diversité d’univers olfactifs pour faire de votre moment de détente une parenthèse de bien-être absolu. </p>
+                                    <h6>Gestuelle d'application :</h6>
+                                    <p>Vaporiser sur l’ensemble du corps ou localement et faire pénétrer par mouvements circulaires. Pour une utilisation quotidienne ou pour réaliser des modelages.</p>
+                                </div>
+                                <div class="text-start">
+                                    <h4 id="fontCaveat" class="font-weight-bolder py-2">Gommage granité corps</h4>
+                                    <p class="card-text text-muted">Une <b>texture granité originale</b> enrichie en sève de bouleau revitalisante et en sucre bio de betterave pour exfolier la peau en douceur. Son parfum aux notes hespéridées et anisées associé au beurre de karité bio et équitable laisse la peau délicatement <b>parfumée et nourrie.</b></p>
+                                </div>
+                                <div class="text-start">
+                                    <h4 id="fontCaveat" class="font-weight-bolder py-2">Baume protecteur multi-usages</h4>
+                                    <p class="card-text text-muted">L’allié beauté multi-usages pour protéger et réconforter la peau de toute la famille !
+                                    Ce baume au <b>beurre de karité bio équitable</b> et à la cire de carnauba nourrit, protège et apporte confort à votre peau au quotidien.<br>
+                                    Délicatement parfumée, cette texture ultra-fondante enrichie en <b>oléo-extrait de chèvrefeuille</b> a un effet réconfortant sur votre peau.</p>
+                                    <h6>Gestuelle d'application :</h6>
+                                    <p>Faire chauffer une noisette de baume au creux de la main et appliquer :</p>
+                                    <ul>
+                                        <li>en soin corps par de légers effleurages sur l'ensemble du corps, ou sur les zones très sèches</li>
+                                        <li>en soin cheveux tel un masque avant le shampooing (laisser poser 5min) ou sur les pointes avant brushing</li>
+                                        <li>en soin ongles pour les fortifier tout en nourrissant les cuticules</li>
+                                        <li>s'utilise également sur le visage localement sur les zones sèches</li>
+                                    </ul>
+                                </div>
+                                <div class="text-start">
+                                    <h4 id="fontCaveat" class="font-weight-bolder py-2">Huile sublimatrice visage/corps/cheveux</h4>
+                                    <p class="card-text text-muted">Cette huile <b>sèche et légèrement texturée</b> enrichie en extrait d’alfafa protecteur <b>assouplit, nourrit, et sublime</b> la peau. Elle pénètre rapidement et laisse un voile doux et soyeux sur la peau, sans fini gras.</p>
+                                    <h6>Gestuelle d'application :</h6>
+                                    <p>Toutes peaux même sensibles.<br>
+                                    Sur le corps appliquer matin et soir, idéale en sortie de douche sur peau légèrement humide.<br>
+                                    Pour les cheveux : en masque nourrissant en pose de 5 min avant le shampoing et quelques gouttes sur les pointes avant le brushing. </p>
+                                </div>
+                            </div>
+                        </section>
+                        <!--Sothys card END-->
+
+                        <!--Cassière.B card-->
+                <section id="cardCassiere" class="col-md-6 align-self-start card bg-light mt-4 mx-5" onload="collapsed()" style="width: 30rem;">
+                    <figure style="--c:#fff5">
+                        <img class="card-img-top rounded-3 my-2" src="./assets/img/img6.webp" alt="photo de la gamme Sothys">
+                        <figcaption id="fontCaveat" class="text-center">Bernard Cassière</figcaption>
+                    </figure>
+                    <div class="text-center p-3">
+                        <button id="togg2" type="button" class="btn">Afficher</button>
+                        <!--<button id="togg2" type="button" class="btn">Réduire</button>-->
+                    </div>
+                    <div id="cardContent2" class="card-body">
+                        <h1 id="fontCaveat" class="card-title">Bernard Cassière</h1>
+                        <h2 id="fontCaveat">Composition de la gamme</h2>
+                        <div class="text-start">
+                            <h4 id="fontCaveat" class="font-weight-bolder py-2">Masque en stick pureté</h4>
+                            <p class="card-text text-muted">Véritable soin nomade et mixte, ce masque en stick est parfait pour purifier et matifier les peaux mixtes et grasses. Son format stick innovant est très pratique pour appliquer le masque uniformément sans en mettre partout. Sa formule combine 2 argiles (blanche & verte), un complexe de plantes Bio (menthe, sauge et romarin) ainsi qu'un AHA pour purifier et éliminer les impuretés et rééquilibrer la peau durablement. En 5min top chrono, une peau visiblement plus nette, douce et purifiée !</p>
+                            <h6>Gestuelle d'application :</h6>
+                            <p>2 fois par semaine, appliquer à l'aide du stick sur l'ensemble du visage en insistant sur la zone T. Terminer l'application au doigt pour homogénéiser si besoin. Laisser agir 5min puis rincer à l'eau tiède.</p>
+                        </div>
+                    <div class="text-start">
+                        <h4 id="fontCaveat" class="font-weight-bolder py-2">Concentré de nuit pureté</h4>
+                        <p class="card-text text-muted">Vous n'êtes plus adolescent, et pourtant les imperfections et les points noirs continuent de vous gâcher la vie ? Ce concentré a été spécialement conçu pour faire face aux problématiques des imperfections chez l'adulte. Il agit la nuit pour purifier la peau, la lisser et la rééquilibrer durablement. Le matin les imperfections sont visiblement atténuées, la peau est plus nette, belle et éclatante ! Sa formule contient un complexe de plantes Bio (menthe, sauge et romarin) pour aider à purifier la peau, de l'huile de jojoba pour rééquilibrer, et des AHA pour une peau plus lisse. Un extrait d'algue brune et de l'acide hyaluronique viennent complèter la formule pour aider à lutter contre les signes du vieillissement.</p>
+                        <h6>Gestuelle d'application :</h6>
+                        <p>Aplliquer une noisette le soir sur peau propre avant le coucher, en évitant le contour des yeux.</p>
+                    </div>
+                    <div class="text-start">
+                        <h4 id="fontCaveat" class="font-weight-bolder py-2">Fluide hydratant matité</h4>
+                        <p class="card-text text-muted">Ce fluide mixte est idéal pour hydrater la peau mais aussi la matifier au quotidien grâce à sa texture tout en légèreté ses agents hydratants d'origine naturelle ainsi que l'huile de jojoba. Sa formule contient un complexe de plantes Bio (menthe, sauge et romarin) pour aider à purifier la peau, mais également un extrait de thé de Java pour aider à matifier les zones de brillance. C'est <b>le</b> soin hydratant parfait pour hydrater ni trop, ni trop peu les peaux mixtes à grasses et/ou à imperfections. Sa fraîcheur et sa légèreté sont également très agréables lorsque les températures montent !</p>
+                        <h6>Gestuelle d'application :</h6>
+                        <p>Appliquer une noisette matin et/ou soir sur peau propre pour la réconforter.</p>
+                    </div>
+                    <div class="text-start">
+                        <h4 id="fontCaveat" class="font-weight-bolder py-2">Roll-on SOS pureté</h4>
+                        <p class="card-text text-muted">Un format nomade et malin à emporter partout ! Ce roll-on purifiant assèche les imperfections dès qu'elles apparaissent. Sa formule composée d'un complexe de plantes Bio (menthe, sauge et romarin), d'AHA et de PHA est idéale en application locale pour aider à purifier, réduire et atténuer les imperfections au quotidien. Dans sa trousse de toilette, dans son sac à main, au bureau ... bref on ne le quitte plus !</p>
+                        <h6>Gestuelle d'application :</h6>
+                        <p>Appliquer directement sur les zones concernées au moins une fois par jour et en retouches dans la journée.</p>
+                    </div>
+                    <div class="text-start">
+                        <h4 id="fontCaveat" class="font-weight-bolder py-2">BB stop brillance</h4>
+                        <p class="card-text text-muted">Pour dire stop aux brillances ! Ce soin BB (Blur Balm) au complexe de plantes Bio (menthe, sauge et romarin) est incomparable pour unifier et matifier la peau. Idéal en base de maquillage pour flouter les imperfections et atténuer les brillances. Non gras, toucher doux sans silicone, sa texture étonnante fond sur la peau et la laisse uniforme, douce et veloutée. Sa couleur universelle permet de s'adapter à toutes les carnations avec fini très naturel.</p>
+                        <h6>Gestuelle d'application :</h6>
+                        <p>Après le Fluide hydratant matité, ou votre crème, appliquer par petites touches en insistant sur la zone T et avant le maquillage. Peut aussi s'utiliser en retouche(s) dans la journée.</p>
+                        <p class="border p-3"><b>Pourquoi un bouquet aromatique Bio ?</b><br>Notre <b>bouquet aromatique</b> est composé d'un complexe <b>d'hydrolats de plantes Bio</b> associant de la menthe poivrée, de la sauge et du romarin.<br><b>Qu'est-ce qu'un hydrolat ?</b><br>C'est de <b>l'eau aromatique issue de la distillation d'une plante à la vapeur d'eau.</b> Cette eau est faiblement chargée en molécules aromatiques. <b>Elle est bien tolérée par tous</b> et ne comporte pas de contre-indication en cosmétique.<br>&bull;&nbsp;<b>Hydrolat de menthe poivrée Bio :</b> la menthe poivrée est riche en anti-oxydants et en minéraux. Son hydrolat est connu pour ses propriétés astringentes, tonifiantes et purifiantes. Il est donc idéal pour aider à équilibrer les peaux mixtes à grasses.<br>&bull;&nbsp;<b>Hydrolat de sauge Bio : </b>parfaitement adapté aux peaux mixtes à grasses dont il aide à éliminer le sébum, il est également connu pour lutter contre les imperfections de peau liées au cycle féminin et à la ménopause.<br>&bull;&nbsp;<b>Hydrolat de romarin Bio : </b>le romarin est reconnu depuis des siècles pour ses propriétés antioxydantes et purifiantes. Idéal pour les peaux mixtes à grasses, sujettes aux imperfections, cet hydrolat est parfait pour une action tonifiante et astringente.</p>
+                    </div>
+                    <h2 id="fontCaveat">Soins à l'Orange Sanguine</h2>
+                    <div class="text-start">
+                        <h4 id="fontCaveat" class="font-weight-bolder py-2">EE (Energy Enhancer)crème</h4>
+                        <p class="card-text text-muted">La texture innovante de la EE crème se métamorphose sous vos doigts pour dégriser naturellement votre teint et lui rendre un aspect frais et reposé.</p>
+                        <p><b>Teinté - SPF15 - Hydratante - Anti-rides - Fermeté - Énergie</b></p>
+                        <h6>Gestuelle d'application :</h6>
+                        <p>Appliquer seule ou après la crème (pour les peaux sèches ou deshydratées) sur peau parfaitement propre. Bien étirer la texture, rajouter si besoin du produit pour moduler l'intensité de la teinte.</p>
+                    </div>
+                    <div class="text-start">
+                        <h4 id="fontCaveat" class="font-weight-bolder py-2">Crème hydratante Détox'révélatrice de teint</h4>
+                        <p class="card-text text-muted">Gorgée d'actifs d'origine naturelle, sa texture doucement nacrée fond sous vos doigts et fusionne avec votre carnation pour apporter éclat, fraîcheur et vitalité à votre teint. Elle contient un complexe DETOX' nouvelle génération [extrait d'orange sanguine + extrait d'agrumes up-cyclés + extrait de baies 5 saveurs bio] pour <b>aider à lutter contre les attaques du quotidien en piégeant les polluants urbains et améliorer la qualité de la peau.</b> Un extrait de Manioc a été ajouté pour améliorer la fermeté de la peau, et lui donner un aspect re-dynamisé. Un acide hyaluronique-like végétal complète la formule pour une peau bien hydratée. Jour après jour, la peau parait mieux protégée contre les agressions extérieures comme la pollution, et semble re-vivifiée, comme si elle respirait mieux.</p>
+                        <h6>Gestuelle d'application :</h6>
+                        <p>Appliquer une noisette le matin sur une peau parfaitement propre, seule ou après la crème de soin pour les peaux sèches ou déshydratées.</p>
+                    </div>
+                    <div class="text-start">
+                        <h4 id="fontCaveat" class="font-weight-bolder py-2">Masque Détox'3 en 1 à l'orange sanguine</h4>
+                        <p class="card-text text-muted">Teint terne, peau surmenée ? <b>Ce masque 3 en 1 est la réponse pour un teint plus lumineux et une peau comme réénergisée.</b> Sa formule associe une enzyme naturelle d'ananas, des acides doux de pamplemousse et de la poudre de riz pour éliminer les cellules mortes, les impurtés et les particules de pollution et ainsi révéler une peau plus lisse, un teint moins brouillé, dégrisé, moins fatigué. Il contient un extrait d'orange sanguine et un extrait d'agrumes up-cyclés pour <b>améliorer le lissage et la qualité de la peau.</b></p>
+                        <h6>Gestuelle d'application :</h6>
+                        <p>Appliquer ce masque en couche très fine sur le visage et le cou en évitant le contour des yeux. Laisser poser 3 min, puis réaliser des mouvements circulaires pour chauffer la texture et réaliser un gommage mécanique avec les grains contenus dans la formule. Du bout des doigts, émulsionner le produit une ou plusieurs fois à l'eau tiède. Rincer, puis sècher.</p>
+                    </div>
+                    <div class="text-start">
+                        <h4 id="fontCaveat" class="font-weight-bolder py-2">Sérum Détox'booster d'éclat</h4>
+                        <p class="card-text text-muted">Teint terne, peau surmenée ? <b>Donnez un coup de fouet à votre peau grise et fatiguée avec ce sérum enrichi en dérivé de vitamine C,</b> en acide hyaluronique, et en complexe Détox' nouvelle génération (extrait d'orange sanguine + extrait d'agrumes up-cyclés + extrait de baies 5 saveurs bio). La peau retrouve sa vitalité, parait plus belle, comme réénergisée. <b>Le teint est plus uniforme, plus frais et plus lumineux, comme détoxifié.</b> Les traits du visages sont défatigués, détendus, comme reposés. Sa pipette permet d'adopter un geste professionnel et précis et de délivrer le nombre de gouttes nécessaires.</p>
+                        <h6>Gestuelle d'application :</h6>
+                        <p>En cure booster d'éclat : appliquer quelques gouttes seules ou en combinaison avec votre crème. Cure de soin à renouveler à chaque changement de saison.</p>
+                    </div>
+                    <div class="text-start">
+                        <h4 id="fontCaveat" class="font-weight-bolder py-2">Concentré de nuit Détox'</h4>
+                        <p class="card-text text-muted">Ce concentré de nuit est une huile sèche d'origine naturelle à plus de 99%. Au réveil, le teint est incroyablement frais, la peau est rayonnante, lisse et joliment rebondie.</p>
+                        <h6>Gestuelle d'application :</h6>
+                        <p>Le soir, prélever 4 à 6 gouttes dans le creux de la main et appliquer sur le visage propre avec de doux effleurages. Terminer en plaquant les mains sur le visage pour faire pénétrer l'huile à la chaleur des paumes.</p>
+                        <p class="border p-3"><b>Pourquoi l'orange sanguine ?</b><br>Le complexe Détox'nouvelle génération (Extrait d'orange sanguine + extrait d'agrumes up-cyclés + extrait de baies 5 saveurs bio) : <b>pour détoxifier et donner un coup de boost aux peaux ternes et dévitalisées.</b><br>Pour les peaux atones sans éclat, fatiguées, asphyxiées de cellules mortes et de toxines.</p>
+                    </div>
+                    <h2 id="fontCaveat">Soins au Bambou & Aloe-vera bio</h2>
+                    <div class="text-start">
+                        <h4 id="fontCaveat" class="font-weight-bolder py-2">Crème haute hydratation</h4>
+                        <p class="card-text text-muted">Telle une seconde peau, cette crème fond littéralement sous vos doigts au contact de l'épiderme pour le protéger comme un bouclier. Des extraits naturels de bambou et d'aloe-vera bio, combinés à des agents hydratants (acide hyaluronique etc ...) apportent les vitamines, les mineraux et les acides aminés essentiels à l'éclat de la peau. Un extrait de muguet du Japon, combiné à des phospholipides végétaux, renforcent la fonction barrière pour limiter la perte en eau par évaporation, et favorise l'apport en eau, conférant à la crème son pouvoir hydratant longue durée. La crème contient du beurre de karité pour nourir et assouplir les peaux sèches et déshydratées.</p>
+                        <p><b>Formule particulièrement adaptée aux peaux sèches et déshydratées.</b></p>
+                        <h6>Gestuelle d'application :</h6>
+                        <p>Appliquer le matin sur une peau parfaitement nettoyée. Compléter le soir par l'application de la crème de nuit.</p>
+                    </div>
+                    <div class="text-start">
+                        <h4 id="fontCaveat" class="font-weight-bolder py-2">Crème sorbet haute hydratation</h4>
+                        <p class="card-text text-muted">Légère et aérienne, la texture sorbet de ce soin a été spécialement élaborée pour satisfaire les besoins en eau des peaux mixtes à grasses souffrant de déshydratation. Des extraits naturels de bambou et d'aloe-vera bio, combinés à des agents hydratants (acide hyaluronique...) apportent les vitamines, mineraux, et acides aminés essentiels à l'éclat de la peau. Un extrait de muguet du Japon et de la provitamine-B5 complètent la formule de ce soin pour favoriser l'apport en eau conférant à ce soin son pouvoir hydratant longue durée, restaurer l'aspect "teint frais" et enrayer sur le long terme les sensations de tiraillement.</p>
+                        <p><b>Formule particulièrement adaptée aux peaux mixtes à grasses et déshydratées.</b></p>
+                        <h6>Gestuelle d'application :</h6>
+                        <p>Appliquer le matin sur une peau parfaitement nettoyée. Compléter le soir par l'application de la crème de nuit.</p>
+                    </div>
+                    <div class="text-start">
+                        <h4 id="fontCaveat" class="font-weight-bolder py-2">Masque haute hydratation</h4>
+                        <p class="card-text text-muted">Désaltérez votre peau assoiffée avec ce masque à la texture fraîche et douce ! Spécialement formulé pour satisfaire les besoins spécifiques des peaux très déshydratées, ce masque atténue les sensations d'inconfort et restaure l'éclat et la souplesse. Enrichi en extraits naturels de bambou et d'aloe-vera bio, en agents hydratants (acide hyaluronique etc ...) et en beurre de karité, il n'a pas son pareil pour apporter protection, nutrition et confort.</p>
+                        <h6>Gestuelle d'application :</h6>
+                        <p>Appliquer 2 fois par semaine sur peau propre en couche moyenne, en évitant le contour des yeux. Laisser poser 10 minutes, puis rincer. Peut se conserver au frigo pour maximiser la sensation de fraicheur.</p>
+                    </div>
+                    <div class="text-start">
+                        <h4 id="fontCaveat" class="font-weight-bolder py-2">Aquasleeping - Crème de nuit haute hydratation</h4>
+                        <p class="card-text text-muted">Véritable concentré de technologie, cette crème de nuit réunit le meilleur du végétal & de la science pour agir comme un cocon régénérateur pendant votre sommeil. Sa texture surprenante à mémoire de forme gomme visiblement les traits de fatigue en créant un maillage 3D à la surface de la peau, pour une peau d'aspect plus fraîche et rebondie dès le reveil. Des extraits naturels de bambou et d'aloe-vera bio, combinés à des agents hydratants (acide hyaluronique...) et à une huile de jojoba apportent les vitamines, mineraux et acides aminés essentiels à l'éclat.</p>
+                        <p><b>Formule végan</b></p>
+                        <h6>Gestuelle d'application :</h6>
+                        <p>Appliquer généreusement le soir sur une peau parfaitement nettoyée, laisser l'excédent ou le faire pénétrer par mouvements circulaires.</p>
+                        <p class="border p-3"><b>Pourquoi le bambou et l'aloe-vera Bio ?</b><br>Des extraits naturels de bambou et d'aloe-vera bio, combinés à des agents hydratants pour apporter vitamines, minéraux et acides aminés essentiels à l'éclat de la peau.<br>Pour les peaux présentant un manque d'hydratation, de nutrition, de souplesse et de fermeté.</p>
+                    </div>
+                    <h2 id="fontCaveat">Soins au Muesli</h2>
+                    <div class="text-start">
+                        <h4 id="fontCaveat" class="font-weight-bolder py-2">La crème apaisante quotidienne</h4>
+                        <p class="card-text text-muted">La crème de la crème onctueuse et apaisante pour les peaux sensibilisées. Elle combine l'action du complexe nutritif muesli [extrait d'avoine biologique + probiotiques] avec les bienfaits du beurre de karité biologique et équitable. Sa texture légère et aérienne, qui pénètre parfaitement dans la peau, l'aide à retrouver son confort et la soulage des irritations. Les probiotiques qu'elle contient vont contribuer à renforcer la barrière naturelle de la peau pour qu'elle soit en bonne santé.</p>
+                        <h6>Gestuelle d'application :</h6>
+                        <p>Appliquer une noisette de produit matin et/ou soir sur une peau propre pour la réconforter.</p>
+                    </div>
+                    <div class="text-start">
+                        <h4 id="fontCaveat" class="font-weight-bolder py-2">La crème riche façon Cold cream</h4>
+                        <p class="card-text text-muted">La super-recette pour les peaux healthy ! Cette crème cocooning et réconfortante est un véritable baume ultra-nourrissant à la texture beurre enrichi d'un complexe nutritif muesli [extrait d'avoine biologique + probiotiques], en beurre de karité biologique et équitable et en miel issu de nos ruches à Auriac. C'est la réponse pour les peaux sensibles et sèches. Le miel vient aider à réparer et à soulager directement dès  l'application et tout au long de la journée tandis que le karité vient nourrir et protéger la peau des agressions extérieures.</p>
+                        <h6>Gestuelle d'application :</h6>
+                        <p>Prélever l'équivalent d'une noisette de produit et la répartir en petites touches sur les zones des pommettes, du front et du menton ayant besoin de nutrition et de réparation. Faire pénétrer par de légers mouvements circulaires.</p>
+                    </div>
+                    <div class="text-start">
+                        <h4 id="fontCaveat" class="font-weight-bolder py-2">Le masque apaisant texture Skyr</h4>
+                        <p class="card-text text-muted">Besoin de soulager sa peau de ses rougeurs et des sensations de tiraillement ? Même s'il ne se mange pas ce masque à la texture yaourt skyr nourrit tout de même la peau et lui apporte les nutriments nécessaires à son équilibre. Le visage est enveloppé de douceur grâce au beurre de karité biologique et équitable et l'huile d'amande douce qu'il contient. Le complexe nutritif muesli [extrait d'avoine biologique + probiotiques], quant à lui aide la peau à retrouver son équilibre.</p>
+                        <h6>Gestuelle d'application :</h6>
+                        <p>Appliquer 2 fois par semaine le masque :</p>
+                        <ul>
+                            <li>En couche moyenne sur le visage et le cou. Laisser poser 12 minutes et rincer délicatement avec un gant humidifié.</li>
+                            <li>En couche fine (la peau doit se voir en transparence) sur le visage et le cou. Laisser poser 12 minutes puis faire pénétrer l'excédent ou rincer.</li>
+                        </ul>
+                    </div>
+                    <div class="text-start">
+                        <h4 id="fontCaveat" class="font-weight-bolder py-2">Le sérum SOS rougeurs</h4>
+                        <p class="card-text text-muted"><b>Un soin intensif à la texture légère qui apaise instantanément la peau et la rééquilibre.</b> Il renferme un complexe nutritif muesli [extrait d'avoine biologique + probiotiques] ainsi que des actifs végétaux tels que l'extrait de graine de marronnier et l'alpha-bisabolol. Une synergie d'actifs pour réduire les rougeurs, rééquilibrer la peau et apaiser les irritations. Fini les sensations d'échauffement et les rougeurs tout au long de la journée, la peau est instantanément et durablement apaisée et soulagée. Compléte parfaitement l'utilisation de la <b>cold cream</b> ou de la <b>crème apaisante quotidienne.</b></p>
+                        <h6>Gestuelle d'application :</h6>
+                        <p>Appliquer sur peau propre une noisette de sérum matin et/ou soir sur l'ensemble du visage avant la crème de soin.</p>
+                    </div>
+                    <div class="text-start">
+                        <h4 id="fontCaveat" class="font-weight-bolder py-2">La crème mains nutri-protectrice</h4>
+                        <p class="card-text text-muted">Les mains sont des zones de notre corps les plus soumises aux variations de conditions environnementales : froid, chaleur, vent, eau, pollution ... Pour les protéger toute l'année, cette crème pour les mains combine les bienfaits du complexe nutritif muesli [extrait d'avoine biologique + probiotiques] avec le beurre de karité biologique et équitable et le miel issu de nos ruches à Auriac. La peau nourrie, protégée et adoucie tout en étant enveloppée d'une légère senteur gourmande. Á user et abuser pour le confort de vos mains.</p>
+                        <h6>Gestuelle d'application :</h6>
+                        <p>La crème s'applique sur les mains aussi souvent que nécessaire.</p>
+                    </div>
+                    <div class="text-start">
+                        <h4 id="fontCaveat" class="font-weight-bolder py-2">Le baume lèvre nourrissant au miel</h4>
+                        <p class="card-text text-muted">Les lèvres sont aussi une zone fragile et très soumises aux variations environnementales : froid, chaleur, vent, soleil, eau, pollution, ... Pour les réconforter et les protéger toute l'année, ce baume lèvres combine les bienfaits du beurre de karité bio et équitable, de l'extrait d'avoine bio, de l'alpha-bisabolol et du miel issu de nos ruches à Auriac. Les lèvres sont nourries, protégées et adoucies.</p>
+                        <h6>Gestuelle d'application :</h6>
+                        <p>Appliquer dès que nécessaire sur les lèvres.</p>
+                        <p class="border p-3"><b>Pourquoi le muesli ?</b><br><b>Notre complexe nutritif muesli</b><br>Á la surface de la peau, des millions de bactéries sont présentes naturellement et forment ce que l'on appelle le microbiote. Le déséquilibre de ce microbiote cutané peut être à l'origine de désagréments tels que les sensibilités et la peau sèche et agir comme une véritable agression. Notre solution pour rétablir cet équilibre repose sur 4 actions : minimiser les risques, protéger, traiter et normaliser. Les produits ont donc été pensés avec des formules épurées et validées par un toxicologue. Avec un extrait d'avoine bio pour apaiser, des probiotiques pour aider à rétablir l'équilibre, et du miel de nos ruches en Corrèze pour son super-pouvoir protecteur, la gamme propose la recette "healthy" idéale pour nourrir sa peau de l'extérieur. Les textures développées sont très cocooning grâce aux beurres et huiles végétales qu'elles contiennent comme le karité bio, l'huile de coton et l'huile d'amande douce pour envelopper de douceur les peaux fragilisées.</p>
+                    </div>
+                    <h2 id="fontCaveat">Soins à la Spiruline</h2>
+                    <div class="text-start">
+                        <h4 id="fontCaveat" class="font-weight-bolder py-2">Crème Jeunesse Confort</h4>
+                        <p class="card-text text-muted">La crème présente une action jeunesse grâce à sa teneur en extraits naturels de Spiruline et d'algue brune, supplémentés en extraits d'arbre à papillons et en peptides. <b>Version confort,</b> adaptée aux <b>peaux normales à mixtes.</b></p>
+                        <h6>Gestuelle d'application :</h6>
+                        <p>S'applique tous les jours matin et/ou soir sur le visage et le cou préalablement bien nettoyés.</p>
+                    </div>
+                    <div class="text-start">
+                        <h4 id="fontCaveat" class="font-weight-bolder py-2">Crème Jeunesse Ultra-Confort</h4>
+                        <p class="card-text text-muted">La crème présente une action jeunesse grâce à sa teneur en extraits naturels de Spiruline et d'algue brune, supplémentés en extraits d'arbre à papillons et en peptides. <b>Version ultra-confort,</b> adaptée aux <b>peaux sèches et déshydratées.</b></p>
+                        <h6>Gestuelle d'application :</h6>
+                        <p>S'applique tous les jours matin et/ou soir sur le visage et le cou préalablement bien nettoyés.</p>
+                    </div>
+                    <div class="text-start">
+                        <h4 id="fontCaveat" class="font-weight-bolder py-2">Sérum Jeunesse</h4>
+                        <p class="card-text text-muted">Ce sérum présente une action jeunesse grâce à sa teneur en extraits naturels de Spiruline et d'algue brune, supplémentés en extraits de criste marine et de fougère arborescente, en acide hyaluronique, en peptides et lipopeptides. Il offre ainsi à votre peau un effet repulpant, et une action sur la jeunesse apparente globale permettant d'harmoniser visiblement les traits du visage. Il possède également une action confort apportée par l'huile vierge de jojoba et des extraits végétaux.</p>
+                        <h6>Gestuelle d'application :</h6>
+                        <p>Complémentaire de vos crèmes "jeunesse", il s'applique matin et soir par effleurages sur une peau parfaitement propre, avant la crème.</p>
+                    </div>
+                    <div class="text-start">
+                        <h4 id="fontCaveat" class="font-weight-bolder py-2">Crème Jeunesse Contour des Yeux</h4>
+                        <p class="card-text text-muted">La crème contour des yeux contient des extraits naturels de Spiruline et d'algue brune, combinés à de l'acide hyaluronique, un extrait de fougère arborescente et des peptides jeunesse pour lisser et raffermir le contour de l'oeil et sa paupière mobile. Un extrait d'arbre à papillons et du beurre de karité ont été ajoutés pour redonner une apparence plus tonique à cette zone et bien la protéger.</p>
+                        <h6>Gestuelle d'application :</h6>
+                        <p>Pour un regard qui parait visiblement plus jeune, s'applique matin et soir sur peau propre sur le contour de l'oeil et sur sa paupière mobile. Reproduire les manoeuvres dessinées sur l'étui pour réaliser les bons gestes, comme une professionnelle !</p>
+                    </div>
+                    <div class="text-start">
+                        <h4 id="fontCaveat" class="font-weight-bolder py-2">Crème Jeunesse Corps</h4>
+                        <p class="card-text text-muted">Faire enfin la paix avec votre âge ! <br>On se déculpabilise, et on se sert une généreuse noix de cette crème onctueuse formulée à base d'extraits naturels de Spiruline et d'algue brune pour lisser et rafermir la peau de tout le corps. Du beurre de karité bio et issu du commerce équitable, ainsi qu'une huile vierge de jojoba ont été ajoutés pour apporter douceur, protection, souplesse et élasticité à la peau.</p>
+                        <h6>Gestuelle d'application :</h6>
+                        <p>S'applique quotidiennement sur l'ensemble du corps après la douche (ou le bain), pour un moment de bonheur rien qu'à soi. En cas de journée difficile, doubler la dose !</p>
+                    </div>
+                    <div class="text-start">
+                        <h4 id="fontCaveat" class="font-weight-bolder py-2">DD Crème Jeunesse</h4>
+                        <p class="card-text text-muted"><b>Teintée – Hydratante – Fermeté – Protection lumière bleue</b><br>Parce que nos modes de vie nous exposent de plus en plus à la pollution digitale et aux rayonnements artificiels de nos écrans (lumière bleue), participant à la survenue précoce des signes visibles de l’âge, cette crème est conçue telle un bouclier protecteur grâce à un extrait naturel d’arbre à papillons. Des extraits naturels de Spiruline et de Criste marine, supplémentés par de la vitamine E délivrent une action jeunesse préventive sur l’aspect des ridules, la perte de tonicité et le manque de fermeté. Elle hydrate et apporte confort grâce à du beurre de karité bio et commerce équitable et de l’acide hyaluronique.<br><b>FORMULE VÉGAN</b></p>
+                        <h6>Gestuelle d'application :</h6>
+                        <p>Seule ou après votre crème (pour les peaux sèches et déshydratées), appliquer le matin l’équivalent d’un petit pois par petites touches et effleurages sur le visage et le cou. Bien étirer la crème pour obtenir une teinte uniforme. Excellente base de maquillage, sa teinte discrète « match » avec votre carnation pour unifier le teint, l’illuminer et lui donner un look frais !</p>
+                    </div>
+                    <div class="text-start">
+                        <h4 id="fontCaveat" class="font-weight-bolder py-2">Mud Mask Jeunesse</h4>
+                        <p class="card-text text-muted">Faites enfin la paix avec votre âge ! Et pour vous y aider, ce masque contient un duo d’argiles (argile verte du Puy en Velay + argile blanche), supplémenté en extraits naturels de Spiruline et d’Algue brune pour une action jeunesse globale. En seulement une application par semaine, il atténue l’apparence des rides et ridules, réduit la sensation de sècheresse cutanée, pour une peau plus lisse, d’apparence rebondie, et des traits comme parfaitement détendus.
+                            *Mud-mask = masque argileux</p>
+                        <h6>Gestuelle d'application :</h6>
+                        <p>Appliquer une fois par semaine en couche moyenne sur l’ensemble du visage et du cou, en évitant le contour des yeux. Laisser poser 10 min. Pour un retrait facile, rincer simplement abondamment à l’eau.</p>
+                        <p class="border p-3"><b>Pourquoi la spiruline ?</b><br>La Spiruline est une micro-algue douce, de forme spiralée, qui appartient à la famille des cyanobactéries. En cosmétique, la Spiruline est une des substances les plus efficaces pour freiner visiblement le vieillissement cutané de la peau grâce à ses propriétés anti-oxydantes qui limitent la formation de radicaux libres. De plus, sa teneur en acides gamma-linoléiques permettent d'apporter souplesse, élasticité et douceur à la peau. La spiruline est donc notre meilleur allié pour une jolie peau. La Spiruline utilisée dans les Soins Jeunesse Bernard Cassière est Origine France.</p>
                     </div>
                 </div>
-        </section>
-        <section class="certifications">
-            <h2 id="titleCertifications" class="text-center fontRanchers py-5">Certifications</h2>
-            <a id="certifications" href=""></a>
-            <div class="carousel-control bg-dark text-light text-center py-5">
-                <div class="container">
+            </section>
+            <!--Cassière.B card END-->
+        </div>
+    </section>
+
+    <!--Anchor-->
+    <a id="rdv" href=""></a>
+    <!--Anchor END-->
+    <section class="card-bloc merriweatherFont py-5">
+        <div class="container">
+            <div class="row">
+                <div class="card my-5 border-0 bg-light rounded-5">
                     <div class="row">
-                        <div class="col-mg-12">
-                            <div id="carouselExampleFade" class="carousel slide carousel-fade rounded-4">
-                                <div class="carousel-inner">
-                                    <div class="carousel-item active">
-                                        <img src="./assets/img/carousel/cover.jpg" class="d-block w-100" alt="...">
-                                    </div>
-                                    <div class="carousel-item">
-                                        <img src="./assets/img/carousel/Interface3/Front-end.png" class="d-block w-100" alt="...">
-                                    </div>
-                                    <div class="carousel-item">
-                                        <img src="./assets/img/carousel/LinkedIn/JS/CertificatDaccomplissement_JavaScript La programmation asynchrone .png" class="d-block w-100" alt="...">
-                                    </div>
-                                    <div class="carousel-item">
-                                        <img src="./assets/img/carousel/LinkedIn/JS/CertificatDaccomplissement_JavaScript La programmation orientee objet.png" class="d-block w-100" alt="...">
-                                    </div>
-                                    <div class="carousel-item">
-                                        <img src="./assets/img/carousel/LinkedIn/JS/CertificatDaccomplissement_Lessentiel de JavaScript.png" class="d-block w-100" alt="...">
-                                    </div>
-                                    <div class="carousel-item">
-                                        <img src="./assets/img/carousel/LinkedIn/JS/CertificatDaccomplissement_Lessentiel de jQuery.png" class="d-block w-100" alt="...">
-                                    </div>
-                                    <div class="carousel-item">
-                                        <img src="./assets/img/carousel/LinkedIn/JS/CertificatDaccomplissement_Lessentiel de Node.js.png" class="d-block w-100" alt="...">
-                                    </div>
-                                    <div class="carousel-item">
-                                        <img src="./assets/img/carousel/LinkedIn/JS/CertificatDaccomplissement_Lessentiel de PHP et MySQL.png" class="d-block w-100" alt="...">
-                                    </div>
-                                    <div class="carousel-item">
-                                        <img src="./assets/img/carousel/LinkedIn/JS/CertificatDaccomplissement_Lessentiel de React.js.png" class="d-block w-100" alt="...">
-                                    </div>
-                                    <div class="carousel-item">
-                                        <img src="./assets/img/carousel/LinkedIn/bootstrap.png" class="d-block w-100" alt="...">
-                                    </div>
-                                    <div class="carousel-item">
-                                        <img src="./assets/img/carousel/LinkedIn/css.png" class="d-block w-100" alt="...">
-                                    </div>
-                                    <div class="carousel-item">
-                                        <img src="./assets/img/carousel/LinkedIn/Sass.png" class="d-block w-100" alt="...">
-                                    </div>
-                                    <div class="carousel-item">
-                                        <img src="./assets/img/carousel/LinkedIn/bootstrap.png" class="d-block w-100" alt="...">
-                                    </div>
-                                    <div class="carousel-item">
-                                        <img src="./assets/img/carousel/LinkedIn/les bases de données.png" class="d-block w-100" alt="...">
-                                    </div>
-                                    <div class="carousel-item">
-                                        <img src="./assets/img/carousel/LinkedIn/html.png" class="d-block w-100" alt="...">
-                                    </div>
-                                    <div class="carousel-item">
-                                        <img src="./assets/img/carousel/LinkedIn/Illustrator les logos.png" class="d-block w-100" alt="...">
-                                    </div>
+                        <div class="col-md-6">
+                            <img src="./assets/img/svg/calendar.svg" class="img-fluid rounded-start" alt="Image d'un calendrier">
+                        </div>
+                        <div class="col-md-6">
+                            <div class="card-body justify-content-center">
+                                <h1 id="rdvTitle" class="card-title text-center py-2">Prendre rendez-vous</h1>
+                                <a id="appointment" href="https://booking.optios.net/19311" onclick="openLink()" type="button" class="btn btn-primary" rel="noopener">Prendre rendez-vous</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card my-5 border-0 bg-light rounded-5">
+                        <div class="row">
+                            <div class="col-md-6" id="carteFid">
+                                <img src="./assets/img/svg/carteF.svg" class="img-fluid rounded-start" alt="Dessin de la carte de fidélité">
+                            </div>
+                            <div class="col-md-6">
+                                <div class="card-body justify-content-center" id="sectionFid">
+                                    <h1 id="rdvTitle" class="card-title text-center py-2">Carte de fidélité </h1>
+                                    <h3 class="caveatFont">Un soin = un cachet</h3>
+                                    <p>Au bout de dix soins vous aurez 10% de réduction. Cartes cadeaux à commander en ligne à venir chercher et à payer sur place en cash ou via app ou via virement, en précisant de qui, pour qui et le soin ou le montant offert. Valable 6 mois.</p>
                                 </div>
-                                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
-                                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                                    <span class="visually-hidden">Previous</span>
-                                </button>
-                                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next">
-                                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                                    <span class="visually-hidden">Next</span>
-                                </button>
                             </div>
                         </div>
                     </div>
                 </div>
-            </div>
-            <div class="col-md-2 animationLogo">
-                <img src="./assets/img/svg/Logo.svg" alt="logo circulaire du PortFolio" id="logo">
-            </div>
         </section>
-    </body>
-    <footer class="text-center text-lg-start colorYellow py-5">
-        <section class="">
-          <div class="container text-center text-md-start mt-5">
-                <div class="row mt-3">
-                   <div class="col-md-4 col-lg-4 col-xl-3 mx-auto mb-4">
-                        <p class="text-uppercase fontRanchers fontSizeTitles mb-4 text-center">
-                            <i class="fas fa-gem me-3"></i>Adresse
-                        </p>
-                        <p class="text-center">
-                            Rue Champ Rodange 14, Waterloo
-                        </p>
-                        <div id="mapid" class="container-fluid"></div>
-                    </div>
-                    <div class="col-md-4 col-lg-2 col-xl-2 mx-auto mb-4">
-                        <p class="text-uppercase fontRanchers fontSizeTitles mb-4 text-center">
-                            Réseaux Sociaux
-                        </p>
-                        <div class="justify-content-center mx-5">
-                            <a href="https://github.com/Baboo81"><img class="netWorks px-2" src="../assets/img/svg/footer/PictoGit.svg" alt="Logo de GitHub" /></a>
-                            <a href="https://www.linkedin.com/in/chris-rodriguez-perez-609716100/"><img class="netWorks px-2" src="../assets/img/svg/footer/PictoLinkedIn.svg" alt="Logo de LinkedIn" /></a>
-                        </div>
-                    </div>
-                    <div class="col-md-4 col-lg-2 col-xl-2 mx-auto mb-4">
-                        <p class="text-uppercase fontRanchers fontSizeTitles mb-4 text-center">
-                            Contact
-                        </p>
-                        <div class="justify-content-center mx-5 mt-3">
-                            <a href="mailto:chrisrodriguez@hotmail.be"><img class="netWorks px-2" src="../assets/img/svg/footer/PictoMail.svg" alt="Logo mail" /></a>
-                        </div>
-                    </div>
+</body>
+
+<footer class="text-center text-lg-start bg-dark text-light py-5">
+    <section class="">
+      <div class="container text-center text-md-start mt-5" id="containerFooter">
+        <div class="row mt-3">
+          <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+            <p class="text-uppercase fw-bold mb-4">
+              <i class="fas fa-gem me-3"></i>Adresse
+            </p>
+            <p>
+                Avenue du Fief 12, 1420 Braine-l'Alleud, Belgique
+            </p>
+            <div id="mapid" class="container-fluid"></div>
+          </div>
+          <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+            <p class="text-uppercase fw-bold mb-4">
+              Horaires
+            </p>
+            <div class="">
+                <p>Lundi    09:00 - 19h00</p>
+                <p>Mardi    09:00 - 16h00</p>
+                <p>Mercredi Fermé</p>
+                <p>Jeudi    09h00 - 19h00</p>
+                <p>Vendredi 09h00 - 19h00</p>
+                <p>Samedi   09h00 - 16h00</p>
+                <p>Dimanche Fermé</p>
+            </div>
+          </div>
+          <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+                <p class="text-uppercase fw-bold mb-4">
+                    Réseaux Sociaux
+                </p>
+                <div class="">
+                    <a href="https://www.facebook.com/soinsdesoie"><img class="icons p-3" src="./assets/img/svg/facebook.svg" alt="Icône FaceBook"></a>
+                    <a href="https://www.instagram.com/soins_de_soie_1420"><img class="icons p-3" src="./assets/img/svg/instagram.svg" alt="Icône Instagram"></a>
                 </div>
-            </div>
-        </section>
-            <div class="text-center fontSizeMedium fontRanchers py-3">
-                <p>&copy; Christel Rodriguez Perez - 2024</p>
-            </div>
-      </footer>
+          </div>
+          <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+            <p class="text-uppercase fw-bold mb-4">Coordonnées</p>
+            <p>soinsdesoie1420@gmail.com</p>
+            <p>0472/26.19.93</p>
+            <p>RC  0691.859.626</p>
+          </div>
+        </div>
+      </div>
+    </section>
+        <div class="text-center fw-bolder">
+            <p>&copy; Christel Rodriguez Perez - 2024</p>
+        </div>
+  </footer>
 </html>
