@@ -14,7 +14,7 @@ body
 {
     box-sizing: border-box;
     overflow-x: hidden;
-    background-color: var(--violet);
+    background: var(--violet);
 }
 
 p
@@ -364,32 +364,36 @@ h1:nth-child(4){
 /*Section*/
 .acceuil
 {
+    position: relative;
     background: url(../img/banner/banner1.svg) center center no-repeat;
     background-size: cover;
-    height: 5100px;
+    height: 300em;
 }
 
 .projets
 {
+    position: relative;
     background: url(../img/banner/banner2.svg) center center no-repeat;
     background-size: cover;
-    height: 5500px;
+    height: 320em;
     margin-top: -100%;
 }
 
 .pictos
 {
+    position: relative;
     background: url(../img/banner/banner3.svg) center center no-repeat;
     background-size: cover;
-    height: 6900px;
+    height: 440em;
     margin-top: -130%;
 }
 
 .certifications
 {
+    position: relative;
     background: url(../img/banner/banner4.svg) center center no-repeat;
     background-size: cover;
-    height: 3500px;
+    height: 180em;
     margin-top: -133%;
 }
 /*Section END*/
@@ -535,12 +539,24 @@ footer
 /*Style pour mobile,largeur d'écran inférieur à 480px*/
 @media only screen and (max-width : 480px)
 {
+    /*Nav*/
+    #navbarSupportedContent
+    {
+        background-color: var(--blue);
+    }
+
+    .nav-link:hover
+    {
+        color: var(--violet);
+    }
+    /*Nav END*/
+
     /*MainTitle*/
     .mainTitle
     {
         font-size: .7em;
         margin-top: 20%;
-        margin-left: 40%;
+        margin-left: 48%;
     }
 
     /*Clock*/
@@ -549,10 +565,23 @@ footer
         margin-left: 12%;
     }
 
+    /*Card acceuil*/
+    #cardAcceuil
+    {
+        height: 55em;
+        width: 25em;
+        margin-left: 9%;
+    }
+
+    .img-fluid
+    {
+        padding: auto;
+    }
+
     /*Section*/
     .acceuil
     {
-        height: 6400px;
+        height: 6650px;
     }
 
     .projets
@@ -604,13 +633,106 @@ footer
 }
 
 /*Style pour les tablettes*/
-@media only screen and (min-width : 481px) and (max-width : 768px)
+@media only screen and (min-width : 481px) and (max-width : 810px)
 {
+     /*Nav*/
+     #navbarSupportedContent
+     {
+         background-color: var(--blue);
+     }
+ 
+     .nav-link:hover
+     {
+         color: var(--violet);
+     }
+     /*Nav END*/
+
+    /*MainTitle*/
+    .mainTitle
+    {
+        font-size: .7em;
+        margin-top: 10%;
+        margin-left: 50%;
+    }
+
+     /*Clock*/
+     .clock
+     {
+         margin-left: 20%;
+     }
+
+     /*Section*/
+    .acceuil
+    {
+        height: 380em;
+    }
+
+    .projets
+    {
+        height: 720em;
+        margin-top: -450%;
+    }
+
+    .pictos
+    {
+        height: 700em;
+        margin-top: -930%;
+    }
+
+    .certifications
+    {
+        height: 120em;
+        margin-top: -680%;
+    }
+
+    /*Cards*/
+    .card p 
+    {
+        font-size: .9em;
+    }
+
+    .carousel-control
+    {
+        height: 46em;
+    }
+ 
+    .list-group p
+    {
+        font-size: .9em;
+    }
+}
+
+@media only screen and (min-width : 481px) and (max-width : 991px)
+{
+    /*Nav*/
+    #navbarSupportedContent
+    {
+        background-color: var(--blue);
+    }
+
+    .nav-link:hover
+    {
+        color: var(--violet);
+    }
+    /*Nav END*/
 
 }
 
 /*Style pour les desktop*/
-@media only screen and (min-width : 769px)
-{
+@media only screen and (min-width : 991px) and (max-width : 1288px)
 
+{
+    .nav-link
+    {
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+     /*MainTitle*/
+     .mainTitle
+     {
+         font-size: 1.2em;
+         margin-top: 10%;
+         margin-left: 30%;
+     }
 }
