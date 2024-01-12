@@ -517,31 +517,6 @@ td a
   }
 /*CarouselCertifications END*/
 
-/*Comments*/
-#commentsBloc
-{
-    margin-top: 15%;
-}
-
-.bg-yellow
-{
-    background-color: var(--yellow);
-}
-
-input::placeholder
-{
-    color: var(--violet);
-    font-family: 'Ranchers', sans-serif;
-}
-
-textarea::placeholder
-{
-    text-align: center;
-    color: var(--violet);
-    font-family: 'Ranchers', sans-serif;
-}
-/*Comments END*/
-
   /*Footer*/
 footer
 {
