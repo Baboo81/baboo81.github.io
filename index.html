@@ -78,7 +78,7 @@
                         <div class="card my-5 border-0 rounded-4" id="cardAcceuil">
                                 <div class="row">
                                     <div class="col-md-6">
-                                        <img src="./assets/img/bulles.png" height="555em" width="555em" class="img-fluid mx-3  p-3" alt="Chris faisant des bulles">
+                                        <img src="./assets/img/bulles.png" height="555em" width="555em" class="img-fluid m-3  p-3" alt="Chris faisant des bulles">
                                     </div>
                                     <div class="col-md-6">
                                         <div class="card-body">
