@@ -50,6 +50,8 @@ nav
 .nav-link:hover
 {
     color: var(--blue);
+    transform: scale(1.2);
+    transition: transform 330ms ease-in;
 }
 /*Nav END*/
 
@@ -181,6 +183,13 @@ nav
 #titleCertifications
 {
     font-size: 8em;
+    color: var(--pink);
+    margin-top: 5%;
+}
+
+#titleComments
+{
+    font-size: 4em;
     color: var(--pink);
     margin-top: 5%;
 }
@@ -393,7 +402,7 @@ h1:nth-child(4){
     position: relative;
     background: url(../img/banner/banner4.svg) center center no-repeat;
     background-size: cover;
-    height: 180em;
+    height: 230em;
     margin-top: -133%;
 }
 /*Section END*/
@@ -507,6 +516,31 @@ td a
     right: 0;
   }
 /*CarouselCertifications END*/
+
+/*Comments*/
+#commentsBloc
+{
+    margin-top: 15%;
+}
+
+.bg-yellow
+{
+    background-color: var(--yellow);
+}
+
+input::placeholder
+{
+    color: var(--violet);
+    font-family: 'Ranchers', sans-serif;
+}
+
+textarea::placeholder
+{
+    text-align: center;
+    color: var(--violet);
+    font-family: 'Ranchers', sans-serif;
+}
+/*Comments END*/
 
   /*Footer*/
 footer
