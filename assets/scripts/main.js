@@ -14,7 +14,7 @@ L.marker([50.71036, 4.36889]).addTo(map);
 function clock () {
     //Récupération de : l'heure, des minutes, des secondes:
     const date = new Date();
-    const hours = ((date.getHours() + 11) % 12 + 1);
+    const hours = ((date.getHours() + 11) % 12 + 2);
     const minutes = date.getMinutes();
     const secondes = date.getSeconds();
     //Corréler les valeurs avec les degrés de l'horloge:
