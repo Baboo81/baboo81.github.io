@@ -19,12 +19,13 @@
 <section id="about">
     <div class="">
         <div class="row aboutSection">
-            <div class="about1 col-md-4 d-flex align-items-center justify-content-center">
-                <img class="rounded-2" src="img/other/mySelf2.png" alt="Photo de moi-même">
+            <div class="about1 col-md-5 d-flex align-items-center justify-content-center">
+                <img class="rounded-cercle" src="img/other/mySelf2.png" alt="Photo de moi-même">
             </div>
-            <div class="about2 col-md-8">
+            <div class="about2 col-md-7 d-flex aligne-items-center justify-content-center">
                 <article>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate fuga, ullam ipsam quaerat nemo aperiam itaque, quo illum pariatur molestiae ad nobis rerum similique recusandae! Quia, nulla minima. Eius sapiente doloribus eaque, harum quia repellat assumenda in possimus dolorum sunt recusandae impedit ducimus temporibus ipsam laborum perferendis porro labore reiciendis!</p>
+                    <h3 class="text-center fontBleuVert mt-5">Qui suis-je</h3>
+                    <p>Hello, moi c'est Christel, développeuse web, je suis passionnée par l'informatique depuis mes 12 ans.</p>
                 </article>
             </div>
         </div>

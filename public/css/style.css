@@ -16,6 +16,15 @@ body
     background-color: var(--beige);
 }
 
+h3
+{
+    font-size: 2.5rem;
+}
+
+.fontBleuVert
+{
+    color: var(--bleuVert);
+}
 /* NavBar */
 
 .navbar
@@ -161,7 +170,7 @@ section .hero-content
 
 section .about1
 {
-    background-color: var(--bleuVert);
+    background-color: var(--bleu);
 }
 
 section .about1 img
@@ -172,7 +181,7 @@ section .about1 img
 
 section .about2
 {
-    background-color: var(--bleu);
+    background-color: var(--gris);
 }
 
 /* END Section : about */
