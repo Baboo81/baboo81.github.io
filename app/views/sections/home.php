@@ -3,7 +3,9 @@
 <?php
     use App\data;
 
+    $hero = include __DIR__ . '/../../data/hero.php';
     $about = include __DIR__ . '/../../data/about.php';
+    $projects = include __DIR__ . '/../../data/projects.php';
 ?>
 
 <section id="home">
@@ -13,11 +15,13 @@
             Votre navigateur ne supporte pas les vidéos !  
         </video>
         <div class="hero-content">
-            <h1 class="homeTitle">WEB DEVELOPER</h1>
-            <div class="my-5">
-                <h2 class="homeSecondTitle">Christel</h2>
-                <h2 class="homeSecondTitle">Rodriguez Perez</h2>
-            </div>
+            <?php foreach ($hero as $key2 => $heroTemp): ?>
+                <h1 class="homeTitle"><?php echo $heroTemp['title']; ?></h1>
+                <div class="my-5">
+                    <h2 class="homeSecondTitle"><?php echo $heroTemp['secondTitle1']; ?></h2>
+                    <h2 class="homeSecondTitle"><?php echo $heroTemp['secondTitle2']; ?></h2>
+                </div>
+            <?php endforeach; ?>
         </div>
     </div>
 </section>
@@ -47,33 +51,95 @@
 <section id="projects">
     <div class="row">
         <div class="col-12">
-            <h3 class="text-center fontBleuVert mt-5">Les projets</h3>
+            <div class="my-5">
+                <h3 class="text-center fontBleuVert my-5">Les projets</h3>
+            </div>
             <div class="d-flex align-items-center justify-content-center">
-                <!-- Cards -->   
-                <div class="card" style="width: 20rem;">
-                    <img src="img/projects/Kenko.png" class="card-img-top" alt="Image représentant la page d'accueil du site Kenko">
-                    <div class="card-body">
-                        <h5 class="card-title">Kenko</h5>
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                        <a href="#" class="btn btn-primary">Go somewhere</a>
+                <!-- Cards -->  
+                <?php foreach ($projects as $key3 => $projectsTemp): ?>  
+                <div class="card d-flex flex-column h-100" style="width: 30rem;">
+                    <img src="<?php echo $projectsTemp['card1Img']; ?>" class="card-img-top" alt="Image représentant la page d'accueil du site Kenko">
+                    <div class="card-body d-flex flex-column">
+                        <h5 class="card-title"><?php echo $projectsTemp['card1Title']; ?></h5>
+                        <p class="card-text text-muted"><?php echo $projectsTemp['card1Txt']; ?></p>
+                        <h6 class="text-center my-3">Technologies utilisées</h6>
+                        <div class="text-center mt-auto">
+                            <button class="button"><?php echo $projectsTemp['card1Btn1']; ?></button>
+                            <button class="button"><?php echo $projectsTemp['card1Btn2']; ?></button>
+                        </div>
                     </div>
                 </div>
-                <div class="card" style="width: 20rem;">
-                    <img src="img/projects/SoinsDeSoie.png" class="card-img-top" alt="Image représentant la page d'accueil du site SoinsDeSoie">
-                    <div class="card-body">
-                        <h5 class="card-title">Kenko</h5>
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                        <a href="#" class="btn btn-primary">Go somewhere</a>
+                <div class="card d-flex flex-column h-100 mx-5" style="width: 30rem;">
+                    <img src="<?php echo $projectsTemp['card2Img']; ?>" class="card-img-top" alt="Image représentant la page d'accueil du site SoinsDeSoie">
+                    <div class="card-body d-flex flex-column">
+                        <h5 class="card-title"><?php echo $projectsTemp['card2Title']; ?></h5>
+                        <p class="card-text text-muted"><?php echo $projectsTemp['card2Txt']; ?></p>
+                        <h6 class="text-center my-3">Technologies utilisées</h6>
+                        <div class="mt-auto text-center">
+                            <button class="button"><?php echo $projectsTemp['card2Btn1']; ?></button>
+                            <button class="button"><?php echo $projectsTemp['card2Btn2']; ?></button>
+                        </div>
                     </div>
                 </div>
-                <div class="card" style="width: 20rem;">
-                    <img src="img/projects/Souffle.png" class="card-img-top" alt="Image représentant la page d'accueil du site Souffle d'équilibre">
-                    <div class="card-body">
-                        <h5 class="card-title">Kenko</h5>
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                        <a href="#" class="btn btn-primary">Go somewhere</a>
+                <div class="card d-flex flex-column h-100" style="width: 30rem;">
+                <img src="<?php echo $projectsTemp['card3Img']; ?>" class="card-img-top" alt="Image représentant la page d'accueil du site SoinsDeSoie">
+                    <div class="card-body d-flex flex-column">
+                        <h5 class="card-title"><?php echo $projectsTemp['card3Title']; ?></h5>
+                        <p class="card-text text-muted"><?php echo $projectsTemp['card3Txt']; ?></p>
+                        <h6 class="text-center my-3">Technologies utilisées</h6>
+                        <div class="mt-auto text-center">
+                            <button class="button"><?php echo $projectsTemp['card3Btn1']; ?></button>
+                            <button class="button"><?php echo $projectsTemp['card3Btn2']; ?></button>
+                        </div>
                     </div>
                 </div>
+                <?php endforeach; ?>
+                <!-- END Cards -->  
+            </div>
+        </div>
+    </div>
+    <div class="row my-5">
+        <div class="col-12">
+            <div class="d-flex align-items-center justify-content-center">
+                <!-- Cards -->  
+                <?php foreach ($projects as $key3 => $projectsTemp): ?>  
+                <div class="card d-flex flex-column h-100" style="width: 30rem;">
+                    <img src="<?php echo $projectsTemp['card4Img']; ?>" class="card-img-top" alt="Image représentant la page d'accueil du site Kenko">
+                    <div class="card-body d-flex flex-column">
+                        <h5 class="card-title"><?php echo $projectsTemp['card4Title']; ?></h5>
+                        <p class="card-text text-muted"><?php echo $projectsTemp['card4Txt']; ?></p>
+                        <h6 class="text-center my-3">Technologies utilisées</h6>
+                        <div class="text-center mt-auto">
+                            <button class="button"><?php echo $projectsTemp['card4Btn1']; ?></button>
+                            <button class="button"><?php echo $projectsTemp['card4Btn2']; ?></button>
+                        </div>
+                    </div>
+                </div>
+                <div class="card d-flex flex-column h-100 mx-5" style="width: 30rem;">
+                    <img src="<?php echo $projectsTemp['card2Img']; ?>" class="card-img-top" alt="Image représentant la page d'accueil du site SoinsDeSoie">
+                    <div class="card-body d-flex flex-column">
+                        <h5 class="card-title"><?php echo $projectsTemp['card2Title']; ?></h5>
+                        <p class="card-text text-muted"><?php echo $projectsTemp['card2Txt']; ?></p>
+                        <h6 class="text-center my-3">Technologies utilisées</h6>
+                        <div class="mt-auto text-center">
+                            <button class="button"><?php echo $projectsTemp['card2Btn1']; ?></button>
+                            <button class="button"><?php echo $projectsTemp['card2Btn2']; ?></button>
+                        </div>
+                    </div>
+                </div>
+                <div class="card d-flex flex-column h-100" style="width: 30rem;">
+                <img src="<?php echo $projectsTemp['card3Img']; ?>" class="card-img-top" alt="Image représentant la page d'accueil du site SoinsDeSoie">
+                    <div class="card-body d-flex flex-column">
+                        <h5 class="card-title"><?php echo $projectsTemp['card3Title']; ?></h5>
+                        <p class="card-text text-muted"><?php echo $projectsTemp['card3Txt']; ?></p>
+                        <h6 class="text-center my-3">Technologies utilisées</h6>
+                        <div class="mt-auto text-center">
+                            <button class="button"><?php echo $projectsTemp['card3Btn1']; ?></button>
+                            <button class="button"><?php echo $projectsTemp['card3Btn2']; ?></button>
+                        </div>
+                    </div>
+                </div>
+                <?php endforeach; ?>
                 <!-- END Cards -->  
             </div>
         </div>

@@ -24,6 +24,12 @@ h3
     font-size: 2.5rem;
 }
 
+h6
+{
+    font-size: 1.5rem;
+    color: var(--bleuVert);
+}
+
 p
 {
     font-family: "Bodoni Moda", serif;
@@ -45,7 +51,7 @@ p
 .button
 {
     height: 50px;
-    width: 200px;
+    min-width: 150px;
     border: 1px solid var(--blanc);
     border-radius: 24px;
     background-color: var(--bleuVert);
@@ -192,7 +198,6 @@ section .hero-content
 /* END Section : home */
 
 /* Section : about */
-
 .about
 {
     min-height: 500px;
@@ -218,8 +223,33 @@ section .about2 article
 {
     padding: 80px 30px 30px 100px;
 }
-
 /* END Section : about */
+
+/* Section : projects */
+section .card
+{
+    min-height: 40rem;
+}
+
+section .card-title
+{
+    color: var(--bleuVert);
+    font-size: 2rem;
+    text-align: center;
+}
+
+section .card-text
+{
+    font-size: 1.3rem;
+    text-align: center;
+}
+
+section .card-body
+{
+    background-color: var(--bleuC);
+}
+
+/* END Section : projects */
 
 /* media queries */
 /*NavBar*/
