@@ -39,7 +39,7 @@
                                 <a class="nav-link active" aria-current="page" href="/" data-section="home">Accueil</a>
                             </li>
                             <li class="nav-item mx-5">
-                                <a class="nav-link" href="sections/about" data-section="about">Qui suis-je ?</a>
+                                <a class="nav-link" href="#" data-section="about">Qui suis-je ?</a>
                             </li>
                             <li class="nav-item mx-5">
                                 <a class="nav-link" href="#" data-section="skills">Skills</a>
