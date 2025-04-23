@@ -164,6 +164,12 @@ section .about1
     background-color: var(--bleuVert);
 }
 
+section .about1 img
+{
+    margin-top: 15%;
+    margin-bottom: 15%;
+}
+
 section .about2
 {
     background-color: var(--bleu);

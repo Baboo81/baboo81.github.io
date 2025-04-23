@@ -19,8 +19,8 @@
 <section id="about">
     <div class="">
         <div class="row aboutSection">
-            <div class="about1 col-md-4">
-                <img src="" alt="Photo de moi-même">
+            <div class="about1 col-md-4 d-flex align-items-center justify-content-center">
+                <img class="rounded-2" src="img/other/mySelf2.png" alt="Photo de moi-même">
             </div>
             <div class="about2 col-md-8">
                 <article>
