@@ -24,6 +24,13 @@ h3
     font-size: 2.5rem;
 }
 
+h5
+{
+    font-size: 1.8rem;
+    color: var(--bleuVert);
+    text-align: center;
+}
+
 h6
 {
     font-size: 1.5rem;
@@ -257,9 +264,21 @@ footer
     background-color: var(--vert);
 }
 
+footer p
+{
+    color: var(--bleuVert);
+    text-align: center;
+}
+
+footer small
+{
+    color: var(--bleuVert);
+    font-weight: bold;
+}
+
 footer #mapid
 {
-    height: 300px;
+    height: 350px;
 }
 /* END : Footer */
 
