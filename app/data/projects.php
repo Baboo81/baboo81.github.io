@@ -36,6 +36,14 @@ return [
          'card4Btn2' => 'Code',
          // END Card 4
 
+         // Card 5
+         'card5Img' => '/../../img/projects/amme.png',
+         'card5Title' => 'Master Mind',
+         'card5Txt' => 'Création du jeu Master Mind en langage C++',
+         'card5Btn1' => 'Run',
+         'card5Btn2' => 'Code',
+         // END Card 5
+
     ], 
 ];
 

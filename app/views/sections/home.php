@@ -118,12 +118,12 @@
                 <div class="card d-flex flex-column h-100 mx-5" style="width: 30rem;">
                     <img src="<?php echo $projectsTemp['card2Img']; ?>" class="card-img-top" alt="Image représentant la page d'accueil du site SoinsDeSoie">
                     <div class="card-body d-flex flex-column">
-                        <h5 class="card-title"><?php echo $projectsTemp['card2Title']; ?></h5>
-                        <p class="card-text text-muted"><?php echo $projectsTemp['card2Txt']; ?></p>
+                        <h5 class="card-title"><?php echo $projectsTemp['card5Title']; ?></h5>
+                        <p class="card-text text-muted"><?php echo $projectsTemp['card5Txt']; ?></p>
                         <h6 class="text-center my-3">Technologies utilisées</h6>
                         <div class="mt-auto text-center">
-                            <button class="button"><?php echo $projectsTemp['card2Btn1']; ?></button>
-                            <button class="button"><?php echo $projectsTemp['card2Btn2']; ?></button>
+                            <button class="button"><?php echo $projectsTemp['card5Btn1']; ?></button>
+                            <button class="button"><?php echo $projectsTemp['card5Btn2']; ?></button>
                         </div>
                     </div>
                 </div>

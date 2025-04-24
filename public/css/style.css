@@ -248,8 +248,20 @@ section .card-body
 {
     background-color: var(--bleuC);
 }
-
 /* END Section : projects */
+
+/* Footer */
+footer
+{
+    min-height: 500px;
+    background-color: var(--vert);
+}
+
+footer #mapid
+{
+    height: 300px;
+}
+/* END : Footer */
 
 /* media queries */
 /*NavBar*/

@@ -20,45 +20,11 @@ function clock () {
     setInterval(clock, 1000);
 
 
-// Liste des sections correspondant aux pages
-let sections = ["home", "about", "skills", "picto", "stage", "certif"];
+//Footer : Map
+//Create map:
+const centroid = [50.71036, 4.36889];
+const map = L.map('mapid').setView(centroid, 16.4);
 
-// Fonction pour charger dynamiquement le contenu d'une section
-function loadSection(section) {
-    if (sections.includes(section)) {
-        // Utilisation de fetch pour récupérer le contenu de la section (par exemple, 'about.php')
-        fetch(`${section}.php`)  // Par exemple, 'about.php'
-            .then(response => response.text())
-            .then(data => {
-                // Injecter le contenu de la page dans la div appropriée
-                document.getElementById("sections-container").innerHTML = data;
-            })
-            .catch(error => {
-                console.error('Erreur de chargement de la section:', error);
-            });
-    }
-}
-
-// Fonction pour gérer le défilement et charger les sections
-function onScroll() {
-    // Récupérer la position actuelle du scroll
-    const scrollPosition = window.scrollY;
-
-    // Vérifier dans quelle section on se trouve et charger la section correspondante
-    if (scrollPosition < document.getElementById('about').offsetTop) {
-        loadSection("home");
-    } else if (scrollPosition >= document.getElementById('about').offsetTop && scrollPosition < document.getElementById('skills').offsetTop) {
-        loadSection("about");
-    } else if (scrollPosition >= document.getElementById('skills').offsetTop && scrollPosition < document.getElementById('picto').offsetTop) {
-        loadSection("skills");
-    } else if (scrollPosition >= document.getElementById('picto').offsetTop && scrollPosition < document.getElementById('stage').offsetTop) {
-        loadSection("picto");
-    } else if (scrollPosition >= document.getElementById('stage').offsetTop && scrollPosition < document.getElementById('certif').offsetTop) {
-        loadSection("stage");
-    } else if (scrollPosition >= document.getElementById('certif').offsetTop) {
-        loadSection("certif");
-    }
-}
-
-// Attacher l'événement de défilement
-window.addEventListener('scroll', onScroll);
+//Add tiles & marker:
+L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png').addTo(map);
+L.marker([50.71036, 4.36889]).addTo(map);
