@@ -42,7 +42,7 @@
                                 <a class="nav-link" href="#" data-section="about">Qui suis-je ?</a>
                             </li>
                             <li class="nav-item mx-5">
-                                <a class="nav-link" href="#" data-section="skills">Skills</a>
+                                <a class="nav-link" href="#" data-section="skills">Projets</a>
                             </li>
                             <li class="nav-item logo-container mx-5">
                                 <img src="/img/logo/Logo.svg" class="logo" alt="Logo du site">

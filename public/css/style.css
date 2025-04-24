@@ -83,6 +83,8 @@ p
     position: fixed;
     top: 10;
     z-index: 1000;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    opacity: 80%;
 }
 
 .navbar li a
