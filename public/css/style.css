@@ -239,6 +239,7 @@ section .about2 article
 section .card
 {
     min-height: 40rem;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
 
 section .card-title
@@ -298,13 +299,14 @@ section .bloc2
 /* Section : Skills */
 section .skills-container
 {
-    min-height: 400px;
+    min-height: 600px;
 }
 
 .animationPictos-container
 {
     width: 100%;
     position: absolute;
+    margin-top: 5%;
     overflow: hidden;
 }
 
@@ -317,7 +319,7 @@ section .skills-container
 
 .animationPictos-tracks img
 {
-    height: 60px;
+    height: 90px;
     margin: 0 20px;
 }
 
