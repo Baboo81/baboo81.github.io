@@ -248,4 +248,14 @@
     </div>
 </section>
 
+<section id="skills">
+    <div class="row">
+        <div class="col-12">
+            <div class="my-5">
+                <h3 class="text-center fontBleuVert my-5">Les technologies utilisées</h3>
+            </div>
+        </div>
+    </div>
+</section>
+
 <?php include __DIR__ . '/../partials/footer.php'; ?>
