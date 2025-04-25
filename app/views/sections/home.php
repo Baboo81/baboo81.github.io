@@ -7,6 +7,7 @@
     $about = include __DIR__ . '/../../data/about.php';
     $projects = include __DIR__ . '/../../data/projects.php';
     $stage = include __DIR__ . '/../../data/stage.php';
+    $skills = include __DIR__ . '/../../data/skills.php';
 ?>
 
 <section id="home">
@@ -250,9 +251,28 @@
 
 <section id="skills">
     <div class="row">
-        <div class="col-12">
+        <div class="col-12 skills-container">
             <div class="my-5">
                 <h3 class="text-center fontBleuVert my-5">Les technologies utilisées</h3>
+            </div>
+            <div class="animationPictos-container">
+                <?php foreach ($skills as $key5 => $skillsTemp): ?>
+                <div class="animationPictos-tracks">
+                    <img src="<?php echo $skillsTemp['img1']; ?>" alt="Picto représentant Angular">
+                    <img src="<?php echo $skillsTemp['img2']; ?>" alt="Picto représentant Bootstrap5">
+                    <img src="<?php echo $skillsTemp['img3']; ?>" alt="Picto représentant CSS3">
+                    <img src="<?php echo $skillsTemp['img4']; ?>" alt="Picto représentant HTML5">
+                    <img src="<?php echo $skillsTemp['img5']; ?>" alt="Picto représentant Adobe Illustrator">
+                    <img src="<?php echo $skillsTemp['img6']; ?>" alt="Picto représentant JavaScript">
+                    <img src="<?php echo $skillsTemp['img7']; ?>" alt="Picto représentant Laravel">
+                    <img src="<?php echo $skillsTemp['img8']; ?>" alt="Picto représentant Linux">
+                    <img src="<?php echo $skillsTemp['img9']; ?>" alt="Picto représentant Adobe PhotoShop">
+                    <img src="<?php echo $skillsTemp['img10']; ?>" alt="Picto représentant PHP">
+                    <img src="<?php echo $skillsTemp['img11']; ?>" alt="Picto représentant React">
+                    <img src="<?php echo $skillsTemp['img12']; ?>" alt="Picto représentant Sass">
+                    <img src="<?php echo $skillsTemp['img13']; ?>" alt="Picto représentant Adobe XD">
+                </div>
+                <?php endforeach; ?>
             </div>
         </div>
     </div>

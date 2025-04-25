@@ -295,6 +295,42 @@ section .bloc2
 }
 /* END Section : Stage */
 
+/* Section : Skills */
+section .skills-container
+{
+    min-height: 400px;
+}
+
+.animationPictos-container
+{
+    width: 100%;
+    position: absolute;
+    overflow: hidden;
+}
+
+.animationPictos-tracks
+{
+    display: flex;
+    width: max-content;
+    animation: scroll-right 20s linear infinite;
+}
+
+.animationPictos-tracks img
+{
+    height: 60px;
+    margin: 0 20px;
+}
+
+@keyframes scroll-right {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(100%);
+    }
+  }
+/* END Section : Skills */
+
 /* Footer */
 footer
 {
