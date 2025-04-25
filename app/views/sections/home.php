@@ -6,6 +6,7 @@
     $hero = include __DIR__ . '/../../data/hero.php';
     $about = include __DIR__ . '/../../data/about.php';
     $projects = include __DIR__ . '/../../data/projects.php';
+    $stage = include __DIR__ . '/../../data/stage.php';
 ?>
 
 <section id="home">
@@ -184,6 +185,65 @@
                     </button>
                 </div>
             </div>
+        </div>
+    </div>
+</section>
+
+<section id="stage">
+    <div class="">
+        <div class="row stageSection">
+        <?php foreach ($stage as $key4 => $stageTemp): ?>
+            <div class="bloc1 col-md-6 d-flex aligne-items-center justify-content-center p-5">
+                <article class="text-center">
+                    <h3 class="text-center fontBleuVert mt-5"><?php echo $stageTemp['title']; ?></h3>
+                    <p class="fontBleuVert mt-5"><?php echo $stageTemp['p1']; ?></p>
+                    <p class="fontBleuVert mt-3"><?php echo $stageTemp['p2']; ?></p>
+                </article>
+            </div>
+            <div class="bloc2 col-md-6 d-flex align-items-center justify-content-center">
+                <article class="text-center">
+                    <h3 class="text-center fontBleuVert my-3"><?php echo $stageTemp['title2']; ?></h3>
+                        <div class="accordion accordion-flush" id="accordionFlushExample">
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="flush-headingOne">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                                    <?php echo $stageTemp['link1']; ?>
+                                    </button>
+                                </h2>
+                                <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+                                <div class="accordion-body">
+                                    <?php echo $stageTemp['accordionTxtLink1']; ?>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="flush-headingTwo">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                                <?php echo $stageTemp['link2']; ?>
+                                </button>
+                            </h2>
+                            <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
+                                <div class="accordion-body">
+                                    <?php echo $stageTemp['accordionTxtLink2']; ?>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="flush-headingThree">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+                                    <?php echo $stageTemp['link3']; ?>
+                                </button>
+                            </h2>
+                            <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
+                                <div class="accordion-body">
+                                    <?php echo $stageTemp['accordionTxtLink3']; ?>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        <?php endforeach; ?>
         </div>
     </div>
 </section>

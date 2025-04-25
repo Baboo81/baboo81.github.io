@@ -282,6 +282,18 @@ section .custom-carousel .carousel-item img
 }
 /* END Section : Pictos */
 
+/* Section : Stage */
+section .bloc1
+{
+    background-color: var(--bleuC);
+}
+
+section .bloc2
+{
+    background-color: var(--bleu);
+}
+/* END Section : Stage */
+
 /* Footer */
 footer
 {
