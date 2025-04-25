@@ -67,7 +67,7 @@
                                 <a class="nav-link" href="#" data-section="stage">Stage</a>
                             </li>
                             <li class="nav-item mx-5">
-                                <a class="nav-link" href="#" data-section="certif">Certifications</a>
+                                <a class="nav-link" href="#" data-section="certif">Technologies</a>
                             </li>
                         </ul>
                     </div>

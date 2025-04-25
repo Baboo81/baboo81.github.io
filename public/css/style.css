@@ -259,11 +259,34 @@ section .card-body
 }
 /* END Section : projects */
 
+/* Section : Pictos */
+section .sliderContent
+{
+    background-color: var(--vert);
+    min-height: 1000px;
+}
+
+section .custom-carousel
+{
+    max-width: 600px;
+    height: 750px;
+    margin: auto;
+    overflow: hidden;
+}
+
+section .custom-carousel .carousel-item img
+{
+    height: 100%;             /* Remplit toute la hauteur */
+    width: 100%;              /* Remplit toute la largeur */
+    object-fit: cover; 
+}
+/* END Section : Pictos */
+
 /* Footer */
 footer
 {
     min-height: 500px;
-    background-color: var(--vert);
+    background-color: var(--gris);
 }
 
 footer p
