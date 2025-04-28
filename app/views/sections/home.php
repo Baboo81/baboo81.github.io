@@ -258,19 +258,11 @@
             <div class="animationPictos-container">
                 <?php foreach ($skills as $key5 => $skillsTemp): ?>
                 <div class="animationPictos-tracks">
-                    <img src="<?php echo $skillsTemp['img1']; ?>" alt="Picto représentant Angular">
-                    <img src="<?php echo $skillsTemp['img2']; ?>" alt="Picto représentant Bootstrap5">
-                    <img src="<?php echo $skillsTemp['img3']; ?>" alt="Picto représentant CSS3">
-                    <img src="<?php echo $skillsTemp['img4']; ?>" alt="Picto représentant HTML5">
-                    <img src="<?php echo $skillsTemp['img5']; ?>" alt="Picto représentant Adobe Illustrator">
-                    <img src="<?php echo $skillsTemp['img6']; ?>" alt="Picto représentant JavaScript">
-                    <img src="<?php echo $skillsTemp['img7']; ?>" alt="Picto représentant Laravel">
-                    <img src="<?php echo $skillsTemp['img8']; ?>" alt="Picto représentant Linux">
-                    <img src="<?php echo $skillsTemp['img9']; ?>" alt="Picto représentant Adobe PhotoShop">
-                    <img src="<?php echo $skillsTemp['img10']; ?>" alt="Picto représentant PHP">
-                    <img src="<?php echo $skillsTemp['img11']; ?>" alt="Picto représentant React">
-                    <img src="<?php echo $skillsTemp['img12']; ?>" alt="Picto représentant Sass">
-                    <img src="<?php echo $skillsTemp['img13']; ?>" alt="Picto représentant Adobe XD">
+                    <?php for ($repeat = 0; $repeat < 3; $repeat++): ?>
+                        <?php for ($i = 1; $i <= 13; $i++): ?>
+                            <img src="<?php echo $skillsTemp['img' . $i]; ?>" alt="Picto représentant <?php echo $skillsTemp['img' . $i]; ?>">
+                        <?php endfor; ?>
+                    <?php endfor; ?>
                 </div>
                 <?php endforeach; ?>
             </div>

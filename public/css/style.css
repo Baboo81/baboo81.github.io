@@ -305,29 +305,44 @@ section .skills-container
 .animationPictos-container
 {
     width: 100%;
-    position: absolute;
-    margin-top: 5%;
     overflow: hidden;
+    position: relative;
+    background-color: var(--vert); /* Couleur de fond (modifiable) */
+    padding: 30px 0; /* Un petit peu d'air autour si tu veux */
+    margin-top: 7%;
 }
-
 .animationPictos-tracks
 {
     display: flex;
     width: max-content;
-    animation: scroll-right 20s linear infinite;
+    animation: scroll-right 30s linear infinite;
 }
 
 .animationPictos-tracks img
 {
     height: 90px;
-    margin: 0 20px;
+    margin: 0 40px;
+    object-position: contain;
+    transition: transform 0.3s ease;
+}
+
+.animationPictos-container img:hover
+{
+    transform: scale(1.2);
+}
+
+.animationPictos-container:hover .animationPictos-tracks
+{
+    animation-play-state: paused;
 }
 
 @keyframes scroll-right {
-    0% {
+    0% 
+    {
       transform: translateX(0);
     }
-    100% {
+    100% 
+    {
       transform: translateX(100%);
     }
   }
