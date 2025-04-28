@@ -51,47 +51,53 @@
 </section>
 
 <section id="projects">
-    <div class="row">
-        <div class="col-12">
+    <div class="container-fluid">
+        <div class="row">
             <div class="my-5">
                 <h3 class="text-center fontBleuVert my-5">Les projets</h3>
             </div>
-            <div class="d-flex align-items-center justify-content-center">
+            <div class="justify-content-center">
                 <!-- Cards -->  
                 <?php foreach ($projects as $key3 => $projectsTemp): ?>  
-                <div class="card d-flex flex-column h-100" style="width: 30rem;">
-                    <img src="<?php echo $projectsTemp['card1Img']; ?>" class="card-img-top" alt="Image représentant la page d'accueil du site Kenko">
-                    <div class="card-body d-flex flex-column">
-                        <h5 class="card-title"><?php echo $projectsTemp['card1Title']; ?></h5>
-                        <p class="card-text text-muted"><?php echo $projectsTemp['card1Txt']; ?></p>
-                        <h6 class="text-center my-3">Technologies utilisées</h6>
-                        <div class="text-center mt-auto">
-                            <button class="button"><?php echo $projectsTemp['card1Btn1']; ?></button>
-                            <button class="button"><?php echo $projectsTemp['card1Btn2']; ?></button>
+                <div class="col-12 col-md-6 col-lg-4 mb-4">
+                    <div class="card d-flex flex-column h-100 w-100">
+                        <img src="<?php echo $projectsTemp['card1Img']; ?>" class="card-img-top" alt="Image représentant la page d'accueil du site Kenko">
+                        <div class="card-body d-flex flex-column">
+                            <h5 class="card-title"><?php echo $projectsTemp['card1Title']; ?></h5>
+                            <p class="card-text text-muted"><?php echo $projectsTemp['card1Txt']; ?></p>
+                            <h6 class="text-center my-3">Technologies utilisées</h6>
+                            <div class="text-center mt-auto d-flex flex-wrap justify-content-center gap-2">
+                                <button class="button"><?php echo $projectsTemp['card1Btn1']; ?></button>
+                                <button class="button"><?php echo $projectsTemp['card1Btn2']; ?></button>
+                            </div>
                         </div>
                     </div>
                 </div>
-                <div class="card d-flex flex-column h-100 mx-5" style="width: 30rem;">
-                    <img src="<?php echo $projectsTemp['card2Img']; ?>" class="card-img-top" alt="Image représentant la page d'accueil du site SoinsDeSoie">
-                    <div class="card-body d-flex flex-column">
-                        <h5 class="card-title"><?php echo $projectsTemp['card2Title']; ?></h5>
-                        <p class="card-text text-muted"><?php echo $projectsTemp['card2Txt']; ?></p>
-                        <h6 class="text-center my-3">Technologies utilisées</h6>
-                        <div class="mt-auto text-center">
-                            <button class="button"><?php echo $projectsTemp['card2Btn1']; ?></button>
-                            <button class="button"><?php echo $projectsTemp['card2Btn2']; ?></button>
+                <div class="col-12 col-md-6 col-lg-4 mb-4">
+                    <div class="card d-flex flex-column h-100 w-100">
+                        <img src="<?php echo $projectsTemp['card2Img']; ?>" class="card-img-top" alt="Image représentant la page d'accueil du site Kenko">
+                        <div class="card-body d-flex flex-column">
+                            <h5 class="card-title"><?php echo $projectsTemp['card2Title']; ?></h5>
+                            <p class="card-text text-muted"><?php echo $projectsTemp['card2Txt']; ?></p>
+                            <h6 class="text-center my-3">Technologies utilisées</h6>
+                            <div class="text-center mt-auto d-flex flex-wrap justify-content-center gap-2">
+                                <button class="button"><?php echo $projectsTemp['card2Btn1']; ?></button>
+                                <button class="button"><?php echo $projectsTemp['card2Btn2']; ?></button>
+                            </div>
                         </div>
                     </div>
                 </div>
-                <div class="card d-flex flex-column h-100" style="width: 30rem;">
-                <img src="<?php echo $projectsTemp['card3Img']; ?>" class="card-img-top" alt="Image représentant la page d'accueil du site SoinsDeSoie">
-                    <div class="card-body d-flex flex-column">
-                        <h5 class="card-title"><?php echo $projectsTemp['card3Title']; ?></h5>
-                        <p class="card-text text-muted"><?php echo $projectsTemp['card3Txt']; ?></p>
-                        <h6 class="text-center my-3">Technologies utilisées</h6>
-                        <div class="mt-auto text-center">
-                            <button class="button"><?php echo $projectsTemp['card3Btn1']; ?></button>
-                            <button class="button"><?php echo $projectsTemp['card3Btn2']; ?></button>
+                <div class="col-12 col-md-6 col-lg-4 mb-4">
+                    <div class="card d-flex flex-column h-100 w-100">
+                        <img src="<?php echo $projectsTemp['card3Img']; ?>" class="card-img-top" alt="Image représentant la page d'accueil du site Kenko">
+                        <div class="card-body d-flex flex-column">
+                            <h5 class="card-title"><?php echo $projectsTemp['card3Title']; ?></h5>
+                            <p class="card-text text-muted"><?php echo $projectsTemp['card3Txt']; ?></p>
+                            <h6 class="text-center my-3">Technologies utilisées</h6>
+                            <div class="text-center mt-auto d-flex flex-wrap justify-content-center gap-2">
+                                <button class="button"><?php echo $projectsTemp['card3Btn1']; ?></button>
+                                <button class="button"><?php echo $projectsTemp['card3Btn2']; ?></button>
+                            </div>
                         </div>
                     </div>
                 </div>
