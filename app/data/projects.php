@@ -4,46 +4,48 @@ namespace App\data;
 
 return [
     'projects' => [
-        // Card 1
-        'card1Img' => '/../../img/projects/Kenko.png',
-        'card1Title' => 'Kenko',
-        'card1Txt' => 'Le site Kenko est mon site personnel, il présente mes activités de webmaster et conseillère bien-être.',
-        'card1Btn1' => 'Run',
-        'card1Btn2' => 'Code',
-        //  END Card 1 
-
-        // Card 2
-        'card2Img' => '/../../img/projects/SoinsDeSoie.png',
-        'card2Title' => 'Soins De Soie',
-        'card2Txt' => 'Le site Soins De Soie est un site réalisé pour un institut de beauté.',
-        'card2Btn1' => 'Run',
-        'card2Btn2' => 'Code',
-        // END Card 2
-
-        // Card 3
-        'card3Img' => '/../../img/projects/Souffle.png',
-        'card3Title' => 'Souffle d\'équilibre',
-        'card3Txt' => 'Le site Souffle d\'équilibre est un site réalisé pour une thérapeute en sophrologie.',
-        'card3Btn1' => 'Run',
-        'card3Btn2' => 'Code',
-        // END Card 3
-
-         // Card 4
-         'card4Img' => '/../../img/projects/amme.png',
-         'card4Title' => '@mme',
-         'card4Txt' => 'Le site @mme est un site pour une fiduciaire, ce site est en cours de construction.',
-         'card4Btn1' => 'Run',
-         'card4Btn2' => 'Code',
-         // END Card 4
-
-         // Card 5
-         'card5Img' => '/../../img/projects/amme.png',
-         'card5Title' => 'Master Mind',
-         'card5Txt' => 'Création du jeu Master Mind en langage C++',
-         'card5Btn1' => 'Run',
-         'card5Btn2' => 'Code',
-         // END Card 5
-
+        [
+            'img' => '/../../img/projects/Kenko.png',
+            'title' => 'Kenko',
+            'txt' => 'Le site Kenko est mon site personnel, il présente mes activités de webmaster et conseillère bien-être.',
+            'btn1' => 'Run',
+            'btn2' => 'Code',
+        ],
+        [
+            'img' => '/../../img/projects/SoinsDeSoie.png',
+            'title' => 'Soins De Soie',
+            'txt' => 'Le site Soins De Soie est un site réalisé pour un institut de beauté.',
+            'btn1' => 'Run',
+            'btn2' => 'Code',
+        ],
+        [
+            'img' => '/../../img/projects/Souffle.png',
+            'title' => 'Souffle d\'équilibre',
+            'txt' => 'Le site Souffle d\'équilibre est un site réalisé pour une thérapeute en sophrologie.',
+            'btn1' => 'Run',
+            'btn2' => 'Code',
+        ],
+        [
+            'img' => '/../../img/projects/amme.png',
+            'title' => '@mme',
+            'txt' => 'Le site @mme est un site pour une fiduciaire, ce site est en cours de construction.',
+            'btn1' => 'Run',
+            'btn2' => 'Code',
+        ],
+        [
+            'img' => '/../../img/projects/amme.png',
+            'title' => 'Master Mind',
+            'txt' => 'Création du jeu Master Mind en langage C++',
+            'btn1' => 'Run',
+            'btn2' => 'Code',
+        ],
+        [
+            'img' => '/../../img/projects/amme.png',
+            'title' => 'Master Mind',
+            'txt' => 'Création du jeu Master Mind en langage C++',
+            'btn1' => 'Run',
+            'btn2' => 'Code',
+        ],
     ], 
 ];
 
