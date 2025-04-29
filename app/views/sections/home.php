@@ -19,10 +19,10 @@
         </video>
         <div class="hero-content">
             <?php foreach ($hero as $key2 => $heroTemp): ?>
-                <h1 class="homeTitle"><?php echo $heroTemp['title']; ?></h1>
+                <h1 class="homeTitle"><?php echo htmlspecialchars($heroTemp['title']); ?></h1>
                 <div class="my-5">
-                    <h2 class="homeSecondTitle"><?php echo $heroTemp['secondTitle1']; ?></h2>
-                    <h2 class="homeSecondTitle"><?php echo $heroTemp['secondTitle2']; ?></h2>
+                    <h2 class="homeSecondTitle"><?php echo htmlspecialchars($heroTemp['secondTitle1']); ?></h2>
+                    <h2 class="homeSecondTitle"><?php echo htmlspecialchars($heroTemp['secondTitle2']); ?></h2>
                 </div>
             <?php endforeach; ?>
         </div>
@@ -38,11 +38,11 @@
             <div class="about2 col-md-7 d-flex aligne-items-center justify-content-center">
                 <article class="text-center">
                     <?php foreach ($about as $key1 => $aboutTemp): ?>
-                        <h3 class="text-center fontBleuVert mt-5"><?php echo $aboutTemp['title']; ?></h3>
-                            <p class="fontBleuVert mt-5"><?php echo $aboutTemp['p1']; ?></p>
-                            <p class="fontBleuVert mt-3"><?php echo $aboutTemp['p2']; ?></p>
+                        <h3 class="text-center fontBleuVert mt-5"><?php echo htmlspecialchars($aboutTemp['title']); ?></h3>
+                            <p class="fontBleuVert mt-5"><?php echo htmlspecialchars($aboutTemp['p1']); ?></p>
+                            <p class="fontBleuVert mt-3"><?php echo htmlspecialchars($aboutTemp['p2']); ?></p>
                         <div class="text-center my-5">
-                            <button class="button"><?php echo $aboutTemp['btn']; ?></button>
+                            <button class="button"><?php echo htmlspecialchars($aboutTemp['btn']); ?></button>
                         </div>
                     <?php endforeach; ?>
                 </article>
@@ -132,9 +132,9 @@
                 </article>
             </div>
             <div class="bloc2 col-md-6 d-flex align-items-center justify-content-center">
-                <article class="text-center">
-                    <h3 class="text-center fontBleuVert my-3"><?php echo $stageTemp['title2']; ?></h3>
-                        <div class="accordion accordion-flush" id="accordionFlushExample">
+                <article class="text-center p-3">
+                    <h3 class="text-center fontBleuVert mb-5"><?php echo $stageTemp['title2']; ?></h3>
+                        <div class="accordion accordion-flush shadow" id="accordionFlushExample">
                             <div class="accordion-item">
                                 <h2 class="accordion-header" id="flush-headingOne">
                                     <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">

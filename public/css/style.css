@@ -294,6 +294,32 @@ section .bloc2
 {
     background-color: var(--bleu);
 }
+
+#accordionFlushExample 
+{
+    border-radius: 0.8rem;
+    overflow: hidden;
+    border: 1px solid #ccc;
+}
+
+.accordion-button
+{
+    background-color: var(--bleuC) !important;
+    font-size: 1.5rem;
+    color: var(--bleuVert);
+}
+
+.accordion-button:hover
+{
+    background-color: var(--beige);
+}
+
+.accordion-body
+{
+    background-color: var(--vert);
+    color: var(--blanc);
+    font-size: 1.2rem;
+}
 /* END Section : Stage */
 
 /* Section : Skills */

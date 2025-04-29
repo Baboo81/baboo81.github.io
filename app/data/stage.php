@@ -4,6 +4,7 @@ namespace App\data;
 
 return [
     'stage' => [
+        
         'title' => 'Stage chez Agoria',
         'title2' => 'Activités',
         'p1' => 'Agoria, la fédération de l’industrie technologique, regroupe 2079 entreprises technologiques et tous ceux qui sont inspirés par la technologie. Comptant plus de 321.000 travailleurs, le secteur technologique est le plus grand secteur de Belgique et Agoria la plus grande fédération au sein de la FEB. Quelque 70 pour cent des membres d\'Agoria sont des PME.',
