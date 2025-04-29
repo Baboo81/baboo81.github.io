@@ -187,13 +187,13 @@
             </div>
             <div class="animationPictos-container">
                 <?php foreach ($skills as $key5 => $skillsTemp): ?>
-                <div class="animationPictos-tracks">
-                    <?php for ($repeat = 0; $repeat < 3; $repeat++): ?>
-                        <?php for ($i = 1; $i <= 13; $i++): ?>
-                            <img src="<?php echo $skillsTemp['img' . $i]; ?>" alt="Picto représentant <?php echo $skillsTemp['img' . $i]; ?>">
+                    <div class="animationPictos-tracks">
+                        <?php for ($repeat = 0; $repeat < 3; $repeat++): ?>
+                            <?php for ($i = 1; $i <= 13; $i++): ?>
+                                <img src="<?php echo $skillsTemp['img' . $i]; ?>" alt="Picto représentant <?php echo $skillsTemp['img' . $i]; ?>">
+                            <?php endfor; ?>
                         <?php endfor; ?>
-                    <?php endfor; ?>
-                </div>
+                    </div>
                 <?php endforeach; ?>
             </div>
         </div>
