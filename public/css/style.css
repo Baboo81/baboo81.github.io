@@ -397,6 +397,11 @@ footer #mapid
 {
     height: 350px;
 }
+
+footer .content
+{
+    margin-top: 2%;
+}
 /* END : Footer */
 
 /* media queries */

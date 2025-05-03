@@ -1,5 +1,5 @@
         <footer class="pt-4 pb-2">
-            <div class="container">
+            <div class="content">
                 <div class="row text-center text-md-start">
                         <!-- Adresse -->
                         <div class="col-12 col-md-3 mb-4">
