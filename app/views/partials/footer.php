@@ -17,10 +17,10 @@
                             <h5 class="my-4">Réseaux Sociaux</h5>
                             <div class="d-flex align-items-center justify-content-center gap-3">
                                 <a href="https://github.com/Baboo81">
-                                    <img src="/img/pictos/Git.svg" alt="GitHub" width="42" height="42">
+                                    <img src="/img/pictos/Git.svg" alt="GitHub" width="55" height="55">
                                 </a>
                                 <a href="https://www.linkedin.com/in/chris-rodriguez-perez-609716100/">
-                                    <img src="/img/pictos/LinkedIn.svg" alt="LinkedIn" width="42" height="42">
+                                    <img src="/img/pictos/LinkedIn.svg" alt="LinkedIn" width="55" height="55">
                                 </a>
                             </div>
                         </div>
@@ -29,7 +29,7 @@
                             <h5 class="my-4">Contact</h5>
                             <div class="d-flex align-items-center justify-content-center">
                                 <a href="mailto:chrisrodriguez@hotmail.be">
-                                    <img src="/img/pictos/Email.svg" alt="Mail" width="42" height="42">
+                                    <img src="/img/pictos/Email.svg" alt="Mail" width="55" height="55">
                                 </a>
                             </div>
                         </div>
