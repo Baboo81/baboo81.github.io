@@ -408,13 +408,16 @@ footer .content
 /*NavBar*/
 
 /* Taille par défaut (mobile) */
-.navbar li a {
+.navbar li a 
+{
     font-size: 1.2rem;
 }
 
 /* Tablettes */
-@media (min-width: 768px) {
-    .navbar li a {
+@media (min-width: 768px) 
+{
+    .navbar li a 
+    {
         font-size: 1.5rem;
     }
 }
