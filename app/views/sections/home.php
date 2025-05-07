@@ -33,7 +33,7 @@
     <div class="">
         <div class="row aboutSection">
             <div class="about1 col-md-5 d-flex align-items-center justify-content-center">
-                <img class="rounded-cercle" src="img/other/mySelf2.png" alt="Photo de moi-même">
+                <img class="" src="img/other/mySelf2.png" alt="Photo de moi-même">
             </div>
             <div class="about2 col-md-7 d-flex aligne-items-center justify-content-center">
                 <article class="text-center">
