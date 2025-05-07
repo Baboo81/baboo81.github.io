@@ -220,6 +220,8 @@ section .about1
 
 section .about1 img
 {
+    height: 30rem;
+    width: 20rem;
     margin-top: 15%;
     margin-bottom: 15%;
 }
