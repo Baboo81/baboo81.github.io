@@ -238,6 +238,11 @@ section .about2 article
 /* END Section : about */
 
 /* Section : projects */
+section #projects
+{
+    min-height: 1200px;
+}
+
 section .card
 {
     min-height: 40rem;
@@ -264,25 +269,28 @@ section .card-body
 /* END Section : projects */
 
 /* Section : Pictos */
-section .sliderContent
+#pictos 
 {
     background-color: var(--vert);
-    min-height: 1000px;
 }
 
-section .custom-carousel
+.custom-carousel 
 {
-    max-width: 600px;
-    height: 750px;
-    margin: auto;
+    max-width: 100%;
+    height: auto;
+}
+
+.custom-carousel .carousel-inner 
+{
+    border-radius: 1rem;
     overflow: hidden;
 }
 
-section .custom-carousel .carousel-item img
+.custom-carousel .carousel-item img 
 {
-    height: 100%;             /* Remplit toute la hauteur */
-    width: 100%;              /* Remplit toute la largeur */
-    object-fit: cover; 
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain; /* Pas de déformation, on garde les proportions */
 }
 /* END Section : Pictos */
 

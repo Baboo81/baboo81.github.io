@@ -51,12 +51,12 @@
     </div>
 </section>
 
-<section id="projects">
-    <div class="container-fluid">
+<section id="projects" class="my-5">
+    <div class="container-fluid my-5">
         <div class="my-5">
             <h3 class="text-center fontBleuVert my-5">Les projets</h3>
         </div>
-        <div class="row justify-content-center">
+        <div class="row justify-content-center my-5">
                 <?php foreach ($projects as $project): ?>
                     <div class="col-12 col-md-6 col-lg-4 d-flex align-items-stretch mb-4">
                         <div class="card w-100 h-100">
@@ -78,20 +78,13 @@
     </div>
 </section>
 
-<section id="pictos">
-    <div class="">
-        <div class="row">
-            <div class="col-12 sliderContent">
-                <div class="my-5">
-                    <h3 class="text-center fontBleuVert my-5">Les Pictos</h3>
-                </div>
-                <div id="carouselExampleCaptions" class="carousel slide custom-carousel" data-bs-ride="carousel">
-                    <div class="carousel-indicators">
-                        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-                        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
-                        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
-                        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3" aria-label="Slide 4"></button>
-                    </div>
+<section id="pictos" class="py-5">
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-lg-6 sliderContent text-center my-5">
+                <h3 class="text-center fontBleuVert mb-4">Les Pictos</h3>
+
+                <div id="carouselExampleCaptions" class="carousel slide carousel-fade custom-carousel my-5" data-bs-ride="carousel">
                     <div class="carousel-inner">
                         <div class="carousel-item active">
                             <img src="../../img/pictos/soinsDeSoie.svg" class="d-block w-100" alt="Logo représentant un joli pissenlit">
@@ -106,14 +99,6 @@
                             <img src="../../img/pictos/souffleDequilibre.svg" class="d-block w-100" alt="...">
                         </div>
                     </div>
-                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
-                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                        <span class="visually-hidden">Previous</span>
-                    </button>
-                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
-                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                        <span class="visually-hidden">Next</span>
-                    </button>
                 </div>
             </div>
         </div>
