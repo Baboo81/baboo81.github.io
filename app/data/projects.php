@@ -33,9 +33,9 @@ return [
             'btn2' => 'Code',
         ],
         [
-            'img' => '/../../img/projects/amme.png',
-            'title' => 'Master Mind',
-            'txt' => 'Création du jeu Master Mind en langage C++',
+            'img' => '/../../img/projects/Imayah.png',
+            'title' => 'Imayah',
+            'txt' => 'Création d\'un site qui propose différents services. France-Alexandra Vigouroux est énergéticienne et propose des soins énergétiques, des méditations, des retraites, un accompagnement thérapeutique. Les soins se passent en Sicile ou à Bruxelles.',
             'btn1' => 'Run',
             'btn2' => 'Code',
         ],
