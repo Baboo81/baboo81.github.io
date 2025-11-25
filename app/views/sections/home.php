@@ -33,7 +33,7 @@
     <div class="">
         <div class="row aboutSection">
             <div class="about1 col-md-5 d-flex align-items-center justify-content-center">
-                <img class="" src="img/other/mySelf2.png" alt="Photo de moi-même">
+                <img class="rounded-5" src="img/other/mySelf2.png" alt="Photo de moi-même">
             </div>
             <div class="about2 col-md-7 d-flex aligne-items-center justify-content-center">
                 <article class="text-center">
@@ -42,7 +42,9 @@
                             <p class="fontBleuVert mt-5"><?php echo htmlspecialchars($aboutTemp['p1']); ?></p>
                             <p class="fontBleuVert mt-3"><?php echo htmlspecialchars($aboutTemp['p2']); ?></p>
                         <div class="text-center my-5">
-                            <button class="button"><?php echo htmlspecialchars($aboutTemp['btn']); ?></button>
+                            <button class="button" onclick="window.location.href='https://www.kenko-web.be'">
+                                <?php echo htmlspecialchars($aboutTemp['btn']); ?>
+                            </button>
                         </div>
                     <?php endforeach; ?>
                 </article>

@@ -40,9 +40,9 @@ return [
             'btn2' => 'Code',
         ],
         [
-            'img' => '/../../img/projects/amme.png',
-            'title' => 'Master Mind',
-            'txt' => 'Création du jeu Master Mind en langage C++',
+            'img' => '/../../img/projects/JardiCare.png',
+            'title' => 'JardiCare',
+            'txt' => 'Création d\'un site pour un entrepreneur de jardin',
             'btn1' => 'Run',
             'btn2' => 'Code',
         ],
