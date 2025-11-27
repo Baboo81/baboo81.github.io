@@ -384,6 +384,12 @@ section .card-body
 {
     background-color: var(--bleuC);
 }
+
+.tech-picto
+{
+    width: 40px;
+    height: auto;
+}
 /* END Section : projects */
 
 /* Section : Pictos */

@@ -69,6 +69,11 @@ $skills = include __DIR__ . '/../../data/skills.php';
                             <h5 class="card-title"><?= htmlspecialchars($project['title']); ?></h5>
                             <p class="card-text text-muted"><?= htmlspecialchars($project['txt']); ?></p>
                             <h6 class="text-center my-3">Technologies utilisées</h6>
+                            <div class="d-flex justify-content-center gap-2 flex-wrap my-5">
+                                <?php foreach ($project['pictos'] as $picto): ?>
+                                    <img src="<?= $picto; ?>" alt="Technologie" class="tech-picto">
+                                <?php endforeach; ?>
+                            </div>
                             <div class="mt-auto text-center">
                                 <a href="<?= $project['run']; ?>" target="_blank" class="button">
                                     <?= htmlspecialchars($project['btn1']); ?>
