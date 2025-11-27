@@ -242,15 +242,23 @@ section .about2 article
 /* END Section : about */
 
 /* Section : projects */
-section #projects
+.mainTitle
+{
+    margin-bottom: 5% !important;
+}
+
+#projects
 {
     min-height: 1200px;
+    padding: 200px 0px !important;
 }
 
 section .card
 {
     min-height: 40rem;
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    border-radius: 40px !important;
+    overflow: hidden;
 }
 
 section .card-title
@@ -258,6 +266,11 @@ section .card-title
     color: var(--bleuVert);
     font-size: 2rem;
     text-align: center;
+}
+
+#projects .card-img-top
+{
+    object-fit: cover;
 }
 
 section .card-text
@@ -286,15 +299,34 @@ section .card-body
 
 .custom-carousel .carousel-inner 
 {
-    border-radius: 1rem;
     overflow: hidden;
 }
 
 .custom-carousel .carousel-item img 
 {
-    max-width: 100%;
-    max-height: 100%;
-    object-fit: contain; /* Pas de déformation, on garde les proportions */
+    max-width: 50%;
+    max-height: 50%;
+    object-fit: contain; 
+}
+
+#carouselPictos .carousel-item img 
+{
+    height: 250px; 
+    width: auto; 
+    object-fit: contain; 
+    object-position: center;
+    padding: 10px; 
+    display: block;
+    margin: 0 auto;
+}
+
+#carouselPictos .carousel-item 
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 250px;
+    background: transparent; 
 }
 /* END Section : Pictos */
 
@@ -337,55 +369,53 @@ section .bloc2
 /* END Section : Stage */
 
 /* Section : Skills */
+.tecTitle
+{
+    margin-bottom: 5% !important;
+}
+
 section .skills-container
 {
     min-height: 600px;
+    padding: 200px 0;
 }
 
-.animationPictos-container
-{
+.animationPictos-container {
     width: 100%;
     overflow: hidden;
     position: relative;
-    background-color: var(--vert); /* Couleur de fond (modifiable) */
-    padding: 30px 0; /* Un petit peu d'air autour si tu veux */
-    margin-top: 7%;
-}
-.animationPictos-tracks
-{
-    display: flex;
-    width: max-content;
-    animation: scroll-right 30s linear infinite;
+    background-color: var(--vert);
+    padding: 30px 0;
 }
 
-.animationPictos-tracks img
-{
+/* La piste de défilement */
+.animationPictos-tracks {
+    display: flex;
+    align-items: center;
+    gap: 40px; /* espacements identiques */
+    animation: scroll-right 25s linear infinite;
+}
+
+/* Les images */
+.animationPictos-tracks img {
     height: 90px;
-    margin: 0 40px;
-    object-position: contain;
+    object-fit: contain;
     transition: transform 0.3s ease;
 }
 
-.animationPictos-container img:hover
-{
-    transform: scale(1.2);
-}
-
-.animationPictos-container:hover .animationPictos-tracks
-{
+.animationPictos-container:hover .animationPictos-tracks {
     animation-play-state: paused;
 }
 
+/* Défilement continu vers la gauche */
 @keyframes scroll-right {
-    0% 
-    {
-      transform: translateX(0);
+    0% {
+        transform: translateX(0);
     }
-    100% 
-    {
-      transform: translateX(100%);
+    100% {
+        transform: translateX(-50%); /* Ajuste si nécessaire */
     }
-  }
+}
 /* END Section : Skills */
 
 /* Footer */

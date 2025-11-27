@@ -8,6 +8,8 @@ $hero = include __DIR__ . '/../../data/hero.php';
 $about = include __DIR__ . '/../../data/about.php';
 $projectsData = include __DIR__ . '/../../data/projects.php';
 $projects = $projectsData['projects'];
+$pictosData = include __DIR__ . '/../../data/pictos.php';
+$pictos = $pictosData['pictos'];
 $stage = include __DIR__ . '/../../data/stage.php';
 $skills = include __DIR__ . '/../../data/skills.php';
 ?>
@@ -56,13 +58,13 @@ $skills = include __DIR__ . '/../../data/skills.php';
 
 <section id="projects" class="my-5">
     <div class="container-fluid my-5">
-        <div class="my-5">
+        <div class="mainTitle my-5">
             <h3 class="text-center fontBleuVert my-5">Les projets</h3>
         </div>
         <div class="row justify-content-center my-5">
             <?php foreach ($projects as $project): ?>
                 <div class="col-12 col-md-6 col-lg-4 d-flex align-items-stretch mb-4">
-                    <div class="card w-100 h-100">
+                    <div class="card">
                         <img src="<?= $project['img']; ?>" class="card-img-top" alt="Image du projet <?= htmlspecialchars($project['title']); ?>">
                         <div class="card-body d-flex flex-column">
                             <h5 class="card-title"><?= htmlspecialchars($project['title']); ?></h5>
@@ -82,29 +84,25 @@ $skills = include __DIR__ . '/../../data/skills.php';
             <?php endforeach; ?>
         </div>
     </div>
-    </div>
+</div>
 </section>
 
 <section id="pictos" class="py-5">
-    <div class="container">
+     <div class="container">
         <div class="row justify-content-center">
-            <div class="col-lg-6 sliderContent text-center my-5">
+            <div class="col-12 sliderContent text-center my-5">
                 <h3 class="text-center fontBleuVert mb-4">Les Pictos</h3>
-
-                <div id="carouselExampleCaptions" class="carousel slide carousel-fade custom-carousel my-5" data-bs-ride="carousel">
+                <div id="carouselPictos" 
+                     class="carousel slide carousel-fade custom-carousel my-5" 
+                     data-bs-ride="carousel">
                     <div class="carousel-inner">
-                        <div class="carousel-item active">
-                            <img src="../../img/pictos/soinsDeSoie.svg" class="d-block w-100" alt="Logo représentant un joli pissenlit">
-                        </div>
-                        <div class="carousel-item">
-                            <img src="../../img/pictos/logoAmme.gif" class="d-block w-100" alt="Logo représentant un ordinateur">
-                        </div>
-                        <div class="carousel-item">
-                            <img src="../../img/pictos/logoBc.svg" class="d-block w-100" alt="...">
-                        </div>
-                        <div class="carousel-item">
-                            <img src="../../img/pictos/souffleDequilibre.svg" class="d-block w-100" alt="...">
-                        </div>
+                        <?php foreach ($pictos as $index => $picto): ?>
+                            <div class="carousel-item <?= $index === 0 ? 'active' : '' ?>">
+                                <img src="<?= $picto['img']; ?>" 
+                                     class="d-block w-100"
+                                     alt="<?= htmlspecialchars($picto['alt']); ?>">
+                            </div>
+                        <?php endforeach; ?>
                     </div>
                 </div>
             </div>
@@ -117,16 +115,16 @@ $skills = include __DIR__ . '/../../data/skills.php';
         <div class="row stageSection">
             <?php foreach ($stage as $key4 => $stageTemp): ?>
                 <div class="bloc1 col-md-6 d-flex aligne-items-center justify-content-center p-5">
-                    <article class="text-center">
+                    <article class="text-center p-5">
                         <h3 class="text-center fontBleuVert mt-5"><?php echo $stageTemp['title']; ?></h3>
                         <p class="fontBleuVert mt-5"><?php echo $stageTemp['p1']; ?></p>
                         <p class="fontBleuVert mt-3"><?php echo $stageTemp['p2']; ?></p>
                     </article>
                 </div>
                 <div class="bloc2 col-md-6 d-flex align-items-center justify-content-center">
-                    <article class="text-center p-3">
+                    <article class="text-center p-5">
                         <h3 class="text-center fontBleuVert mb-5"><?php echo $stageTemp['title2']; ?></h3>
-                        <div class="accordion accordion-flush shadow" id="accordionFlushExample">
+                        <div class="accordion accordion-flush shadow rounded-5" id="accordionFlushExample">
                             <div class="accordion-item">
                                 <h2 class="accordion-header" id="flush-headingOne">
                                     <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
@@ -174,10 +172,10 @@ $skills = include __DIR__ . '/../../data/skills.php';
 <section id="skills">
     <div class="row">
         <div class="col-12 skills-container">
-            <div class="my-5">
+            <div class="tecTitle my-5">
                 <h3 class="text-center fontBleuVert my-5">Les technologies utilisées</h3>
             </div>
-            <div class="animationPictos-container">
+            <div class="animationPictos-container my-5">
                 <?php foreach ($skills as $key5 => $skillsTemp): ?>
                     <div class="animationPictos-tracks">
                         <?php for ($repeat = 0; $repeat < 3; $repeat++): ?>
