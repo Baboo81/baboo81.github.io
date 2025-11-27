@@ -55,7 +55,6 @@ $skills = include __DIR__ . '/../../data/skills.php';
         </div>
     </div>
 </section>
-
 <section id="projects" class="my-5">
     <div class="container-fluid my-5">
         <div class="mainTitle my-5">

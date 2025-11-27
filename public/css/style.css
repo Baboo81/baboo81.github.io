@@ -12,6 +12,11 @@
     --blanc : #ffffff;
 }
 
+html
+{
+    scroll-behavior: smooth;
+}
+
 body
 {
     min-height: 2000px;

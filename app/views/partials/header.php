@@ -39,7 +39,7 @@
                                 <a class="nav-link active" aria-current="page" href="/" data-section="home">Accueil</a>
                             </li>
                             <li class="nav-item mx-5">
-                                <a class="nav-link" href="#" data-section="skills">Projets</a>
+                                <a class="nav-link" href="#projects" data-section="skills">Projets</a>
                             </li>
                             <li class="nav-item logo-container" id="horloge">
                                 <img src="/img/logo/Logo.svg" class="logo" alt="Logo du site">
@@ -58,10 +58,10 @@
                                 </div>
                             </li>
                             <li class="nav-item mx-5">
-                                <a class="nav-link" href="#" data-section="picto">Pictos</a>
+                                <a class="nav-link" href="#pictos" data-section="picto">Pictos</a>
                             </li>
                             <li class="nav-item mx-5">
-                                <a class="nav-link" href="#" data-section="stage">Stage</a>
+                                <a class="nav-link" href="#stage" data-section="stage">Stage</a>
                             </li>
                         </ul>
                     </div>
