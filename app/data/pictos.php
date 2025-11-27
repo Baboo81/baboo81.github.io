@@ -28,9 +28,13 @@ return [
             'img' => '/../../img/pictos/jardiCare.svg',
             'alt' => 'Logo du site Jardicare',
         ],
-        [
+         [
             'img' => '/../../img/pictos/kenko.svg',
             'alt' => 'Logo du site Kenko-web',
+        ],
+         [
+            'img' => '/../../img/pictos/amme.svg',
+            'alt' => 'Logo du site aMME',
         ],
     ],
 ];
