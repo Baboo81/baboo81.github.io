@@ -78,17 +78,57 @@ p
 /* END : Btn */
 
 /* NavBar */
-.navbar
-{ 
-    position: relative;
-    margin-top: 2%;
-    background-color: var(--bleuVert);
-    border-radius: 25px;
+.navbar 
+{
     position: fixed;
-    top: 10;
+    top: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: auto;        /* s’adapte au contenu */
+    max-width: 95vw;    /* pas plus que l’écran */
+    overflow: visible;
     z-index: 1000;
+    border-radius: 25px;
+    background-color: var(--bleuVert);
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-    opacity: 80%;
+    opacity: 0.8;
+    padding: 0 1rem;
+}
+
+/* Navbar-nav : toujours centrée */
+.navbar-nav 
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: nowrap; /* on force les liens à rester sur la même ligne */
+}
+
+.navbar-nav .nav-item 
+{
+    margin: 0 0.5rem; /* petite marge par défaut */
+}
+
+@media (min-width: 992px) 
+{
+    .navbar-nav .nav-item 
+    {
+        margin: 0 2rem; /* marge desktop */
+    }
+}
+
+
+.navbar-nav .nav-item 
+{
+    margin: 0 .5rem; /* marge par défaut */
+}
+
+@media (min-width: 992px) 
+{
+    .navbar-nav .nav-item 
+    {
+        margin: 0 2rem; /* plus d’espace sur desktop */
+    }
 }
 
 .navbar li a
@@ -111,17 +151,36 @@ p
     top: -50px; /* Décale le logo vers le haut de 15px */
     left: 50%; /* Centre horizontalement */
     transform: translateX(-50%); /* Centrer parfaitement */
+    transition: all 0.3s ease;
     
+}
+
+/* Espace autour du bouton hamburger */
+.navbar-toggler 
+{
+    margin-top: 1rem;   /* espace au-dessus */
+    margin-bottom: 1rem; /* espace en dessous */
 }
 /* END NavBAR*/
 
 /* Animation horloge */
-.wrap
+.wrap 
 {
-    width: 0px;
-    height: 0px;
-    position: relative;
-    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    top: 10%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+@media (max-width: 576px) 
+{
+    .wrap 
+    {
+        width: 40px;
+        height: 40px;
+    }
 }
 
 .minute, .heure
@@ -162,6 +221,41 @@ p
     transform-origin: bottom center;
     transform: rotate(180deg);
 }
+
+/* ========================= */
+/*   NAV RESPONSIVE          */
+/* ========================= */
+@media (max-width: 992px) 
+{
+    /* Taille du logo réduite sur tablettes */
+    .navbar .logo 
+    {
+        height: 100px;
+        width: 100px;
+        top: -30px;
+    }
+}
+
+@media (max-width: 576px) 
+{
+    /* Taille du logo réduite sur mobiles */
+    .navbar .logo 
+    {
+        height: 80px;
+        width: 80px;
+        top: -20px;
+    }
+}
+
+/* Masquer l’horloge sur mobile (menu hamburger) */
+@media (max-width: 991.98px) 
+{
+     #horloge 
+     {
+     display: none !important;
+    }
+}
+
 /* END horloge*/
 
 /* Section : home */
@@ -259,6 +353,7 @@ section .card
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
     border-radius: 40px !important;
     overflow: hidden;
+    width: 100%;
 }
 
 section .card-title
@@ -271,6 +366,7 @@ section .card-title
 #projects .card-img-top
 {
     object-fit: cover;
+    height: 300px;
 }
 
 section .card-text
@@ -419,32 +515,64 @@ section .skills-container
 /* END Section : Skills */
 
 /* Footer */
-footer
+footer 
 {
-    min-height: 500px;
     background-color: var(--gris);
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    min-height: 500px;
 }
 
-footer p
+footer p, footer small 
 {
     color: var(--bleuVert);
-    text-align: center;
 }
 
-footer small
+footer small 
 {
-    color: var(--bleuVert);
     font-weight: bold;
 }
 
-footer #mapid
+/* Carte responsive */
+footer #mapid 
 {
-    height: 350px;
+    height: 350px; /* desktop par défaut */
+    width: 100%;
+    border-radius: 0.5rem;
 }
 
-footer .content
+@media (max-width: 768px) 
 {
-    margin-top: 2%;
+    footer #mapid 
+    {
+        height: 200px; /* réduire la hauteur sur tablettes/mobiles */
+    }
+
+    /* Espacement vertical entre sections */
+    footer .col-12 
+    {
+        margin-bottom: 1.5rem;
+    }
+}
+
+/* Centrer les icônes sur mobile */
+@media (max-width: 576px) 
+{
+    footer .d-flex 
+    {
+        justify-content: center !important;
+    }
+
+    footer h5 
+    {
+        text-align: center;
+    }
+}
+
+/* Copyright */
+footer .text-center.pt-3 
+{
+    margin-top: 2rem;
 }
 /* END : Footer */
 

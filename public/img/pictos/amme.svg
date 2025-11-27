@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 24.1.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="Calque_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 1920 1080" style="enable-background:new 0 0 1920 1080;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:#255C5F;}
+	.st1{font-family:'EuphemiaUCAS';}
+	.st2{font-size:92px;}
+	.st3{fill:url(#SVGID_1_);}
+	.st4{fill:url(#SVGID_2_);}
+	.st5{fill:#FFFFFF;}
+	.st6{font-size:140px;}
+</style>
+<g>
+	<text transform="matrix(1 0 0 1 743.8364 752.7495)" class="st0 st1 st2">aMME</text>
+	<g>
+		
+			<linearGradient id="SVGID_1_" gradientUnits="userSpaceOnUse" x1="856.1754" y1="693.1596" x2="856.1754" y2="482.1596" gradientTransform="matrix(1 0 0 -1 0 1080.4094)">
+			<stop  offset="0" style="stop-color:#00E8C3"/>
+			<stop  offset="1" style="stop-color:#005A5E"/>
+		</linearGradient>
+		<path class="st3" d="M961.6,492.7c0,58.2-47.2,105.5-105.5,105.5s-106.7-47.3-105.4-105.5c1.2-56.9,47.2-105.5,105.5-105.5
+			S961.6,434.4,961.6,492.7z"/>
+		
+			<linearGradient id="SVGID_2_" gradientUnits="userSpaceOnUse" x1="866.3381" y1="736.1596" x2="866.3381" y2="439.3596" gradientTransform="matrix(1 0 0 -1 0 1080.4094)">
+			<stop  offset="0" style="stop-color:#00E8C3"/>
+			<stop  offset="1" style="stop-color:#005A5E"/>
+		</linearGradient>
+		<path class="st4" d="M950,597.4c2.8,3.4,2.2,8.5-1.2,11.2c-1.5,1.2-3.2,1.8-5,1.8c-2.3,0-4.7-1-6.3-3c-2.8-3.4-2.2-8.5,1.3-11.2
+			C942.3,593.4,947.3,594,950,597.4z M904.7,615.9c-4.1,1.6-6.1,6.3-4.5,10.4c1.2,3.2,4.3,5.1,7.4,5.1c1,0,2-0.2,2.9-0.6
+			c4.1-1.6,6.1-6.3,4.5-10.4C913.4,616.3,908.8,614.3,904.7,615.9z M976.8,565.1c-3.7-2.5-8.6-1.6-11.1,2.1
+			c-2.5,3.6-1.5,8.6,2.1,11.1c1.4,0.9,3,1.4,4.5,1.4c2.6,0,5.1-1.2,6.6-3.5C981.3,572.6,980.4,567.6,976.8,565.1z M1004.5,498.3
+			c0.1-1.9,0.1-3.8,0.1-5.7c0-81.8-66.6-148.4-148.4-148.4s-148.4,66.6-148.4,148.4S774.4,641,856.2,641c4.4,0,8-3.6,8-8s-3.6-8-8-8
+			c-73,0-132.4-59.4-132.4-132.4s59.4-132.4,132.4-132.4s132.4,59.4,132.4,132.4c0,0.3,0,0.6,0,0.8l-14.5-10.8l10.8,66.2l39.9-53.9
+			L1004.5,498.3z"/>
+		<path class="st5" d="M899.6,430.8l-21.4,37h14.9v41c0,3.6,2.9,6.5,6.5,6.5s6.5-2.9,6.5-6.5v-41H921L899.6,430.8z"/>
+		<text transform="matrix(1 0 0 1 780.4382 557.4094)" class="st5 st1 st6">a</text>
+	</g>
+</g>
+</svg>

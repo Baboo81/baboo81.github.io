@@ -28,7 +28,7 @@
     </head>
     <body>  
         <header class="d-flex justify-content-center">
-            <nav class="navbar navbar-expand-lg">
+            <nav class="navbar navbar-expand-lg my-5">
                 <div class="container-fluid">
                     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                         <span class="navbar-toggler-icon"></span>
@@ -39,12 +39,9 @@
                                 <a class="nav-link active" aria-current="page" href="/" data-section="home">Accueil</a>
                             </li>
                             <li class="nav-item mx-5">
-                                <a class="nav-link" href="#" data-section="about">Qui suis-je ?</a>
-                            </li>
-                            <li class="nav-item mx-5">
                                 <a class="nav-link" href="#" data-section="skills">Projets</a>
                             </li>
-                            <li class="nav-item logo-container mx-5">
+                            <li class="nav-item logo-container" id="horloge">
                                 <img src="/img/logo/Logo.svg" class="logo" alt="Logo du site">
                                 <div class="wrap">
                                     <!--Heure-->
@@ -65,9 +62,6 @@
                             </li>
                             <li class="nav-item mx-5">
                                 <a class="nav-link" href="#" data-section="stage">Stage</a>
-                            </li>
-                            <li class="nav-item mx-5">
-                                <a class="nav-link" href="#" data-section="certif">Technologies</a>
                             </li>
                         </ul>
                     </div>
